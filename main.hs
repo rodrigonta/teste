@@ -72,24 +72,24 @@ getClienteR = do
 
 postClienteR :: Handler Html
 postClienteR = do
-           ((((((result, _), _), _), _), _), _) <- runFormPost formcliente
+           ((result, _), _) <- runFormPost formcliente
            case result of 
-               FormSuccess Clientex -> (runDB $ insert Clientex) >>= \clid -> redirect (ChecarclienteR clid)
+               FormSuccess clientex -> (runDB $ insert clientex) >>= \clid -> redirect (ChecarclienteR clid)
                _ -> redirect ErroR
            
 getHomeR :: Handler Html
 getHomeR = defaultLayout [whamlet|Hello World!|]
 
 getChecarclienteR :: ClientexId -> Handler Html
-getChecarclienteR cld = do
-    Clientex <- runDB $ get404 cld
+getChecarclienteR clid = do
+    clientex <- runDB $ get404 clid
     defaultLayout [whamlet|
-        <p><b> #{ClientexNome Clientex}  
-        <p><b> #{ClientexCpf Clientex}  
-        <p><b> #{ClientexEndereco Clientex}  
-        <p><b> #{ClientexTelefone Clientex}  
-        <p><b> #{ClientexCidade Clientex}  
-        <p><b> #{ClientexEstado Clientex}  
+        <p><b> #{clientexNome clientex}  
+        <p><b> #{clientexCpf clientex}  
+        <p><b> #{clientexEndereco clientex}  
+        <p><b> #{clientexTelefone clientex}  
+        <p><b> #{clientexCidade clientex}  
+        <p><b> #{clientexEstado clientex}  
         
     |]
 
@@ -98,7 +98,7 @@ getErroR = defaultLayout [whamlet|
     cadastro falhou
 |]
 
-connStr = "dbname=dcu5a1uvm92g5f host=ec2-54-243-226-46.compute-1.amazonaws.com user=fubprkbokyfevu password=jl9JSZbmHxlGT88iUNGJQQuUwg port=5432"
+connStr = "dbname=d73v9jtp1m4gmm host=ec2-23-21-193-140.compute-1.amazonaws.com user=wxijesuruymxxv password=olhACvaEhpoy498TfYAlN_kTYc port=5432"
 
 main::IO()
 main = runStdoutLoggingT $ withPostgresqlPool connStr 10 $ \pool -> liftIO $ do 
