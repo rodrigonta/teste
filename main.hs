@@ -21,12 +21,29 @@ Clientex json
    estado Text
    deriving Show
 
+Servicox json  -- mudar para tabela n para 1 com empresa
+   tipo Text
+   preco Double 
+   descricao Text
+   deriving Show
+
+Empresax json
+   nome Text
+   cnpj Text
+   endereco Text
+   telefone Text
+   cidade Text
+   estado Text
+   deriving Show
+
 |]
 
 mkYesod "Pagina" [parseRoutes|
 / HomeR GET
 /cliente/cadastro ClienteR GET POST
 /cliente/checar/#ClientexId ChecarclienteR GET
+/empresa/cadastro EmpresaR GET POST
+/empresa/checar/#EmpresaId ChecarempresaR GET
 /erro ErroR GET
 |]
 
@@ -77,9 +94,50 @@ postClienteR = do
                FormSuccess clientex -> (runDB $ insert clientex) >>= \clid -> redirect (ChecarclienteR clid)
                _ -> redirect ErroR
            
+           
+           
+           
+--empresa           --
+formempresa :: Form Empresax
+formempresa = renderDivs $ Empresax <$>
+           areq textField "Nome: " Nothing <*>
+           areq textField "CNPJ: " Nothing <*>
+           areq textField "Endereço: " Nothing <*>
+           areq textField "Telefone: " Nothing <*>
+           areq textField "Cidade: " Nothing <*>
+           areq textField "Estado: " Nothing
+
+           
+
+getEmpresaR :: Handler Html
+getEmpresaR = do
+           (widget, enctype) <- generateFormPost formempresa
+           defaultLayout $ do 
+           toWidget [cassius|
+               label
+                   color:red;
+           |]
+           [whamlet|
+                 <form method=post enctype=#{enctype} action=@{EmpresaR}>
+                     ^{widget}
+                     <input type="submit" value="Enviar">
+           |]
+           
+           
+postEmpresaR :: Handler Html
+postEmpresaR = do
+           ((result, _), _) <- runFormPost formempresa
+           case result of 
+               FormSuccess empresax -> (runDB $ insert empresax) >>= \emid -> redirect (ChecarempresaR emid)
+               _ -> redirect ErroR
+           
+
+
 getHomeR :: Handler Html
 getHomeR = defaultLayout [whamlet|Hello World!|]
 
+
+--cliente
 getChecarclienteR :: ClientexId -> Handler Html
 getChecarclienteR clid = do
     clientex <- runDB $ get404 clid
@@ -92,6 +150,21 @@ getChecarclienteR clid = do
         <p><b> #{clientexEstado clientex}  
         
     |]
+
+--empresa
+getChecarempresaR :: EmpresaxId -> Handler Html
+getChecarempresaR emid = do
+    empresax <- runDB $ get404 emid
+    defaultLayout [whamlet|
+        <p><b> #{empresaxNome empresax}  
+        <p><b> #{empresaxCnpj empresax}  
+        <p><b> #{empresaxEndereco empresax}  
+        <p><b> #{empresaxTelefone empresax}  
+        <p><b> #{empresaxCidade empresax}  
+        <p><b> #{empresaxEstado empresax}  
+        
+    |]
+
 
 getErroR :: Handler Html
 getErroR = defaultLayout [whamlet|
