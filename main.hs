@@ -11,6 +11,7 @@ data Pagina = Pagina{connPool :: ConnectionPool}
 
 instance Yesod Pagina
 
+-- tabelas
 share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
 Clientex json
    nome Text
@@ -21,10 +22,11 @@ Clientex json
    estado Text
    deriving Show
 
-Servicox json  -- mudar para tabela n para 1 com empresa
+Servicox json
    tipo Text
    preco Double 
    descricao Text
+   empresaid EmpresaId
    deriving Show
 
 Empresax json
@@ -44,6 +46,8 @@ mkYesod "Pagina" [parseRoutes|
 /cliente/checar/#ClientexId ChecarclienteR GET
 /empresa/cadastro EmpresaR GET POST
 /empresa/checar/#EmpresaId ChecarempresaR GET
+/servico/cadastro ServicoR GET POST
+/servico/checar/#ServicoId ChecarservicoR GET
 /erro ErroR GET
 |]
 
@@ -96,6 +100,79 @@ postClienteR = do
            
            
            
+           
+--empresa           --
+formempresa :: Form Empresax
+formempresa = renderDivs $ Empresax <$>
+           areq textField "Nome: " Nothing <*>
+           areq textField "CNPJ: " Nothing <*>
+           areq textField "Endereço: " Nothing <*>
+           areq textField "Telefone: " Nothing <*>
+           areq textField "Cidade: " Nothing <*>
+           areq textField "Estado: " Nothing
+
+           
+
+getEmpresaR :: Handler Html
+getEmpresaR = do
+           (widget, enctype) <- generateFormPost formempresa
+           defaultLayout $ do 
+           toWidget [cassius|
+               label
+                   color:red;
+           |]
+           [whamlet|
+                 <form method=post enctype=#{enctype} action=@{EmpresaR}>
+                     ^{widget}
+                     <input type="submit" value="Enviar">
+           |]
+           
+           
+postEmpresaR :: Handler Html
+postEmpresaR = do
+           ((result, _), _) <- runFormPost formempresa
+           case result of 
+               FormSuccess empresax -> (runDB $ insert empresax) >>= \emid -> redirect (ChecarempresaR emid)
+               _ -> redirect ErroR
+           
+--serviços da empresa
+
+empr = do
+       entidades <- runDB $ selectList [] [Asc EmpresaxNome] 
+       optionsPairs $ fmap (\ent -> (empresaxNome $ entityVal ent, entityKey ent)) entidades
+
+
+formservico :: Form Servicox
+formservico = renderDivs $ Servicox <$>
+             areq textField "Tipo de serviço prestado" Nothing <*>
+             areq doubleField "Preço do serviço" Nothing <*>
+             areq textField "descriçao especifica do serviço" Nothing <*>
+             areq (selectField empr) "Empresa" Nothing
+
+getServicoR :: Handler Html
+getServicoR = do
+           (widget, enctype) <- generateFormPost formservico
+           defaultLayout $ do 
+           toWidget [cassius|
+               label
+                   color:red;
+           |]
+           [whamlet|
+                 <form method=post enctype=#{enctype} action=@{ServicoR}>
+                     ^{widget}
+                     <input type="submit" value="Enviar">
+           |]
+           
+           
+postServicoR :: Handler Html
+postServicoR = do
+           ((result, _), _) <- runFormPost formservico
+           case result of 
+               FormSuccess servicox -> (runDB $ insert servicox) >>= \emid -> redirect (ChecarservicoR emid)
+               _ -> redirect ErroR
+           
+
+-- home
 
 
 getHomeR :: Handler Html
@@ -116,7 +193,35 @@ getChecarclienteR clid = do
         
     |]
 
-
+--empresa
+getChecarempresaR :: EmpresaxId -> Handler Html
+getChecarempresaR emid = do
+    empresax <- runDB $ get404 emid
+    defaultLayout [whamlet|
+        <p><b> #{empresaxNome empresax}  
+        <p><b> #{empresaxCnpj empresax}  
+        <p><b> #{empresaxEndereco empresax}  
+        <p><b> #{empresaxTelefone empresax}  
+        <p><b> #{empresaxCidade empresax}  
+        <p><b> #{empresaxEstado empresax}  
+        
+    |]
+    
+-- servico de empresa
+getChecarservicoR :: ServicoxId -> Handler Html
+getChecarservicoR seid = do
+    servicox <- runDB $ get404 seid
+    empre <- runDB $ get404 (sevicoxEmpresaid servicox)
+    defaultLayout [whamlet|
+        <p> Tipo de serviço: #{servicoxTipo servicox}  
+        <p> Preço: #{servicoxPreco servicox}  
+        <p> Descirçao do serviço: #{servicoxDescricao servicox}
+        <p> Empresa: #{empresaxNome empre}  
+        
+    |]
+    
+    
+    -- erro
 getErroR :: Handler Html
 getErroR = defaultLayout [whamlet|
     cadastro falhou
