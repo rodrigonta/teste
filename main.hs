@@ -26,7 +26,7 @@ Servicox json
    tipo Text
    preco Double 
    descricao Text
-   empresaid EmpresaId
+   empresaid EmpresaxId
    deriving Show
 
 Empresax json
@@ -45,9 +45,9 @@ mkYesod "Pagina" [parseRoutes|
 /cliente/cadastro ClienteR GET POST
 /cliente/checar/#ClientexId ChecarclienteR GET
 /empresa/cadastro EmpresaR GET POST
-/empresa/checar/#EmpresaId ChecarempresaR GET
+/empresa/checar/#EmpresaxId ChecarempresaR GET
 /servico/cadastro ServicoR GET POST
-/servico/checar/#ServicoId ChecarservicoR GET
+/servico/checar/#ServicoxId ChecarservicoR GET
 /erro ErroR GET
 |]
 
@@ -211,7 +211,7 @@ getChecarempresaR emid = do
 getChecarservicoR :: ServicoxId -> Handler Html
 getChecarservicoR seid = do
     servicox <- runDB $ get404 seid
-    empre <- runDB $ get404 (sevicoxEmpresaid servicox)
+    empre <- runDB $ get404 (servicoxEmpresaid servicox)
     defaultLayout [whamlet|
         <p> Tipo de serviço: #{servicoxTipo servicox}  
         <p> Preço: #{servicoxPreco servicox}  
