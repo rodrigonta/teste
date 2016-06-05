@@ -43,6 +43,10 @@ pRoutes = [parseRoutes|
 /servip/checar/#ServipxId ChecarservipR GET
 
 
+
+/login LogR GET POST
+/logout LogoutR GET
+
 /static StaticR Static getStatic
 
 /erro ErroR GET

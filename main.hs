@@ -2,6 +2,10 @@
              TemplateHaskell, GADTs, FlexibleInstances,
              MultiParamTypeClasses, DeriveDataTypeable,
              GeneralizedNewtypeDeriving, ViewPatterns, EmptyDataDecls #-}
+
+
+
+
 import Yesod
 import Database.Persist.Postgresql
 import Data.Text
@@ -13,101 +17,14 @@ import Data.Monoid
 import Text.Lucius
 import Text.Julius
 import Text.Hamlet
+import DBA
+import import
 
 import Control.Monad.Logger (runStdoutLoggingT)
 
 
+mkYesodDispatch "Pagina" pRoutes
 
-data Pagina = Pagina{connPool :: ConnectionPool,
-                     getStatic :: Static }
-
-instance Yesod Pagina
-
--- tabelas
-share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
-Clientex json
-   nome Text
-   cpf Text
-   endereco Text
-   telefone Text
-   cidade Text
-   estado Text
-   deriving Show
-
-Servicox json
-   tipo Text
-   preco Double 
-   descricao Text
-   empresaid EmpresaxId
-   deriving Show
-
-Empresax json
-   nome Text
-   cnpj Text
-   endereco Text
-   telefone Text
-   cidade Text
-   estado Text
-   deriving Show
-   
-Servipx json
-   tipo Text
-   preco Double 
-   descricao Text
-   prestadorid PrestadorxId
-   deriving Show
-
-Prestadorx json
-   nome Text
-   cpf Text
-   endereco Text
-   telefone Text
-   cidade Text
-   estado Text
-   deriving Show
-
-|]
-
-mkYesod "Pagina" [parseRoutes|
-
-/ HomeR GET
-
-
-/cliente/cadastro ClienteR GET POST
-/cliente/checar/#ClientexId ChecarclienteR GET
-/clinte/deletar/#ClientexId ExcluirclienteR GET
-/cliente/listar ListarclienteR GET
-
-
-/empresa/cadastro EmpresaR GET POST
-/empresa/checar/#EmpresaxId ChecarempresaR GET
-
-
-
-
-/servico/cadastro ServicoR GET POST
-/servico/checar/#ServicoxId ChecarservicoR GET
-
-
-
-
-/prestador/cadastro PrestadorR GET POST
-/prestador/checar/#PrestadorxId ChecarprestadorR GET
-
-
-
-
-/servip/cadastro ServipR GET POST
-/servip/checar/#ServipxId ChecarservipR GET
-
-
-/static StaticR Static getStatic
-
-/erro ErroR GET
-
-
-
-|]
 
 
 instance YesodPersist Pagina where
@@ -424,10 +341,67 @@ getHomeR = do
             setTitle "Mew Festas"
             $(whamletFile "hamlets/home/header.hamlet")
             
-            
-            
-            
-            
+
+
+getLoginR :: Handler Html
+getLoginR = do
+           deleteSession "_ID"
+           (widget, enctype) <- generateFormPost formLogin
+           defaultLayout [whamlet|
+                 <form method=post enctype=#{enctype} action=@{LoginR}>
+                     ^{widget}
+                     <input type="submit" value="Login">
+           |]
+-- linkar com clientes
+formUser :: Form Users
+formUser = renderDivs $ Users <$>
+           areq textField "Nome: " Nothing <*>
+           areq textField "Login: " Nothing <*>
+           areq passwordField "Senha: " Nothing
+
+
+postLoginR :: Handler Html
+postLoginR = do
+           ((result, _), _) <- runFormPost formLogin
+           case result of 
+               FormSuccess ("admin","admin") -> setSession "_ID" "admin" >> redirect AdminR
+               FormSuccess (login,senha) -> do 
+                   user <- runDB $ selectFirst [UsersLogin ==. login, UsersSenha ==. senha] []
+                   case user of
+                       Nothing -> redirect LoginR
+                       Just (Entity pid u) -> setSession "_ID" (pack $ show $ fromSqlKey pid) >> redirect (PerfilR pid)
+               _ -> redirect ErroR
+
+formLogin :: Form (Text,Text)
+formLogin = renderDivs $ (,) <$>
+           areq textField "Login: " Nothing <*>
+           areq passwordField "Senha: " Nothing
+{-           
+getUsuarioR :: Handler Html
+getUsuarioR = do
+           (widget, enctype) <- generateFormPost formUser
+           defaultLayout [whamlet|
+                 <form method=post enctype=#{enctype} action=@{UsuarioR}>
+                     ^{widget}
+                     <input type="submit" value="Enviar">
+           |]
+-}
+
+--postUsuarioR :: Handler Html
+--postUsuarioR = do
+
+getAdminR :: Handler Html
+getAdminR = defaultLayout [whamlet|
+     <h1> Seja bem vindo administrador!
+|]
+
+getLogoutR :: Handler Html
+getLogoutR = do
+     deleteSession "_ID"
+     defaultLayout [whamlet| 
+         <h1> Xauzinho!
+     |]
+
 
 
     -- erro
