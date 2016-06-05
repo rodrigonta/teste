@@ -5,9 +5,21 @@
 import Yesod
 import Database.Persist.Postgresql
 import Data.Text
+import Yesod
+import Yesod.Static
+import Yesod.Form.Bootstrap3
+import Control.Applicative
+import Data.Monoid
+import Text.Lucius
+import Text.Julius
+import Text.Hamlet
+
 import Control.Monad.Logger (runStdoutLoggingT)
 
-data Pagina = Pagina{connPool :: ConnectionPool}
+
+
+data Pagina = Pagina{connPool :: ConnectionPool,
+                     getStatic :: Static }
 
 instance Yesod Pagina
 
@@ -89,7 +101,7 @@ mkYesod "Pagina" [parseRoutes|
 /servip/checar/#ServipxId ChecarservipR GET
 
 
-
+/static StaticR Static getStatic
 
 /erro ErroR GET
 
@@ -184,12 +196,6 @@ getListarclienteR = do
     defaultLayout $ do
         setTitle "Lista de Clientes"
         $(whamletFile "hamlets/clientes/listarcliente.hamlet")
-
-
-
-
-
-
 
 
 --empresa           --
@@ -295,10 +301,6 @@ getChecarservicoR seid = do
         <p> Empresa: #{empresaxNome empre}  
         
     |]
-
-
-
-
 
 --prestador de servico
 formprestador :: Form Prestadorx
@@ -416,10 +418,16 @@ getChecarservipR seid = do
 
 
 getHomeR :: Handler Html
-getHomeR = defaultLayout [whamlet|Hello World!|]
-
-
-
+getHomeR = do
+        --lista <- runDB $ selectList [] [Asc EmpresaNome]
+        defaultLayout $ do
+            setTitle "Mew Festas"
+            $(whamletFile "hamlets/home/header.hamlet")
+            
+            
+            
+            
+            
 
 
     -- erro
@@ -433,4 +441,5 @@ connStr = "dbname=d73v9jtp1m4gmm host=ec2-23-21-193-140.compute-1.amazonaws.com 
 main::IO()
 main = runStdoutLoggingT $ withPostgresqlPool connStr 10 $ \pool -> liftIO $ do 
        runSqlPersistMPool (runMigration migrateAll) pool
-       warp 8080 (Pagina pool)
+       s <- static "."
+       warp 8080 (Pagina pool s)
