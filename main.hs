@@ -183,7 +183,11 @@ getListarclienteR = do
     msg <- getMessage
     defaultLayout $ do
         setTitle "Lista de Clientes"
---arrumar a pagina de listar
+        $(whamletFile "hamlets/clientes/listarcliente.hamlet")
+
+
+
+
 
 
 
