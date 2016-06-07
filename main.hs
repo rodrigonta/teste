@@ -169,6 +169,18 @@ getListarempresaR = do
         $(whamletFile "hamlets/empresa/listarempresa.hamlet")
 
 
+--listar empresas com link
+--ou pelo menos uma tentativa disso
+getListarE :: Handler Html
+getListarE = do
+    listaE <- runDB $ selectList [] [Asc EmpresaxNome]
+    defaultLayout [whamlet|
+        <h1> Listagem Geral de Empresas:
+        $forall Entity id EmpresaR <- listaE
+            <a href=@{LivroL id}>#{empresaxNome empresax} <br>
+
+
+
 
 
 --serviços da empresa
