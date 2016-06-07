@@ -18,29 +18,13 @@ import Text.Lucius
 import Text.Julius
 import Text.Hamlet
 import DBA
-import import
+import Import
 
 import Control.Monad.Logger (runStdoutLoggingT)
 
 
 mkYesodDispatch "Pagina" pRoutes
 
-
-
-instance YesodPersist Pagina where
-   type YesodPersistBackend Pagina = SqlBackend
-   runDB f = do
-       master <- getYesod
-       let pool = connPool master
-       runSqlPool f pool
-
-type Form a = Html -> MForm Handler (FormResult a, Widget)
-
-instance RenderMessage Pagina FormMessage where
-    renderMessage _ _ = defaultFormMessage
-    
-    
-    
 
 ------------------------
 -- Sempre que preciso um form, sera ncessario
@@ -58,7 +42,7 @@ formcliente = renderDivs $ Clientex <$>
            areq textField "Cidade: " Nothing <*>
            areq textField "Estado: " Nothing
 
-           
+
 
 getClienteR :: Handler Html
 getClienteR = do
@@ -151,6 +135,7 @@ postEmpresaR = do
            
 
 
+
 getChecarempresaR :: EmpresaxId -> Handler Html
 getChecarempresaR emid = do
     empresax <- runDB $ get404 emid
@@ -165,6 +150,23 @@ getChecarempresaR emid = do
     |]
 
 
+
+getExcluirempresaR :: EmpresaxId -> Handler Html
+getExcluirempresaR id = do
+    runDB $ get404 id
+    runDB $ delete $ id
+    setMessage $ [shamlet| Registro excluído com sucesso! |]
+    redirect ListarempresaR
+
+
+
+getListarempresaR :: Handler Html
+getListarempresaR = do
+    lista <- runDB $ selectList [] [Asc EmpresaxNome]
+    msg <- getMessage
+    defaultLayout $ do
+        setTitle "Lista de Empresas"
+        $(whamletFile "hamlets/empresa/listarempresa.hamlet")
 
 
 
@@ -219,6 +221,28 @@ getChecarservicoR seid = do
         
     |]
 
+
+
+getExcluirservicoR :: ServicoxId -> Handler Html
+getExcluirservicoR id = do
+    runDB $ get404 id
+    empre <- runDB $ delete $ id
+    setMessage $ [shamlet| Registro excluído com sucesso! |]
+    redirect ListarempresaR
+
+{- nao funciona
+
+getListarservicoR :: Handler Html
+getListarservicoR = do
+    lista <- runDB $ selectList [] [Asc ServicoxTipo]
+    empre <- runDB $ get404 (servicoxEmpresaid servicox)
+    msg <- getMessage
+    defaultLayout $ do
+        setTitle "Lista de Serviços"
+        $(whamletFile "hamlets/empresa/listarservico.hamlet")
+-}
+
+
 --prestador de servico
 formprestador :: Form Prestadorx
 formprestador = renderDivs $ Prestadorx <$>
@@ -269,6 +293,24 @@ getChecarprestadorR preid = do
         
     |]
 
+
+
+getExcluirprestadorR :: PrestadorxId -> Handler Html
+getExcluirprestadorR id = do
+    runDB $ get404 id
+    runDB $ delete $ id
+    setMessage $ [shamlet| Registro excluído com sucesso! |]
+    redirect ListarprestadorR
+
+
+
+getListarprestadorR :: Handler Html
+getListarprestadorR = do
+    lista <- runDB $ selectList [] [Asc PrestadorxNome]
+    msg <- getMessage
+    defaultLayout $ do
+        setTitle "Lista de Prestadores"
+        $(whamletFile "hamlets/prestador/listarprestador.hamlet")
 
 
 --serviços do prestador
@@ -322,6 +364,12 @@ getChecarservipR seid = do
 
 
 
+getExcluirservipR :: ServipxId -> Handler Html
+getExcluirservipR id = do
+    runDB $ get404 id
+    prest <- runDB $ delete $ id
+    setMessage $ [shamlet| Registro excluído com sucesso! |]
+    redirect ListarprestadorR
 
 
 
@@ -342,7 +390,7 @@ getHomeR = do
             $(whamletFile "hamlets/home/header.hamlet")
             
 
-
+{-
 getLoginR :: Handler Html
 getLoginR = do
            deleteSession "_ID"
@@ -351,7 +399,11 @@ getLoginR = do
                  <form method=post enctype=#{enctype} action=@{LoginR}>
                      ^{widget}
                      <input type="submit" value="Login">
-           |]
+          |]
+          
+          
+
+
 -- linkar com clientes
 formUser :: Form Users
 formUser = renderDivs $ Users <$>
@@ -376,7 +428,7 @@ formLogin :: Form (Text,Text)
 formLogin = renderDivs $ (,) <$>
            areq textField "Login: " Nothing <*>
            areq passwordField "Senha: " Nothing
-{-           
+         
 getUsuarioR :: Handler Html
 getUsuarioR = do
            (widget, enctype) <- generateFormPost formUser
@@ -385,8 +437,8 @@ getUsuarioR = do
                      ^{widget}
                      <input type="submit" value="Enviar">
            |]
--}
 
+--}
 --postUsuarioR :: Handler Html
 --postUsuarioR = do
 
