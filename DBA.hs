@@ -91,6 +91,9 @@ instance Yesod Pagina where
     isAuthorized ClienteR _ = return Authorized
     isAuthorized LoginR _ = return Authorized
     isAuthorized ErroR _ = return Authorized
+    isAuthorized JqueryR _ = return Authorized
+    isAuthorized ExjqueryR _ = return Authorized
+    isAuthorized ResposivoR _ = return Authorized
     isAuthorized _ _ = isUser
 
 

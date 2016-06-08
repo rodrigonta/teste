@@ -1,0 +1,43 @@
+$(document).ready(function(){
+    
+    $('#menu').hide();
+    
+    $('#icone-menu').click(function(){
+        $('#menu').slideToggle();
+        $('#pesquisar').slideUp();
+        });	
+
+    
+    $('#opcao-logar').click(function () {
+        
+    $('#background').fadeIn();
+    
+    });
+    
+    /*$('#background').click(function(){
+    
+    $('#background').fadeOut();
+    });*/
+    
+
+    $('#lupa-mobile').click(function () {
+        
+    $('#pesquisar').slideToggle();
+    $('#menu').slideUp();
+    });
+
+      // Slideshow 1
+      $("#slider2").responsiveSlides({
+        maxwidth:2000,
+        speed: 800
+      });
+
+    $('.zoom').hover(function() {
+        $(this).addClass('transition');
+ 
+    }, function() {
+        $(this).removeClass('transition');
+    });
+});
+
+

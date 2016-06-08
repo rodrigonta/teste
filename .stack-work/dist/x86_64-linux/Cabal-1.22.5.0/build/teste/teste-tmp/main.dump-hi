@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2016-06-08 05:01:49.188149 UTC
+2016-06-08 07:23:16.596854 UTC
 
 interface main@main:Main [orphan module] 7103
-  interface hash: 71f3cc6a59ba0219d56ccb987dc305e4
-  ABI hash: 8b351a2c8b342ce95c05b6997eb4c3cc
-  export-list hash: 6b51d4fc94e2bd5022f9ec766b9fd641
-  orphan hash: a0cdbfbfc9a3b3e34acdc545de531c82
+  interface hash: f87518e4e5ef3901c9be259f743e1484
+  ABI hash: fad53198927f6297bb8d0dadb85edcb5
+  export-list hash: 61360835d546eaf73caa4b559fbd9205
+  orphan hash: 855c8a531c4e99c8888c17c90510acb2
   flag hash: 7752062497fd05e4bcb9a423582f58aa
   sig of: Nothing
   used TH splices: True
@@ -223,58 +223,61 @@ import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
 import  -/  blaze-markup-0.7.0.3@blaze_C7imNkL0ufD2cjmU64FP9k:Text.Blaze.Internal 2898da33690d2db163df0dc76596091c
 import  -/  blaze-html-0.8.1.1@blaze_Iq6GES6DAMS0745KzFL7i6:Text.Blaze.Html 75b0386c9ee854906d7c6830574b4617
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  DBA 8796001b158f8e8ed62cbdf64fb4e0f3
-  exports: e306e40740095dd7a5348c92e5fde458
-  AdminR 00f02f4ad69d24ed5bf6f25c643bca30
-  ChecarclienteR 93b89d2541bdb356fdbf9a272506337a
-  ChecarempresaR e4f457f4cd81cf6f83f8d54b2e8af09d
-  ChecarprestadorR b60947b678b9047527279950a56d81e6
-  ChecarservicoR 5c7f5a700180d0697018a61c80931a90
-  ChecarservipR c0326a6556f0b17bd9d82cf0d379e7e0
-  ClienteR 9efff79cf87559490d2fec194ec056ea
+import  -/  DBA 0368e572881ff28a27e6613afc64d8dd
+  exports: eac2e65bb9d04b43dbfaa30f52eea5f8
+  AdminR bb1718b69b12dca28d893882a3b650fa
+  ChecarclienteR 69b97c2dba03d33ab533f2adfb5aa525
+  ChecarempresaR 663c94d539ddd0f0b764f8bda6c1b6be
+  ChecarprestadorR 5934401f1001952a771d43550d12e095
+  ChecarservicoR e4e944645a0026c6f855f734570c565c
+  ChecarservipR a0bad2f97f8855ecdf56c1bc87a2908d
+  ClienteR 48cfa26d5524bf65dcc83ac0794bc346
   Clientex 829d446159adc3338c640195d68b19ec
   Clientex c5045012bc1b4ba2a322b1a6d7286630
   ClientexId 8d1cb154420d06c3ca78dcfaed3fa998
   ClientexNome f318ccf3d162b8cfe586ad0c556a30cf
   ClientexSenha 0a9918f6145bd6044a7a8f1034e53109
   ClientexUsername 41b2f0628c9466445b719efb7a37acde
-  EmpresaR f974663d8dd96a7704d49cea49921371
+  EmpresaR 3c7f3169219162b7acaca8b1dfab5deb
   Empresax 276e8231a345efee2954e3c428510d3f
   Empresax cbb6d9d7a044c876dcc33ca31c6cd69f
   EmpresaxId 3c11c3cc5e90cfdfc18576cc1b36f4c5
   EmpresaxNome f60f8731454a9181d9710c42f4141211
-  ErroR 547dd2038584442346dcaa5c76360b54
-  ExcluirclienteR 224b11c0bcafe4527d9b9923c9ccdfa9
-  ExcluirempresaR 389281328804bbf569108e2043e40786
-  ExcluirprestadorR 459aacb695e64ba43065a96faf58b28d
-  ExcluirservicoR 570c38af370c75fd47de79467633f943
-  ExcluirservipR 20a775df7af4445c9f16d1883f463d14
-  Form b7b047ce6e494f3645b37eda08797f0c
-  Handler 20db97dbaa5237fc2c53c2a52de2a23a
-  HomeR 2bf7038ee810c7d64026f648add01065
-  ListarclienteR b8d854c146ad32b680742b38d89aa52d
-  ListarempresaR ce95d7b0acfd11b0291c03a50d6fa5f9
-  ListarprestadorR f65b80a266eba710155c69dd1f6ee143
-  ListarservicoR b6342671d5c23368df9de9eb572ce6b6
-  LoginR 055d13d6e1ea2130532911d31544cde0
-  LogoutR 90b74d357a23316fbeda2898f3762209
-  Pagina 408908caab26371a1008640bb6c4508c
-  Pagina fc6748d1695cb1b77f975e44c6a44a38
-  PrestadorR d86228f4f9980316664e08e88002fd08
+  ErroR 652036d14a5742a9c880ef526cd0150d
+  ExcluirclienteR d34b6977b168605f3744e62c1e0f9e22
+  ExcluirempresaR 30991627a8940f34201f1a6675412754
+  ExcluirprestadorR 72a20d01afc0e61d41db61b380735b2a
+  ExcluirservicoR 01ed3cb96605e45558bc904282a6ac0b
+  ExcluirservipR e6fe9a55d250541093ffb33dfb0906e0
+  ExjqueryR 0bcb265d751230e5b443810262c6ba18
+  Form 957bf5fda46eaaaca342a692e67da056
+  Handler 48103bc0b1a5c9447bdd15a972bc6848
+  HomeR 8e0d08819fbc64988f9427306f521edb
+  JqueryR da642db19a25f531c0e2a1704f300ec6
+  ListarclienteR dc3f959ca313b9c004ae70c2ec74e319
+  ListarempresaR 6fb7d4635ab14a02114bab159da9fbf6
+  ListarprestadorR 2135ee69e041176e34adfb8c2a66c94f
+  ListarservicoR be7b60e59ce6689832d8d12dd2f10fa3
+  LoginR 64193808c1b9d9d12b9851fb42ddc0c3
+  LogoutR 87ee6cb9912f02f93a6538e867966a39
+  Pagina 001b174613b71849ef7e2920e42ff1d2
+  Pagina 7670bf4262adcc4773378e03797cbf4f
+  PrestadorR 6ec45b7077b7087fae01b471fc3a4cab
   Prestadorx f8eda5a718a1694414832f5f7bb19b16
   Prestadorx fce0e090eaea33444ab816c36a17ac8e
   PrestadorxId a821d92283103e782cfb055f647f39c3
   PrestadorxNome 702d6ad6759952ec8cbf80ecf45d1dc5
-  ServicoR d3c7c041762e1970c5075efda71cf0b5
-  Servicox 2de05273b38345357da61ee0ab158f7f
-  Servicox ed75cd20e67476e6bf0e716087671611
-  ServicoxId b1589a2e4a789ec98dcffe59a74d8a7a
-  ServicoxTipo 2054b4dba79ba3693903d19cbfbdf766
-  ServipR ec3522a7c233eda7cc400bbc952fac07
-  Servipx 6a9ddbfe71239618986e212974ab0d8c
-  Servipx c4e6ee3960cfe8101b70b0c5b7953050
-  ServipxId 6c90343d4a07d6d92fcc4d98fd146d6c
-  StaticR d9576b45c1785e8097c94a31059c44c4
+  ResposivoR cb8b297a9c6dd42431f8f2d7d463481a
+  ServicoR b4ef76644a351188a9bf976594a23fb1
+  Servicox 7763b868ec73fae81b3cd9ab368420ed
+  Servicox cffcf6f0c853f3cc4d370f90df5fa5a5
+  ServicoxId 1198fcc32a946ec018a5037e8358b5a7
+  ServicoxTipo aafdbb885cd9d3d337cd7912a50c6aa2
+  ServipR f6dc92391ca0ab3f540df82500233fe7
+  Servipx 599a349570b273fa53b2e90420fbdaff
+  Servipx 148fa87b06e77234c0cd4b46ce91c1e2
+  ServipxId 49a90e8603487a4807d0d043481c1761
+  StaticR b1f6787e8703cc026f8f634602ea5941
   clientexCidade 3e250fbb7d564afcbe670e95d9c97803
   clientexCpf bd1ef5670dc39fe20a2c8a84585d5dd6
   clientexEndereco 0350671bb367b23d4766771fd00c21a7
@@ -289,8 +292,14 @@ import  -/  DBA 8796001b158f8e8ed62cbdf64fb4e0f3
   empresaxEstado 480e27b1131a05f1b7f3966cce588d65
   empresaxNome 1c3758932ff95f273cb9ae0e5ea7f52c
   empresaxTelefone b2fe63a22e73f74a0a0421bd35a57088
-  getStatic 16a61f17f2ba587f00d9b10e3c9057e7
-  img_servicos_png 2071fb1eb6253c10a4b16f07d9d3c15a
+  getStatic 9a183245d6db35ca550c2beb29c8920c
+  img_escolha_png b4efdb1bff4eeeb2445288b7eb6d2fe7
+  img_servicos_png 8b205868eb39eb716a6fc34487cbef20
+  img_slide_slide1_jpg a1f8fcdadb2ef20ae2899be55f35cb83
+  img_slide_slide2_jpg 030d70addcf1912ada04cac8b95e4704
+  img_slide_slide3_jpg 18ceafaafd42d830bf45b31c81c5c77c
+  img_slide_slide4_jpg 7b2877cfc00c0f06a44ac918fef3ddf1
+  img_slide_slide5_jpg b4cb278df96ebdae831d1dc9f7207cff
   migrateAll 3f2caea2919c9e4d0aa6f011d41772fd
   prestadorxCidade 46ffc0f56751f809e1832f8dbe66e05d
   prestadorxCpf f5bcb92e53a9613623a6f41256088e17
@@ -298,14 +307,14 @@ import  -/  DBA 8796001b158f8e8ed62cbdf64fb4e0f3
   prestadorxEstado 69b17a598a62e2c1040b4a64c1c60aee
   prestadorxNome 1cb6b512770ccad2cf3bb3aaf9fc77c8
   prestadorxTelefone 6308e80557738060ed6c5334b26db256
-  servicoxDescricao ee72b7ae10b91b828c92a51d7289f1ed
-  servicoxEmpresaid 67e5589bb77cf94db3ac38e2ef228775
-  servicoxPreco ec113b64b7bbd84789245e5fd119d66d
-  servicoxTipo caf88ca630b6c868d4818fa551b50de9
-  servipxDescricao b4a42a1a2d74675b73a5990dd52cd424
-  servipxPreco 42d83a7ef26997debc2447b8076cd52f
-  servipxPrestadorid ef708f051ee78f32f8dd791ce7352841
-  servipxTipo d373466dc32123539fa15ff884df179a
+  servicoxDescricao 6a2eb28339762a07a642ed81038febb5
+  servicoxEmpresaid a80cc097ccfe240d4e4a2035ee99530f
+  servicoxPreco d76e51a8d65c431f4677fb9030cc218f
+  servicoxTipo e93142d18b2db105b9b6f7281fc62505
+  servipxDescricao 57b19ae75cc4cd73710da46fcdcd1dd4
+  servipxPreco 1c9572b66a84579fa0e3c5f389fdbbc4
+  servipxPrestadorid bd7f63c72f21fcb3d1717d8ce7142728
+  servipxTipo ae01278eaaf550458e02198223808d8a
 import  -/  Import c2369ed7f4428d69d049e1c486e66821
   exports: a81585db2453d9bbc77ba9940a721edf
   pRoutes 9f9e415e07ea3cf548084c6e26d26b66
@@ -323,8 +332,10 @@ import  -/  shakespeare-2.0.8@shake_1o7sYIVV5UR9j4PxxRPUv5:Text.Css 354a5a67eedb
 import  -/  shakespeare-2.0.8@shake_1o7sYIVV5UR9j4PxxRPUv5:Text.Hamlet dbb901a94cb83f593316a487f5b7d9e8
 import  -/  shakespeare-2.0.8@shake_1o7sYIVV5UR9j4PxxRPUv5:Text.Julius 0ae8c5c494e5cece76503e67c1713016
 import  -/  shakespeare-2.0.8@shake_1o7sYIVV5UR9j4PxxRPUv5:Text.Lucius 67d7ed921a6b6620a1fd7e6b13a324d0
+import  -/  shakespeare-2.0.8@shake_1o7sYIVV5UR9j4PxxRPUv5:Text.Shakespeare 34fe2ad0bbcb9e0643b0c2d055dc6bf4
 import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text 677c532e2dd56476a11a0a8a53880ce7
 import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Internal d9b6b9a9dd535595b612aea5738b7466
+import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Internal.Builder 170f5b8dea07ecaecbb885355cadaca7
 import  -/  time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time 05c0775841fb44d3c8063cb78d933b0f
 import  -/  transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.IO.Class 37487179a2f5eb2ea7922b911abcae56
 import  -/  wai-3.2.0.1@wai_AgFrViB2yrqBxAB1eV1Klt:Network.Wai.Internal 4840806ef9331ea0b36e457ca8258b9c
@@ -347,12 +358,13 @@ import  -/  yesod-core-1.4.20@yesod_JLQQ4eq0CXi8EhcgvEN35F:Yesod.Core.Widget c88
 addDependentFile "/home/ubuntu/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h"
 addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/autogen/cabal_macros.h"
 addDependentFile "/usr/include/stdc-predef.h"
+addDependentFile "julius/index.julius"
 addDependentFile "hamlets/home/index.hamlet"
 addDependentFile "hamlets/prestador/listarprestador.hamlet"
 addDependentFile "hamlets/empresa/listarservico.hamlet"
 addDependentFile "hamlets/empresa/listarempresa.hamlet"
 addDependentFile "hamlets/clientes/listarcliente.hamlet"
-9d65a6ecdd396d5765d55a19a1017374
+c18d1e2d4f727fad7154f2aa0af76bf9
   $fYesodDispatchPagina ::
     Yesod.Core.Class.Dispatch.YesodDispatch DBA.Pagina
   DFunId[0]
@@ -361,7 +373,7 @@ addDependentFile "hamlets/clientes/listarcliente.hamlet"
                   @ DBA.Pagina
                   DBA.$fYesodPagina
                   Main.$fYesodDispatchPagina_$cyesodDispatch -}
-1d596375f960dca1d1227dc6cd5a5735
+b943e1d1739fcb5c17c3e896216793bb
   $fYesodDispatchPagina_$cyesodDispatch ::
     Yesod.Core.Types.YesodRunnerEnv DBA.Pagina
     -> Network.Wai.Application
@@ -390,7 +402,7 @@ addDependentFile "hamlets/clientes/listarcliente.hamlet"
                    ww14
                    ww15
                    ww16 }) -}
-13b2a158564dcfe298ca437b59fbb292
+c74a5aebdb9a4f6e0e9eadbe7718d737
   $s$fApplicativeLoggingT ::
     GHC.Base.Applicative (Control.Monad.Logger.LoggingT GHC.Types.IO)
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -416,35 +428,35 @@ addDependentFile "hamlets/clientes/listarcliente.hamlet"
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fApplicativeLoggingT_$s$fFunctorLoggingT -}
-ba1905441f99a2e3f4bdaa48a386f2c6
+164b1bb3b60d3b9fbb5d66a9fdf16927
   $s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$cpure ::
     a -> Control.Monad.Logger.LoggingT GHC.Types.IO a
   {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><L,U>,
      Unfolding: InlineRule (1, True, True)
-                (\ @ a295
-                   eta :: a295
+                (\ @ a328
+                   eta :: a328
                    eta2 :: Language.Haskell.TH.Syntax.Loc
                            -> Control.Monad.Logger.LogSource
                            -> Control.Monad.Logger.LogLevel
                            -> System.Log.FastLogger.LogStr.LogStr
                            -> GHC.Types.IO ()
                    eta3 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (GHC.Base.returnIO @ a295 eta)
+                 (GHC.Base.returnIO @ a328 eta)
                    `cast`
-                 (GHC.Types.NTCo:IO[0] <a295>_R)
+                 (GHC.Types.NTCo:IO[0] <a328>_R)
                    eta3)
                   `cast`
-                (forall a295.
-                 <a295>_R
+                (forall a328.
+                 <a328>_R
                  ->_R Trans
                           (<Language.Haskell.TH.Syntax.Loc
                             -> Control.Monad.Logger.LogSource
                             -> Control.Monad.Logger.LogLevel
                             -> System.Log.FastLogger.LogStr.LogStr
                             -> GHC.Types.IO ()>_R
-                           ->_R Sym (GHC.Types.NTCo:IO[0] <a295>_R))
+                           ->_R Sym (GHC.Types.NTCo:IO[0] <a328>_R))
                           (Sym (Control.Monad.Logger.NTCo:LoggingT[0]
-                                    <GHC.Types.IO>_R <a295>_N))) -}
+                                    <GHC.Types.IO>_R <a328>_N))) -}
 7dc910612c20994c7a8b819e7ab81f1d
   $s$fApplicativeLoggingT_$s$fFunctorLoggingT ::
     GHC.Base.Functor (Control.Monad.Logger.LoggingT GHC.Types.IO)
@@ -457,7 +469,7 @@ ba1905441f99a2e3f4bdaa48a386f2c6
                   (Control.Monad.Logger.$fFunctorLoggingT_$c<$
                      @ GHC.Types.IO
                      GHC.Base.$fMonadIO) -}
-ad0c94720a578cb93ee34d1beb0e8a2f
+671a0f85d9146ecb41450328862212b7
   $s$fApplicativeNoLoggingT ::
     GHC.Base.Applicative
       (Control.Monad.Logger.NoLoggingT
@@ -483,25 +495,25 @@ ad0c94720a578cb93ee34d1beb0e8a2f
                      @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
                      Main.$s$fApplicativeNoLoggingT5
                      Main.$s$fApplicativeNoLoggingT1) -}
-3ae682ba04040a1bbdc09c3993c7a570
+cfa8444a9b967454c22eab6d7a1f9102
   $s$fApplicativeNoLoggingT1 ::
     GHC.Base.Monad
       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fApplicativeNoLoggingT_$s$fMonadResourceT -}
-1951f9079876b71b74db6bd4168b15c2
+2af098faf243a4c4b3520b4faa8b942e
   $s$fApplicativeNoLoggingT2 ::
     GHC.Base.String
     -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
   {- Arity: 1, Strictness: <B,U>b,
      Unfolding: InlineRule (1, True, True)
-                (\ @ a295 eta :: [GHC.Types.Char] ->
+                (\ @ a328 eta :: [GHC.Types.Char] ->
                  GHC.Err.error
                    @ (Control.Monad.Trans.Resource.Internal.ResourceT
-                        GHC.Types.IO a295)
+                        GHC.Types.IO a328)
                    eta) -}
-31012f1aab762884c70cc65629584429
+7c0d7139bd2a12cbbea55b6adb91970f
   $s$fApplicativeNoLoggingT3 ::
     GHC.Base.Applicative
       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
@@ -515,7 +527,7 @@ ad0c94720a578cb93ee34d1beb0e8a2f
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fApplicativeNoLoggingT_$s$fFunctorResourceT -}
-471f7471f1c71f80d458a0a56bdcd58f
+d5bae61ba4301d774de4955f37a0b884
   $s$fApplicativeNoLoggingT5 ::
     GHC.Base.Functor
       (Control.Monad.Logger.NoLoggingT
@@ -523,7 +535,7 @@ ad0c94720a578cb93ee34d1beb0e8a2f
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fApplicativeNoLoggingT_$s$fFunctorNoLoggingT -}
-7847a1bf71fd96f866b383c9ef683275
+d380fa90217c77543fb6be439d12e8cc
   $s$fApplicativeNoLoggingT_$s$fApplicativeResourceT ::
     GHC.Base.Applicative
       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
@@ -538,7 +550,7 @@ ad0c94720a578cb93ee34d1beb0e8a2f
                      GHC.Base.$fApplicativeIO)
                   Main.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c*>
                   Main.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c<* -}
-71bbf245d48a3d17925aaf39db2d718b
+763797fc564af032e9a7bbd337d8403b
   $s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c*> ::
     Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
     -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
@@ -546,10 +558,10 @@ ad0c94720a578cb93ee34d1beb0e8a2f
   {- Arity: 4, HasNoCafRefs,
      Strictness: <C(C(S)),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><L,U>,
      Unfolding: InlineRule (2, True, False)
-                (\ @ a295
+                (\ @ a328
                    @ b
                    eta :: Control.Monad.Trans.Resource.Internal.ResourceT
-                            GHC.Types.IO a295
+                            GHC.Types.IO a328
                    eta2 :: Control.Monad.Trans.Resource.Internal.ResourceT
                              GHC.Types.IO b
                    eta3 :: GHC.IORef.IORef
@@ -561,7 +573,7 @@ ad0c94720a578cb93ee34d1beb0e8a2f
                        @ GHC.Types.IO
                        GHC.Base.$fFunctorIO
                        @ (b -> b)
-                       @ a295
+                       @ a328
                        (GHC.Base.id @ b)
                        eta)
                       `cast`
@@ -574,14 +586,14 @@ ad0c94720a578cb93ee34d1beb0e8a2f
                          <GHC.Types.IO>_R <b>_N)
                       eta3))
                   `cast`
-                (forall a295 b.
+                (forall a328 b.
                  <Control.Monad.Trans.Resource.Internal.ResourceT
-                    GHC.Types.IO a295>_R
+                    GHC.Types.IO a328>_R
                  ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
                          GHC.Types.IO b>_R
                  ->_R Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
                                <GHC.Types.IO>_R <b>_N)) -}
-3fbe4d99459849b359a5b42ef149be70
+d9b630d87a69a187870d9e3272afe999
   $s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c<* ::
     Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
     -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
@@ -589,27 +601,27 @@ ad0c94720a578cb93ee34d1beb0e8a2f
   {- Arity: 4, HasNoCafRefs,
      Strictness: <C(C(S)),1*C1(C1(U(U,U)))><L,1*C1(C1(U(U,A)))><L,U><L,U>,
      Unfolding: InlineRule (2, True, False)
-                (\ @ a295
+                (\ @ a328
                    @ b
                    eta :: Control.Monad.Trans.Resource.Internal.ResourceT
-                            GHC.Types.IO a295
+                            GHC.Types.IO a328
                    eta2 :: Control.Monad.Trans.Resource.Internal.ResourceT
                              GHC.Types.IO b
                    eta3 :: GHC.IORef.IORef
                              Control.Monad.Trans.Resource.Internal.ReleaseMap ->
                  GHC.Base.$fApplicativeIO_$sap
                    @ b
-                   @ a295
+                   @ a328
                    ((Control.Monad.Trans.Resource.Internal.$fFunctorResourceT_$cfmap
                        @ GHC.Types.IO
                        GHC.Base.$fFunctorIO
-                       @ a295
-                       @ (b -> a295)
-                       (GHC.Base.const @ a295 @ b)
+                       @ a328
+                       @ (b -> a328)
+                       (GHC.Base.const @ a328 @ b)
                        eta)
                       `cast`
                     (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
-                         <GHC.Types.IO>_R <b -> a295>_N)
+                         <GHC.Types.IO>_R <b -> a328>_N)
                       eta3)
                    (eta2
                       `cast`
@@ -617,37 +629,37 @@ ad0c94720a578cb93ee34d1beb0e8a2f
                          <GHC.Types.IO>_R <b>_N)
                       eta3))
                   `cast`
-                (forall a295 b.
+                (forall a328 b.
                  <Control.Monad.Trans.Resource.Internal.ResourceT
-                    GHC.Types.IO a295>_R
+                    GHC.Types.IO a328>_R
                  ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
                          GHC.Types.IO b>_R
                  ->_R Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
-                               <GHC.Types.IO>_R <a295>_N)) -}
-b1f89b91e0f2b82d0beb4f01b9757c82
+                               <GHC.Types.IO>_R <a328>_N)) -}
+8deda2e50365a8584a747af1e16f9c54
   $s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$cpure ::
     a -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
   {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><L,U>,
      Unfolding: InlineRule (1, True, True)
-                (\ @ a295
-                   eta :: a295
+                (\ @ a328
+                   eta :: a328
                    eta2 :: GHC.IORef.IORef
                              Control.Monad.Trans.Resource.Internal.ReleaseMap
                    eta3 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (GHC.Base.returnIO @ a295 eta)
+                 (GHC.Base.returnIO @ a328 eta)
                    `cast`
-                 (GHC.Types.NTCo:IO[0] <a295>_R)
+                 (GHC.Types.NTCo:IO[0] <a328>_R)
                    eta3)
                   `cast`
-                (forall a295.
-                 <a295>_R
+                (forall a328.
+                 <a328>_R
                  ->_R Trans
                           (<GHC.IORef.IORef
                               Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
-                           ->_R Sym (GHC.Types.NTCo:IO[0] <a295>_R))
+                           ->_R Sym (GHC.Types.NTCo:IO[0] <a328>_R))
                           (Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
-                                    <GHC.Types.IO>_R <a295>_N))) -}
-b48fb18b55bad936d97c90a307ee644e
+                                    <GHC.Types.IO>_R <a328>_N))) -}
+382936be6bea270571395fe115091406
   $s$fApplicativeNoLoggingT_$s$fFunctorNoLoggingT ::
     GHC.Base.Functor
       (Control.Monad.Logger.NoLoggingT
@@ -675,7 +687,7 @@ b48fb18b55bad936d97c90a307ee644e
                   (Control.Monad.Trans.Resource.Internal.$fFunctorResourceT_$c<$
                      @ GHC.Types.IO
                      GHC.Base.$fFunctorIO) -}
-ff18dc9abfaa4a09e32e69f5bbd61d45
+aa47834833556ea0341cb2f3b36d5616
   $s$fApplicativeNoLoggingT_$s$fMonadResourceT ::
     GHC.Base.Monad
       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
@@ -693,13 +705,13 @@ ff18dc9abfaa4a09e32e69f5bbd61d45
                      GHC.Base.$fMonadIO)
                   Main.$s$fApplicativeNoLoggingT_$s$fMonadResourceT_$creturn
                   Main.$s$fApplicativeNoLoggingT2 -}
-751dbc4273ee8fcf15b0691a73fb88bd
+9d1a0f967af85328bc7c997fa317b8cb
   $s$fApplicativeNoLoggingT_$s$fMonadResourceT_$creturn ::
     a -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
   {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$cpure -}
-d121364148d48af1cf06d7c447c74959
+049305efd4833120036533309940ebdd
   $s$fApplicativeWidgetT ::
     GHC.Base.Applicative
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
@@ -715,22 +727,22 @@ d121364148d48af1cf06d7c447c74959
                      GHC.Base.$fMonadIO)
                   Main.$s$fApplicativeWidgetT_$s$fApplicativeWidgetT_$c*>
                   Main.$s$fApplicativeWidgetT_$s$fApplicativeWidgetT_$c<* -}
-e81a4fd977229a202db92b1b7d752fd7
+e99bc9c783b2d45d8503218487aea65b
   $s$fApplicativeWidgetT1 ::
     GHC.Base.Functor (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 (Yesod.Form.Fields.$s$fFunctorWidgetT @ DBA.Pagina) -}
-06b9e460d5bbbd235b46e22712a4e97c
+2160ccac481c7252a7fdbd8cd65559b5
   $s$fApplicativeWidgetT_$s$fApplicativeWidgetT_$c*> ::
     Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a
     -> Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO b
     -> Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO b
   {- Arity: 2, Strictness: <L,C(U)><L,U>,
      Unfolding: InlineRule (2, True, False)
-                (\ @ a295
+                (\ @ a328
                    @ b
-                   eta :: Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a295
+                   eta :: Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a328
                    eta2 :: Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO b ->
                  Yesod.Core.Types.$fApplicativeWidgetT_$c<*>
                    @ DBA.Pagina
@@ -742,20 +754,20 @@ e81a4fd977229a202db92b1b7d752fd7
                    (Yesod.Form.Fields.$s$fFunctorWidgetT_$s$fFunctorWidgetT_$c<$
                       @ DBA.Pagina
                       @ (b -> b)
-                      @ a295
+                      @ a328
                       (GHC.Base.id @ b)
                       eta)
                    eta2) -}
-3ddb2c0a07dfd1b826ac8a506fe9130d
+c5aadd4e703caa0a3796e2d4b6fd9323
   $s$fApplicativeWidgetT_$s$fApplicativeWidgetT_$c<* ::
     Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a
     -> Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO b
     -> Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a
   {- Arity: 2, Strictness: <L,C(U)><L,U>,
      Unfolding: InlineRule (2, True, False)
-                (\ @ a295
+                (\ @ a328
                    @ b
-                   eta :: Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a295
+                   eta :: Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a328
                    eta2 :: Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO b ->
                  Yesod.Core.Types.$fApplicativeWidgetT_$c<*>
                    @ DBA.Pagina
@@ -763,50 +775,50 @@ e81a4fd977229a202db92b1b7d752fd7
                    Main.$s$fApplicativeWidgetT1
                    GHC.Base.$fMonadIO
                    @ b
-                   @ a295
+                   @ a328
                    (Yesod.Core.Types.$fFunctorWidgetT_$cfmap
                       @ DBA.Pagina
                       @ GHC.Types.IO
                       GHC.Base.$fMonadIO
-                      @ a295
-                      @ (b -> a295)
-                      (GHC.Base.const @ a295 @ b)
+                      @ a328
+                      @ (b -> a328)
+                      (GHC.Base.const @ a328 @ b)
                       eta)
                    eta2) -}
-57d4360b923b0c6b35b65f49591242f9
+269586e9533c2123627fe08824c3b60e
   $s$fApplicativeWidgetT_$s$fMonadWidgetT_$creturn ::
     a -> Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a
   {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><L,U>,
      Unfolding: InlineRule (1, True, False)
-                (\ @ a295
-                   a296 :: a295
+                (\ @ a328
+                   a329 :: a328
                    eta :: Yesod.Core.Types.HandlerData
                             DBA.Pagina (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                    eta2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                  (GHC.Base.returnIO
-                    @ (a295,
+                    @ (a328,
                        Yesod.Core.Types.GWData (Yesod.Routes.Class.Route DBA.Pagina))
-                    (a296,
+                    (a329,
                      Yesod.Core.Types.$fApplicativeWidgetT_$cmempty
                        @ (Yesod.Routes.Class.Route DBA.Pagina)))
                    `cast`
                  (GHC.Types.NTCo:IO[0]
-                      <(a295,
+                      <(a328,
                         Yesod.Core.Types.GWData (Yesod.Routes.Class.Route DBA.Pagina))>_R)
                    eta2)
                   `cast`
-                (forall a295.
-                 <a295>_R
+                (forall a328.
+                 <a328>_R
                  ->_R Trans
                           (<Yesod.Core.Types.HandlerData
                               DBA.Pagina (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
                            ->_R Sym (GHC.Types.NTCo:IO[0]
-                                         <(a295,
+                                         <(a328,
                                            Yesod.Core.Types.GWData
                                              (Yesod.Routes.Class.Route DBA.Pagina))>_R))
                           (Sym (Yesod.Core.Types.NTCo:WidgetT[0]
-                                    <DBA.Pagina>_N <GHC.Types.IO>_N <a295>_N))) -}
-a55537ad38937457757f4111cdc131e2
+                                    <DBA.Pagina>_N <GHC.Types.IO>_N <a328>_N))) -}
+71b01bd7df6b875529b5b26e1c2beebb
   $s$fMonadBaseControlbLoggingT ::
     Control.Monad.Trans.Control.MonadBaseControl
       GHC.Types.IO (Control.Monad.Logger.LoggingT GHC.Types.IO)
@@ -825,35 +837,35 @@ a55537ad38937457757f4111cdc131e2
                      @ GHC.Types.IO
                      Main.$s$fMonadBaseControlbLoggingT_$dMonadBase
                      Control.Monad.Trans.Control.$fMonadBaseControlIOIO) -}
-03b0720ec56bc6c487509444e6fc972a
+47dcb7d64f1a9153be8dab8da0514020
   $s$fMonadBaseControlbLoggingT1 ::
     GHC.Base.Monad (Control.Monad.Logger.LoggingT GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT -}
-880cee769c51174d4e0ede35645f35ca
+31cb335dd8854867bc40ad2aed122675
   $s$fMonadBaseControlbLoggingT2 ::
     GHC.Base.String -> Control.Monad.Logger.LoggingT GHC.Types.IO a
   {- Arity: 1, Strictness: <B,U>b,
      Unfolding: InlineRule (1, True, True)
-                (\ @ a295 eta :: [GHC.Types.Char] ->
+                (\ @ a328 eta :: [GHC.Types.Char] ->
                  GHC.Err.error
-                   @ (Control.Monad.Logger.LoggingT GHC.Types.IO a295)
+                   @ (Control.Monad.Logger.LoggingT GHC.Types.IO a328)
                    eta) -}
-b16d63e71c8e354e6a7a66d56bafe556
+2b9e3da003918c592a7faccfc485eb40
   $s$fMonadBaseControlbLoggingT3 ::
     GHC.Base.Applicative (Control.Monad.Logger.LoggingT GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fApplicativeLoggingT -}
-0e112d919fb820c9eb32711102e1d9d7
+073c2c4e3089376454e905e7494ba018
   $s$fMonadBaseControlbLoggingT_$dMonadBase ::
     Control.Monad.Base.MonadBase
       GHC.Types.IO (Control.Monad.Logger.LoggingT GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fMonadBaseControlbLoggingT_$s$fMonadBasebLoggingT -}
-7477b2538226ee5481a68ea5023af526
+a9e4d96aeb70f3765d01e77d90f89f2f
   $s$fMonadBaseControlbLoggingT_$s$fMonadBasebLoggingT ::
     Control.Monad.Base.MonadBase
       GHC.Types.IO (Control.Monad.Logger.LoggingT GHC.Types.IO)
@@ -884,7 +896,7 @@ b16d63e71c8e354e6a7a66d56bafe556
                    `cast`
                  (Sym (Control.Monad.Logger.NTCo:LoggingT[0]
                            <GHC.Types.IO>_R <α>_N))) -}
-4f39514599953b3efc8ae687e0f4ca15
+bb5584e86b37ba1cca9d2c27133ed135
   $s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT ::
     GHC.Base.Monad (Control.Monad.Logger.LoggingT GHC.Types.IO)
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -901,7 +913,7 @@ b16d63e71c8e354e6a7a66d56bafe556
                      GHC.Base.$fMonadIO)
                   Main.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$cpure
                   Main.$s$fMonadBaseControlbLoggingT2 -}
-64e122898ca2ded02ee8cb4655155ee1
+8244ac37ae4289a1acc0a908d0310efa
   $s$fMonadBasebWidgetT ::
     Control.Monad.Base.MonadBase
       GHC.Types.IO (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
@@ -922,30 +934,30 @@ b16d63e71c8e354e6a7a66d56bafe556
                      GHC.Base.$fMonadIO
                      Main.$s$fMonadBasebWidgetT1
                      Control.Monad.Base.$fMonadBaseIOIO) -}
-bd48a635843ab3fadbcab6abf460cb21
+305aae8aba72d25f9a834d5cbe03ba97
   $s$fMonadBasebWidgetT1 ::
     GHC.Base.Monad (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fMonadBasebWidgetT_$s$fMonadWidgetT -}
-71c48dea580b5309cb6e084631fc924a
+2ff00b043382cdc86ef22133e7f218de
   $s$fMonadBasebWidgetT2 ::
     GHC.Base.String
     -> Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a
   {- Arity: 1, Strictness: <B,U>b,
      Unfolding: InlineRule (1, True, True)
-                (\ @ a295 eta :: [GHC.Types.Char] ->
+                (\ @ a328 eta :: [GHC.Types.Char] ->
                  GHC.Err.error
-                   @ (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a295)
+                   @ (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO a328)
                    eta) -}
-457fa654dcb54e197d9b17afdeddc8b0
+4ff03edbfefd4d1738a9cc0f15b900f7
   $s$fMonadBasebWidgetT3 ::
     GHC.Base.Applicative
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fApplicativeWidgetT -}
-076a039b6f6398876c205eba8311db34
+e96a4c52a6553d5a02df75b4273e1bf8
   $s$fMonadBasebWidgetT_$s$fMonadWidgetT ::
     GHC.Base.Monad (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -964,7 +976,7 @@ bd48a635843ab3fadbcab6abf460cb21
                      GHC.Base.$fMonadIO)
                   Main.$s$fApplicativeWidgetT_$s$fMonadWidgetT_$creturn
                   Main.$s$fMonadBasebWidgetT2 -}
-24f3e2241e0296ad885558fb5a9398b4
+8044ea0ef309989e6d26f56952cb737e
   $s$fMonadHandlerWidgetT ::
     Yesod.Core.Class.Handler.MonadHandler
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
@@ -986,34 +998,34 @@ bd48a635843ab3fadbcab6abf460cb21
                   Control.Monad.Base.$fMonadBaseIOIO,
                   Control.Monad.IO.Class.$fMonadIOIO,
                   GHC.Base.$fApplicativeIO)) -}
-30af376e3b61c92f48adec96ac3bd887
+98e4968cc372f2b56b4d5e8590ff5a57
   $s$fMonadHandlerWidgetT2 ::
     Control.Monad.Trans.Resource.Internal.MonadResource
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fMonadHandlerWidgetT_$s$fMonadResourceWidgetT -}
-f63ab6c628c190b786cdbb2650956114
+6092144835f14eddc4226e137e702823
   $s$fMonadHandlerWidgetT3 ::
     Control.Monad.Base.MonadBase
       GHC.Types.IO (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True) Main.$s$fMonadBasebWidgetT -}
-097b7fe0a8dba1efc7846fb706d474a8
+cddb32fa06bbfac7df4510705ebbe912
   $s$fMonadHandlerWidgetT4 ::
     Control.Monad.IO.Class.MonadIO
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fMonadHandlerWidgetT_$s$fMonadIOWidgetT -}
-8f6e3c12e4e72c2ce36c8fff12a52579
+6c55ca0a7ec40adb120b1e733589865a
   $s$fMonadHandlerWidgetT5 ::
     Control.Monad.Catch.MonadThrow
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fMonadHandlerWidgetT_$s$fMonadThrowWidgetT -}
-817f9c8c96a3688742dbd2c135db096c
+40863b12af92ca077e1207eb6489faf1
   $s$fMonadHandlerWidgetT_$s$fMonadIOWidgetT ::
     Control.Monad.IO.Class.MonadIO
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
@@ -1026,7 +1038,7 @@ f63ab6c628c190b786cdbb2650956114
                      @ GHC.Types.IO
                      Main.$s$fMonadBasebWidgetT1
                      Control.Monad.IO.Class.$fMonadIOIO) -}
-a532c6abff59a6b74f7c7e1e5457c7f4
+d914eb66610e3646d4e07f9a345555fd
   $s$fMonadHandlerWidgetT_$s$fMonadResourceWidgetT ::
     Control.Monad.Trans.Resource.Internal.MonadResource
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
@@ -1048,7 +1060,7 @@ a532c6abff59a6b74f7c7e1e5457c7f4
                      Control.Monad.IO.Class.$fMonadIOIO
                      Control.Monad.Base.$fMonadBaseIOIO
                      Control.Monad.Catch.$fMonadThrowIO) -}
-9a0bcbbe43fb5fd5e99162453b620349
+45e0d90cae213e0db8f7b4fc3ed0af4f
   $s$fMonadHandlerWidgetT_$s$fMonadThrowWidgetT ::
     Control.Monad.Catch.MonadThrow
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
@@ -1061,7 +1073,7 @@ a532c6abff59a6b74f7c7e1e5457c7f4
                      @ GHC.Types.IO
                      Main.$s$fMonadBasebWidgetT1
                      Control.Monad.Catch.$fMonadThrowIO) -}
-26bb009d938cb32be0b267ac39f421a0
+518c91b35193d2ca8bc44f7d6177902f
   $s$fMonadIOLoggingT ::
     Control.Monad.IO.Class.MonadIO
       (Control.Monad.Logger.LoggingT GHC.Types.IO)
@@ -1070,7 +1082,7 @@ a532c6abff59a6b74f7c7e1e5457c7f4
                   @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
                   Main.$s$fMonadBaseControlbLoggingT1
                   Main.$s$fMonadBaseControlbLoggingT_$s$fMonadBasebLoggingT_$cliftBase -}
-f02b7c8b663fd1bb389e80cb8a73e130
+e0a0edf355fd512a1528dc601e69dbf1
   $s$fMonadIONoLoggingT ::
     Control.Monad.IO.Class.MonadIO
       (Control.Monad.Logger.NoLoggingT
@@ -1084,14 +1096,14 @@ f02b7c8b663fd1bb389e80cb8a73e130
                      @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
                      Main.$s$fMonadIONoLoggingT2
                      Main.$s$fMonadIONoLoggingT1) -}
-1896e5689aacd87b348bccf23694fe13
+b7c02d38e068ec62bd95a1356e66d714
   $s$fMonadIONoLoggingT1 ::
     Control.Monad.IO.Class.MonadIO
       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fMonadIONoLoggingT_$s$fMonadIOResourceT -}
-a2b2a750596bc3fd22745254adc1e6a4
+c26fd5c2986875750c0fb78a162fca2d
   $s$fMonadIONoLoggingT2 ::
     GHC.Base.Monad
       (Control.Monad.Logger.NoLoggingT
@@ -1099,20 +1111,20 @@ a2b2a750596bc3fd22745254adc1e6a4
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fMonadIONoLoggingT_$s$fMonadNoLoggingT -}
-71389ee9e8f07e01d3528e53c67b9a8a
+33b6dd4081c070f8a06362b7d44821ee
   $s$fMonadIONoLoggingT3 ::
     GHC.Base.String
     -> Control.Monad.Logger.NoLoggingT
          (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) a
   {- Arity: 1, Strictness: <B,U>b,
      Unfolding: InlineRule (1, True, True)
-                (\ @ a295 eta :: [GHC.Types.Char] ->
+                (\ @ a328 eta :: [GHC.Types.Char] ->
                  GHC.Err.error
                    @ (Control.Monad.Logger.NoLoggingT
                         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
-                        a295)
+                        a328)
                    eta) -}
-0107cf886bb2102840d626a153cbfd20
+b2abe3c2ecd0d48a86d949a87d0a5f80
   $s$fMonadIONoLoggingT4 ::
     GHC.Base.Applicative
       (Control.Monad.Logger.NoLoggingT
@@ -1120,7 +1132,7 @@ a2b2a750596bc3fd22745254adc1e6a4
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fApplicativeNoLoggingT -}
-0d075325e06c901393ef54af96071f6b
+9c295ad750298231a65cc6c1e2d77368
   $s$fMonadIONoLoggingT_$s$fMonadIOResourceT ::
     Control.Monad.IO.Class.MonadIO
       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
@@ -1129,23 +1141,23 @@ a2b2a750596bc3fd22745254adc1e6a4
                   @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
                   Main.$s$fApplicativeNoLoggingT1
                   Main.$s$fMonadIONoLoggingT_$s$fMonadIOResourceT_$cliftIO -}
-25d568f2c30f06d73bcf8fec38496a37
+28dfce7478283e3a7fce9b90f83bd127
   $s$fMonadIONoLoggingT_$s$fMonadIOResourceT_$cliftIO ::
     GHC.Types.IO a
     -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
      Unfolding: InlineRule (1, True, False)
-                (\ @ a295 eta :: GHC.Types.IO a295 ->
+                (\ @ a328 eta :: GHC.Types.IO a328 ->
                  let {
-                   eta2 :: GHC.Types.IO a295 = GHC.Base.id @ (GHC.Types.IO a295) eta
+                   eta2 :: GHC.Types.IO a328 = GHC.Base.id @ (GHC.Types.IO a328) eta
                  } in
                  (\ ds3 :: GHC.IORef.IORef
                              Control.Monad.Trans.Resource.Internal.ReleaseMap ->
                   eta2)
                    `cast`
                  (Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
-                           <GHC.Types.IO>_R <a295>_N))) -}
-c77e5f6b877b8e794b94baa3787a92fd
+                           <GHC.Types.IO>_R <a328>_N))) -}
+31b0b1382ebbcdaea16fb8b7c04f5efd
   $s$fMonadIONoLoggingT_$s$fMonadNoLoggingT ::
     GHC.Base.Monad
       (Control.Monad.Logger.NoLoggingT
@@ -1165,7 +1177,7 @@ c77e5f6b877b8e794b94baa3787a92fd
                      Main.$s$fMonadIONoLoggingT4
                      Main.$s$fApplicativeNoLoggingT1)
                   Main.$s$fMonadIONoLoggingT3 -}
-adba12e54baaf86d9e095d446704deff
+fc8bc36c44a95614fa7511cf50106620
   $s$fMonadIONoLoggingT_$s$fMonadNoLoggingT_$c>> ::
     Control.Monad.Logger.NoLoggingT
       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) a
@@ -1177,21 +1189,21 @@ adba12e54baaf86d9e095d446704deff
      Strictness: <C(C(S)),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><L,U>,
      Inline: INLINE (sat-args=2),
      Unfolding: InlineRule (2, False, False)
-                (\ @ a295
+                (\ @ a328
                    @ b
                    m7 :: Control.Monad.Logger.NoLoggingT
-                           (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) a295
+                           (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) a328
                    k5 :: Control.Monad.Logger.NoLoggingT
                            (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) b ->
                  Control.Monad.Logger.$fMonadNoLoggingT_$c>>=
                    @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
                    Main.$s$fMonadIONoLoggingT4
                    Main.$s$fApplicativeNoLoggingT1
-                   @ a295
+                   @ a328
                    @ b
                    m7
-                   (\ ds3 :: a295 -> k5)) -}
-d24bb8c106d5f3cc3ba77e135de9b44f
+                   (\ ds3 :: a328 -> k5)) -}
+a15e31f4970c1c26e27133806b8a95b6
   $s$fMonadLoggerLoggingT ::
     Control.Monad.Logger.MonadLogger
       (Control.Monad.Logger.LoggingT GHC.Types.IO)
@@ -1200,7 +1212,7 @@ d24bb8c106d5f3cc3ba77e135de9b44f
                   @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
                   Main.$s$fMonadBaseControlbLoggingT1
                   Main.$s$fMonadLoggerLoggingT_$s$fMonadLoggerLoggingT_$cmonadLoggerLog -}
-7ec5dc776852164440f2bcfa1725b3c0
+0b5932357a60ef60856bd2f2b01ae173
   $s$fMonadLoggerLoggingT_$s$fMonadLoggerLoggingT_$cmonadLoggerLog ::
     System.Log.FastLogger.LogStr.ToLogStr msg =>
     Language.Haskell.TH.Syntax.Loc
@@ -1213,12 +1225,12 @@ d24bb8c106d5f3cc3ba77e135de9b44f
      Unfolding: InlineRule (5, True, False)
                 (\ @ msg
                    $dToLogStr :: System.Log.FastLogger.LogStr.ToLogStr msg
-                   a295 :: Language.Haskell.TH.Syntax.Loc
+                   a328 :: Language.Haskell.TH.Syntax.Loc
                    b :: Control.Monad.Logger.LogSource
                    c :: Control.Monad.Logger.LogLevel
                    d :: msg ->
                  let {
-                   lvl346 :: System.Log.FastLogger.LogStr.LogStr
+                   lvl418 :: System.Log.FastLogger.LogStr.LogStr
                    = $dToLogStr
                        `cast`
                      (System.Log.FastLogger.LogStr.NTCo:ToLogStr[0] <msg>_N)
@@ -1229,11 +1241,11 @@ d24bb8c106d5f3cc3ba77e135de9b44f
                          -> Control.Monad.Logger.LogLevel
                          -> System.Log.FastLogger.LogStr.LogStr
                          -> GHC.Types.IO () ->
-                  GHC.Base.id @ (GHC.Types.IO ()) (f a295 b c lvl346))
+                  GHC.Base.id @ (GHC.Types.IO ()) (f a328 b c lvl418))
                    `cast`
                  (Sym (Control.Monad.Logger.NTCo:LoggingT[0]
                            <GHC.Types.IO>_R <()>_N))) -}
-b977544f74cdc0938d264b7368de2d62
+20af52e9fb3433b642bebef696ce7acb
   $s$fMonadWidgetWidgetT ::
     Yesod.Core.Class.Handler.MonadWidget
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
@@ -1246,15 +1258,15 @@ b977544f74cdc0938d264b7368de2d62
                      @ GHC.Types.IO
                      Main.$s$fMonadWidgetWidgetT1
                      Main.$s$fMonadHandlerWidgetT1) -}
-983d3adce5033ae2682625bfed9034eb
+9034bce32174d669e97d8d97603d5140
   $s$fMonadWidgetWidgetT1 ::
     Yesod.Core.Class.Handler.MonadHandler
       (Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Main.$s$fMonadHandlerWidgetT -}
-735b9725689a29f1cff533f61cfae052
-  $stoWidget4 ::
+99821a90af6458c4b646a7bf852468e1
+  $stoWidget6 ::
     Yesod.Core.Types.RY DBA.Pagina ~ Yesod.Core.Types.RY DBA.Pagina
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Eq#
@@ -1262,7 +1274,7 @@ b977544f74cdc0938d264b7368de2d62
                    @ (Yesod.Core.Types.RY DBA.Pagina)
                    @ (Yesod.Core.Types.RY DBA.Pagina)
                    @~ <Yesod.Core.Types.RY DBA.Pagina>_N) -}
-3e621b9b9a85cfe7c17811f248435791
+e28e1fd5aea546f719a3370bbc3175ff
   $w$cyesodDispatch ::
     Yesod.Core.Types.YesodRunnerEnv DBA.Pagina
     -> Network.HTTP.Types.Method.Method
@@ -1287,7 +1299,7 @@ b977544f74cdc0938d264b7368de2d62
   {- Arity: 17,
      Strictness: <L,U(U,U(U,U(U,U,U,U,U,U,U,U,U,U)),U,U,C(U(U,1*U(U,U,U))))><L,U(U,U,U,U)><L,U><L,U(U,U,U,U)><L,U><L,U><L,U><L,U><S,U><L,U><L,U><L,U><L,U><L,U><L,U><L,U><L,U>,
      Inline: [0] -}
-f6c8532e289b07abc5167dfcd674185a
+603bdcbbde08c6181e32344e44531bef
   main :: GHC.Types.IO ()
   {- Unfolding: ((Main.main7
                     Main.main6
@@ -1312,7 +1324,7 @@ f6c8532e289b07abc5167dfcd674185a
                     ->_R <Control.Monad.Logger.LogLevel>_R
                     ->_R <System.Log.FastLogger.LogStr.LogStr>_R
                     ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
-432a6b0692f257ee79e3e32416f98add
+2e1b471bfe3f0fc5135ddb15eba76e56
   main1 ::
     Database.Persist.Sql.Types.ConnectionPool
     -> (Language.Haskell.TH.Syntax.Loc
@@ -1397,7 +1409,7 @@ f6c8532e289b07abc5167dfcd674185a
 5eb073f17ac54838655b33d45e43ab34
   main3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "static"#) -}
-bb69a7bb7866e0332da3a604ce09dc89
+ae8b2f45963dd34f3297ec64a33b3273
   main4 ::
     Database.Persist.Sql.Types.SqlBackend
     -> Control.Monad.Logger.NoLoggingT
@@ -1412,7 +1424,7 @@ bb69a7bb7866e0332da3a604ce09dc89
                              <Control.Monad.Logger.NoLoggingT
                                 (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
                              <()>_N))) -}
-56dde5d29b8e34a2f87804d966497a81
+65b688e54bcd68b92dff096b14082a19
   main5 ::
     Database.Persist.Sql.Types.SqlBackend
     -> Control.Monad.Logger.NoLoggingT
@@ -1420,7 +1432,7 @@ bb69a7bb7866e0332da3a604ce09dc89
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: (\ eta :: Database.Persist.Sql.Types.SqlBackend ->
                  let {
-                   a295 :: Control.Monad.Logger.NoLoggingT
+                   a328 :: Control.Monad.Logger.NoLoggingT
                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
                              [Data.Text.Internal.Text]
                    = Database.Persist.Sql.Migration.runMigration1
@@ -1464,7 +1476,7 @@ bb69a7bb7866e0332da3a604ce09dc89
                  (\ r :: GHC.IORef.IORef
                            Control.Monad.Trans.Resource.Internal.ReleaseMap
                     s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                  case (a295
+                  case (a328
                           `cast`
                         (Trans
                              (Control.Monad.Logger.NTCo:NoLoggingT[0]
@@ -1491,7 +1503,7 @@ bb69a7bb7866e0332da3a604ce09dc89
 6d0dd610dab48d178fbd27094d5673b9
   main6 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 10) -}
-68cb4d853fbaf0f01ade5c8d7df92092
+fed52080710094758bc780862f7f6402
   main7 ::
     GHC.Types.Int
     -> (Database.Persist.Sql.Types.ConnectionPool
@@ -1528,7 +1540,7 @@ c1d641e555f3f02de87f477f0c5bd18e
                    (GHC.ForeignPtr.PlainForeignPtr ipv1)
                    0
                    (GHC.Prim.word2Int# ds5) } }) -}
-10469c541c19b4d1e34a43141bb9e920
+d54dbb45e2dc197d71f3795fefb68bab
   main9 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

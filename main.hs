@@ -397,14 +397,6 @@ getExcluirservipR id = do
     setMessage $ [shamlet| Registro excluído com sucesso! |]
     redirect ListarprestadorR
 
-
-
-
-
-
-
-
-
 -- home
 
 
@@ -415,10 +407,10 @@ getHomeR = do
             setTitle "Mew Festas"
             $(whamletFile "hamlets/home/index.hamlet")
             addStylesheet $ StaticR css_menu_css
-            
-
-
-
+            addScript JqueryR
+            addScript ExjqueryR
+            addScript ResposivoR
+            toWidget $(juliusFile "julius/index.julius")
 
 getLoginR :: Handler Html
 getLoginR = do
@@ -475,6 +467,15 @@ getErroR = defaultLayout [whamlet|
     <h1>falhou
 |]
 
+getJqueryR :: Handler ()
+getJqueryR  = sendFile "text/javascript" "js/jquery-2.1.4.min.js"
+
+getExjqueryR :: Handler ()
+getExjqueryR = sendFile "text/javascript" "js/exjquery.js"
+
+getResposivoR :: Handler ()
+getResposivoR = sendFile "text/javascript" "js/resposiveslides.min.js"
+
 connStr = "dbname=d73v9jtp1m4gmm host=ec2-23-21-193-140.compute-1.amazonaws.com user=wxijesuruymxxv password=olhACvaEhpoy498TfYAlN_kTYc port=5432"
 
 main::IO()
@@ -482,3 +483,5 @@ main = runStdoutLoggingT $ withPostgresqlPool connStr 10 $ \pool -> liftIO $ do
        runSqlPersistMPool (runMigration migrateAll) pool
        s <- static "static"
        warp 8080 (Pagina pool s)
+       
+       

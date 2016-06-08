@@ -62,6 +62,8 @@ pRoutes = [parseRoutes|
 
 /erro ErroR GET
 
-
-
+/js/jquery-2.1.4.min.js JqueryR GET
+/js/exjquery.js ExjqueryR GET
+/js/resposiveslides.min.js ResposivoR GET
 |]
+
