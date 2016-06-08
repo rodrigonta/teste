@@ -21,8 +21,9 @@ staticFiles "."
 -- tabelas
 share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
 Clientex json
--- login Text
--- senha Text
+   username Text
+   UniqueUsername username
+   senha Text
    nome Text
    cpf Text
    endereco Text
@@ -78,6 +79,14 @@ instance YesodPersist Pagina where
 
 instance Yesod Pagina where
     authRoute _ = Just $ HomeR
+    isAuthorized EmpresaR _ = isAdmin
+--    isAuthorized ExcluirempresaR _ = isAdmin
+    isAuthorized ServicoR _ = isAdmin
+--    isAuthorized ExcluirservicoR _ = isAdmin
+    isAuthorized PrestadorR _ = isAdmin
+--    isAuthorized ExcluirprestadorR _ = isAdmin
+    isAuthorized ServipR _ = isAdmin
+--    isAuthorized ExcluirservipR _ = isAdmin
     isAuthorized ListarclienteR _ = isUser
     isAuthorized _ _ = return Authorized
 

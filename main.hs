@@ -35,6 +35,8 @@ mkYesodDispatch "Pagina" pRoutes
 
 formcliente :: Form Clientex
 formcliente = renderDivs $ Clientex <$>
+           areq textField "Login: " Nothing <*>
+           areq passwordField "Senha: " Nothing <*>
            areq textField "Nome: " Nothing <*>
            areq textField "CPF: " Nothing <*>
            areq textField "Endereço: " Nothing <*>
@@ -71,6 +73,7 @@ getChecarclienteR :: ClientexId -> Handler Html
 getChecarclienteR clid = do
     clientex <- runDB $ get404 clid
     defaultLayout [whamlet|
+        <p><b> #{clientexUsername clientex}  
         <p><b> #{clientexNome clientex}  
         <p><b> #{clientexCpf clientex}  
         <p><b> #{clientexEndereco clientex}  
@@ -167,8 +170,8 @@ getListarempresaR = do
     defaultLayout $ do
         setTitle "Lista de Empresas"
         $(whamletFile "hamlets/empresa/listarempresa.hamlet")
-
-
+{-
+--esse n ta funcionando (ainda)
 --listar empresas com link
 --ou pelo menos uma tentativa disso
 getListarE :: Handler Html
@@ -180,7 +183,7 @@ getListarE = do
             <a href=@{LivroL id}>#{empresaxNome empresax} <br>
 
 
-
+-}
 
 
 --serviços da empresa
@@ -402,7 +405,9 @@ getHomeR = do
             $(whamletFile "hamlets/home/header.hamlet")
             
 
-{-
+
+
+
 getLoginR :: Handler Html
 getLoginR = do
            deleteSession "_ID"
@@ -416,12 +421,12 @@ getLoginR = do
           
 
 
--- linkar com clientes
-formUser :: Form Users
-formUser = renderDivs $ Users <$>
-           areq textField "Nome: " Nothing <*>
+
+formLogin :: Form (Text,Text)
+formLogin = renderDivs $ (,) <$>
            areq textField "Login: " Nothing <*>
            areq passwordField "Senha: " Nothing
+         
 
 
 postLoginR :: Handler Html
@@ -430,29 +435,13 @@ postLoginR = do
            case result of 
                FormSuccess ("admin","admin") -> setSession "_ID" "admin" >> redirect AdminR
                FormSuccess (login,senha) -> do 
-                   user <- runDB $ selectFirst [UsersLogin ==. login, UsersSenha ==. senha] []
+                   user <- runDB $ selectFirst [ClientexUsername ==. login, ClientexSenha ==. senha] []
                    case user of
                        Nothing -> redirect LoginR
-                       Just (Entity pid u) -> setSession "_ID" (pack $ show $ fromSqlKey pid) >> redirect (PerfilR pid)
+                       Just (Entity pid u) -> setSession "_ID" (pack $ show $ fromSqlKey pid) >> redirect (ChecarclienteR pid)
                _ -> redirect ErroR
 
-formLogin :: Form (Text,Text)
-formLogin = renderDivs $ (,) <$>
-           areq textField "Login: " Nothing <*>
-           areq passwordField "Senha: " Nothing
-         
-getUsuarioR :: Handler Html
-getUsuarioR = do
-           (widget, enctype) <- generateFormPost formUser
-           defaultLayout [whamlet|
-                 <form method=post enctype=#{enctype} action=@{UsuarioR}>
-                     ^{widget}
-                     <input type="submit" value="Enviar">
-           |]
 
---}
---postUsuarioR :: Handler Html
---postUsuarioR = do
 
 getAdminR :: Handler Html
 getAdminR = defaultLayout [whamlet|
@@ -471,7 +460,7 @@ getLogoutR = do
     -- erro
 getErroR :: Handler Html
 getErroR = defaultLayout [whamlet|
-    cadastro falhou
+    falhou
 |]
 
 connStr = "dbname=d73v9jtp1m4gmm host=ec2-23-21-193-140.compute-1.amazonaws.com user=wxijesuruymxxv password=olhACvaEhpoy498TfYAlN_kTYc port=5432"

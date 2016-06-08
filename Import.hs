@@ -51,6 +51,12 @@ pRoutes = [parseRoutes|
 
 
 
+/login LoginR GET POST
+/logout LogoutR GET
+/admin AdminR GET
+
+
+
 
 /static StaticR Static getStatic
 
