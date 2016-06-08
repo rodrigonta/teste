@@ -64,7 +64,7 @@ postClienteR :: Handler Html
 postClienteR = do
            ((result, _), _) <- runFormPost formcliente
            case result of 
-               FormSuccess clientex -> (runDB $ insert clientex) >>= \clid -> redirect (ChecarclienteR clid)
+               FormSuccess clientex -> (runDB $ insert clientex) >>= \clid -> redirect (LoginR)
                _ -> redirect ErroR
            
 
@@ -160,6 +160,7 @@ getExcluirempresaR id = do
     runDB $ delete $ id
     setMessage $ [shamlet| Registro excluído com sucesso! |]
     redirect ListarempresaR
+
 
 
 
@@ -437,7 +438,7 @@ postLoginR = do
                FormSuccess (login,senha) -> do 
                    user <- runDB $ selectFirst [ClientexUsername ==. login, ClientexSenha ==. senha] []
                    case user of
-                       Nothing -> redirect LoginR
+                       Nothing -> redirect ErroR
                        Just (Entity pid u) -> setSession "_ID" (pack $ show $ fromSqlKey pid) >> redirect (ChecarclienteR pid)
                _ -> redirect ErroR
 
@@ -460,7 +461,7 @@ getLogoutR = do
     -- erro
 getErroR :: Handler Html
 getErroR = defaultLayout [whamlet|
-    falhou
+    <h1>falhou
 |]
 
 connStr = "dbname=d73v9jtp1m4gmm host=ec2-23-21-193-140.compute-1.amazonaws.com user=wxijesuruymxxv password=olhACvaEhpoy498TfYAlN_kTYc port=5432"

@@ -78,17 +78,22 @@ instance YesodPersist Pagina where
        runSqlPool f pool
 
 instance Yesod Pagina where
-    authRoute _ = Just $ HomeR
+--    authRoute _ = Just $ HomeR
     isAuthorized EmpresaR _ = isAdmin
---    isAuthorized ExcluirempresaR _ = isAdmin
+    isAuthorized (ExcluirempresaR _) _writable = isAdmin
     isAuthorized ServicoR _ = isAdmin
---    isAuthorized ExcluirservicoR _ = isAdmin
+    isAuthorized (ExcluirservicoR _) _writable = isAdmin
     isAuthorized PrestadorR _ = isAdmin
---    isAuthorized ExcluirprestadorR _ = isAdmin
+    isAuthorized (ExcluirprestadorR _) _writable = isAdmin
     isAuthorized ServipR _ = isAdmin
---    isAuthorized ExcluirservipR _ = isAdmin
-    isAuthorized ListarclienteR _ = isUser
-    isAuthorized _ _ = return Authorized
+    isAuthorized (ExcluirservipR _) _writable = isAdmin
+    isAuthorized HomeR _ = return Authorized
+    isAuthorized ClienteR _ = return Authorized
+    isAuthorized LoginR _ = return Authorized
+    isAuthorized ErroR _ = return Authorized
+    isAuthorized _ _ = isUser
+
+
 
 isAdmin = do
     mu <- lookupSession "_ID"
