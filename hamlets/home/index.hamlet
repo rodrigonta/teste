@@ -23,13 +23,13 @@
             <!-- <figure id="lupa-mobile"><img src="img/search-icon-mobile.png"></figure>-->
             
             <section id="nav-logar">
-            	<section id="opcao-logar"> LOGIN 
+                <section id="opcao-logar"> LOGIN 
                     <a href="CADASTRO_EVENTO/form-evento.php" id="opcao-evento"> + PUBLICAR SERVIÇO 
         
                 <!-- <div id="background">
                 <section id="caixa_login">
                 <form action="autenticar.php" id="login" method="POST">
-                	<h6>Faça seu login</h6>
+                    <h6>Faça seu login</h6>
                     <input name="email" type="text" id="email" placeholder="email">	
                     <input name="senha" type="password" id="senha" placeholder="senha">
                     <input name="entrar" type="submit" id="entrar" value="ENTRAR">
@@ -61,10 +61,10 @@
         
         
         <section id="todos-eventos">
-        	<h1 id="h1desktop">O site com o maior número de serviços na baixada santista
+            <h1 id="h1desktop">O site com o maior número de serviços na baixada santista
             <h1 id="h1mobile">O site com o maior número de<br>serviços na baixada santista
-            	<a href="TODOSEVENTOS.php">
-            	    <section id="icon-todos-eventos">TODOS OS SERVIÇOS
+                <a href="TODOSEVENTOS.php">
+                    <section id="icon-todos-eventos">TODOS OS SERVIÇOS
         
         <div id="barra">
             <!-- <figure id="logo_servicos"><img src="img/servicos.png"></figure>-->
@@ -75,7 +75,7 @@
                     <article>
                             <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
             <section id="categoria" style="background-color:#FF7600;">
@@ -84,7 +84,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
             <section id="categoria" style="background-color:#FF7600;">
@@ -93,7 +93,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
     
             <section id="categoria" style="background-color:#FF7600;">
@@ -102,7 +102,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
               
@@ -112,7 +112,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
               
@@ -122,7 +122,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
             
@@ -132,7 +132,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
              
@@ -142,7 +142,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
                     
@@ -152,7 +152,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
                     
@@ -162,7 +162,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
             
@@ -172,7 +172,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
         
             
@@ -182,7 +182,7 @@
                     <article>
                         <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
                             onmouseover="this.src='img/tipos/2.0.jpg'"
-           					onmouseout="this.src='img/tipos/2.jpg'">
+                            onmouseout="this.src='img/tipos/2.jpg'">
                         </img>-->
 
         <div id="barra2">

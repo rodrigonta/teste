@@ -1,35 +1,22 @@
 
 ==================== FINAL INTERFACE ====================
-2016-06-08 03:03:41.282554 UTC
+2016-06-08 04:21:13.118876 UTC
 
 interface main@main:DBA [family instance module] 7103
-  interface hash: 2c162610a574847a4eb93cabd8a8f0a2
-  ABI hash: 27095a94976191b5d337367c8cfd7573
-  export-list hash: 8502e59ab0c7b812e4cee1916dc9997a
+  interface hash: 68aec9f4cf68ba9b83ed2c5814778b6e
+  ABI hash: e274a47bc36a46408bf4148f61fe993c
+  export-list hash: 9089637133078fa852b5239df6502fc7
   orphan hash: d6c7d991499cbc3b0909c8786e9557a1
   flag hash: 04ddf3e78ba9931eebdc0cfe0da7b8bd
   sig of: Nothing
   used TH splices: True
   where
 exports:
-  DBA._DBA_hs
-  DBA._Import_hs
-  DBA.client_session_key_aes
-  DBA.hamlets_clientes_listarcliente_hamlet
-  DBA.hamlets_empresa_listarempresa_hamlet
-  DBA.hamlets_empresa_listarservico_hamlet
-  DBA.hamlets_home_header_hamlet
-  DBA.hamlets_prestador_listarprestador_hamlet
-  DBA.img_logo_mewlogo_png
+  DBA.css_menu_css
   DBA.isAdmin
   DBA.isUser
-  DBA.main_hs
-  DBA.mewfestas_png
   DBA.migrateAll
   DBA.resourcesPagina
-  DBA.stack_yaml
-  DBA.template_css_menu_css
-  DBA.teste_cabal
   DBA.Clientex{DBA.Clientex DBA.clientexCidade DBA.clientexCpf DBA.clientexEndereco DBA.clientexEstado DBA.clientexNome DBA.clientexSenha DBA.clientexTelefone DBA.clientexUsername}
   DBA.ClientexId
   DBA.Empresax{DBA.Empresax DBA.empresaxCidade DBA.empresaxCnpj DBA.empresaxEndereco DBA.empresaxEstado DBA.empresaxNome DBA.empresaxTelefone}
@@ -11762,209 +11749,6 @@ fc6748d1695cb1b77f975e44c6a44a38
         = Database.Persist.Sql.Types.SqlBackend
 9f215cbece8b572d4405a8c54d43febd
   type Widget = Yesod.Core.Types.WidgetT DBA.Pagina GHC.Types.IO ()
-bb3ab571bd7078a4bfe2b4ebe17c5785
-  _DBA_hs :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA._DBA_hs1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-eeff548382c4f66ca8f6bd6cc0686973
-  _DBA_hs1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute DBA._DBA_hs6 DBA._DBA_hs2) -}
-9d926c6c2b349153279d35c84c72ae60
-  _DBA_hs10 ::
-    Data.Text.Array.MArray s1
-    -> GHC.Types.Int
-    -> [GHC.Types.Char]
-    -> GHC.Prim.Int#
-    -> GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
-     Inline: [0] -}
-ba0699c176ea16abed500bf6aae09300
-  _DBA_hs2 :: [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA._DBA_hs3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-4e3f6c40ba4ef44231e451ceaf0fbe86
-  _DBA_hs3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m, Unfolding: ((DBA._DBA_hs5, DBA._DBA_hs4)) -}
-c33187daa224f780f3e0dbef66c8468d
-  _DBA_hs4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "spKEnO8S"#) -}
-a3d0588055baa19e547520f37fa13f79
-  _DBA_hs5 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "etag"#) -}
-2446d3def22fbbe8f84066e230840699
-  _DBA_hs6 :: [Data.Text.Internal.Text]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Data.Text.Internal.Text
-                   DBA._DBA_hs7
-                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-fb01a7c7deb68fd4812220d8ae7dd031
-  _DBA_hs7 :: Data.Text.Internal.Text
-  {- Unfolding: (GHC.ST.runSTRep
-                   @ Data.Text.Internal.Text
-                   DBA._DBA_hs8) -}
-25d5143c4425d565c78ee5c0d2b7f5e5
-  _DBA_hs8 ::
-    GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 1,
-     Unfolding: (\ @ s1 s2 :: GHC.Prim.State# s1[OneShot] ->
-                 case GHC.Prim.newByteArray# @ s1 8 s2 of ds1 { (#,#) ipv ipv1 ->
-                 DBA._DBA_hs10
-                   @ s1
-                   (Data.Text.Array.MArray @ s1 ipv1)
-                   DBA.$fPersistFieldClientex17
-                   DBA._DBA_hs9
-                   0
-                   ipv }) -}
-578fc22ed35ad9102d914f2cc450703a
-  _DBA_hs9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "DBA.hs"#) -}
-727cf1e165f0098cb7ae69d7547032ab
-  _Import_hs :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA._Import_hs1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-2b5054954a862cc37e0f11952698bda1
-  _Import_hs1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA._Import_hs5
-                   DBA._Import_hs2) -}
-cf26248a47f1dbe605161727e3b3fb56
-  _Import_hs2 :: [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA._Import_hs3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-14effd2d20837381e7aab0238c261cab
-  _Import_hs3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m, Unfolding: ((DBA._DBA_hs5, DBA._Import_hs4)) -}
-d356d384ceeb877b59da2a98ab2f6446
-  _Import_hs4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "sJlUSV_8"#) -}
-469424ae4544d4ed883bc1d50c301179
-  _Import_hs5 :: [Data.Text.Internal.Text]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Data.Text.Internal.Text
-                   DBA._Import_hs6
-                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-8bc7b13891078659990b30878f699c49
-  _Import_hs6 :: Data.Text.Internal.Text
-  {- Unfolding: (GHC.ST.runSTRep
-                   @ Data.Text.Internal.Text
-                   DBA._Import_hs7) -}
-2afcf6500f9dcd8f5af49868c618c488
-  _Import_hs7 ::
-    GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 1,
-     Unfolding: (\ @ s1 s2 :: GHC.Prim.State# s1[OneShot] ->
-                 case GHC.Prim.newByteArray# @ s1 8 s2 of ds1 { (#,#) ipv ipv1 ->
-                 DBA._Import_hs9
-                   @ s1
-                   (Data.Text.Array.MArray @ s1 ipv1)
-                   DBA.$fPersistFieldClientex17
-                   DBA._Import_hs8
-                   0
-                   ipv }) -}
-7f7093ce080ce632406bbf217a40e7af
-  _Import_hs8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "Import.hs"#) -}
-db789ea1aa4925f732fc08086aee5d11
-  _Import_hs9 ::
-    Data.Text.Array.MArray s1
-    -> GHC.Types.Int
-    -> [GHC.Types.Char]
-    -> GHC.Prim.Int#
-    -> GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
-     Inline: [0] -}
-19978155e712e4ab9799292812513357
-  client_session_key_aes :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.client_session_key_aes1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-94ee9231bda4b06e987674b316094f95
-  client_session_key_aes1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.client_session_key_aes5
-                   DBA.client_session_key_aes2) -}
-fd612fa74fef70a9ccf7407707226775
-  client_session_key_aes2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.client_session_key_aes3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-2abc2b37d03d95bafa604fe212d7bfee
-  client_session_key_aes3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA._DBA_hs5, DBA.client_session_key_aes4)) -}
-68d3f03f67806395f8ee73f8961543e0
-  client_session_key_aes4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "7gBETP5x"#) -}
-227af8e9d6914ae08dd1d5d26c2fb063
-  client_session_key_aes5 :: [Data.Text.Internal.Text]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Data.Text.Internal.Text
-                   DBA.client_session_key_aes6
-                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-af0520b800f97794070e5488e687681a
-  client_session_key_aes6 :: Data.Text.Internal.Text
-  {- Unfolding: (GHC.ST.runSTRep
-                   @ Data.Text.Internal.Text
-                   DBA.client_session_key_aes7) -}
-5dfcad25a39b019e07b8e9788dfc803d
-  client_session_key_aes7 ::
-    GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 1,
-     Unfolding: (\ @ s1 s2 :: GHC.Prim.State# s1[OneShot] ->
-                 case GHC.Prim.newByteArray# @ s1 8 s2 of ds1 { (#,#) ipv ipv1 ->
-                 DBA.client_session_key_aes9
-                   @ s1
-                   (Data.Text.Array.MArray @ s1 ipv1)
-                   DBA.$fPersistFieldClientex17
-                   DBA.client_session_key_aes8
-                   0
-                   ipv }) -}
-946454b894aec8f59bbb501f7c82617f
-  client_session_key_aes8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "client_session_key.aes"#) -}
-72e16face8a2a0744303524e357af577
-  client_session_key_aes9 ::
-    Data.Text.Array.MArray s1
-    -> GHC.Types.Int
-    -> [GHC.Types.Char]
-    -> GHC.Prim.Int#
-    -> GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
-     Inline: [0] -}
 3e250fbb7d564afcbe670e95d9c97803
   clientexCidade :: DBA.Clientex -> Data.Text.Internal.Text
   RecSel DBA.Clientex
@@ -12045,6 +11829,63 @@ dd806eb610c94908bc8b772722118b57
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: DBA.Pagina ->
                  case ds of wild { DBA.Pagina ds1 ds2 -> ds1 }) -}
+88219d43508da242bf9efaf3b0ed044b
+  css_menu_css :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.css_menu_css1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+e60dea44d159b5cbe424aefd8af08379
+  css_menu_css1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.css_menu_css6
+                   DBA.css_menu_css2) -}
+701b9f96d6f0e25b4ada16feec3e795c
+  css_menu_css10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "css"#) -}
+cad2dbda395ed33126f19c4dc65a6290
+  css_menu_css2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   DBA.css_menu_css3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+23b0352c073e5d04259f894eecf0c6be
+  css_menu_css3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((DBA.css_menu_css5, DBA.css_menu_css4)) -}
+5e87307cbb6ca513448cb53e92b298ca
+  css_menu_css4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "7683s-cR"#) -}
+a18992d2df4a143e6fc93318c1794db2
+  css_menu_css5 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "etag"#) -}
+8d3e0bf780fa1497ebcf9b3c5926601e
+  css_menu_css6 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.css_menu_css7) -}
+0eb7cbc612c27701e385bd821843bdc1
+  css_menu_css7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.css_menu_css10
+                   DBA.css_menu_css8) -}
+a656476f7ba3a5c4f1bdaece3d37ea05
+  css_menu_css8 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.css_menu_css9
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+402c412eb5cfbc32ce1cedf9e50a99a1
+  css_menu_css9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "menu.css"#) -}
 b9d74f9be9579df7939f0f3d9d18de07
   empresaxCidade :: DBA.Empresax -> Data.Text.Internal.Text
   RecSel DBA.Empresax
@@ -12101,388 +11942,6 @@ b2fe63a22e73f74a0a0421bd35a57088
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: DBA.Pagina ->
                  case ds of wild { DBA.Pagina ds1 ds2 -> ds2 }) -}
-f7db85519b710ae5394a3127b8a9a4a7
-  hamlets_clientes_listarcliente_hamlet :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.hamlets_clientes_listarcliente_hamlet1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-8b2de409a13dd2a65271225a6b229200
-  hamlets_clientes_listarcliente_hamlet1 ::
-    Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.hamlets_clientes_listarcliente_hamlet5
-                   DBA.hamlets_clientes_listarcliente_hamlet2) -}
-3e5a19c69ae885ab29b9a6da346127ed
-  hamlets_clientes_listarcliente_hamlet10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "clientes"#) -}
-77dc87204ea5afcb10a1e45674fa0fd6
-  hamlets_clientes_listarcliente_hamlet11 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "hamlets"#) -}
-c609cdd8352cdf4d98466723da4f1c5a
-  hamlets_clientes_listarcliente_hamlet2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.hamlets_clientes_listarcliente_hamlet3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-17580d1c885bd049604f427eadda6b20
-  hamlets_clientes_listarcliente_hamlet3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA._DBA_hs5,
-                  DBA.hamlets_clientes_listarcliente_hamlet4)) -}
-99744c79430991e8e73ee28967f17aa5
-  hamlets_clientes_listarcliente_hamlet4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "CTqw-MIm"#) -}
-6d660720bd0058db450d48ea69f2392e
-  hamlets_clientes_listarcliente_hamlet5 :: [Data.Text.Internal.Text]
-  {- Unfolding: (GHC.Base.map
-                   @ [GHC.Types.Char]
-                   @ Data.Text.Internal.Text
-                   Data.Text.pack
-                   DBA.hamlets_clientes_listarcliente_hamlet6) -}
-dec20307941db2ef4c46ea22c3ef8c9a
-  hamlets_clientes_listarcliente_hamlet6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_clientes_listarcliente_hamlet11
-                   DBA.hamlets_clientes_listarcliente_hamlet7) -}
-e97e6510bc94e0b6933f0dca8f78f0c9
-  hamlets_clientes_listarcliente_hamlet7 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_clientes_listarcliente_hamlet10
-                   DBA.hamlets_clientes_listarcliente_hamlet8) -}
-0dca83dbffc61a07cbe19dc4a6118882
-  hamlets_clientes_listarcliente_hamlet8 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_clientes_listarcliente_hamlet9
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-ab2fa11267ed7d4116e5a51bcc4c8586
-  hamlets_clientes_listarcliente_hamlet9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "listarcliente.hamlet"#) -}
-379871e4d41f41973d0cbc8e06124638
-  hamlets_empresa_listarempresa_hamlet :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.hamlets_empresa_listarempresa_hamlet1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-64a00894fcd09a0d820c63b0e3f73b33
-  hamlets_empresa_listarempresa_hamlet1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.hamlets_empresa_listarempresa_hamlet5
-                   DBA.hamlets_empresa_listarempresa_hamlet2) -}
-6ab4cdd82ff97a76b17b839b35017faf
-  hamlets_empresa_listarempresa_hamlet10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "empresa"#) -}
-3cf532a9bdca511af1222d7b71e62143
-  hamlets_empresa_listarempresa_hamlet2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.hamlets_empresa_listarempresa_hamlet3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-5ec37c5fd1a3f0fde2b9133fa7ccedb8
-  hamlets_empresa_listarempresa_hamlet3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA._DBA_hs5,
-                  DBA.hamlets_empresa_listarempresa_hamlet4)) -}
-4f508b3656200b8b179fa04dba0b9462
-  hamlets_empresa_listarempresa_hamlet4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "eedNPIOY"#) -}
-ce6761ae7442216fac9a2572bef3f85b
-  hamlets_empresa_listarempresa_hamlet5 :: [Data.Text.Internal.Text]
-  {- Unfolding: (GHC.Base.map
-                   @ [GHC.Types.Char]
-                   @ Data.Text.Internal.Text
-                   Data.Text.pack
-                   DBA.hamlets_empresa_listarempresa_hamlet6) -}
-040d3c89ca894a5cedbd691791b6ae07
-  hamlets_empresa_listarempresa_hamlet6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_clientes_listarcliente_hamlet11
-                   DBA.hamlets_empresa_listarempresa_hamlet7) -}
-cc1e98883c1167454cfa3e8015137438
-  hamlets_empresa_listarempresa_hamlet7 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_empresa_listarempresa_hamlet10
-                   DBA.hamlets_empresa_listarempresa_hamlet8) -}
-b7af884f04cb8a3eeb9b7e451f76244b
-  hamlets_empresa_listarempresa_hamlet8 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_empresa_listarempresa_hamlet9
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-8e858238e39f5fa1cfb2c00d32086a20
-  hamlets_empresa_listarempresa_hamlet9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "listarempresa.hamlet"#) -}
-34510acd940ed38352f4809c03c28330
-  hamlets_empresa_listarservico_hamlet :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.hamlets_empresa_listarservico_hamlet1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-f88966347205549c6b3babba58e4e6f2
-  hamlets_empresa_listarservico_hamlet1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.hamlets_empresa_listarservico_hamlet5
-                   DBA.hamlets_empresa_listarservico_hamlet2) -}
-a0c32d46677e8550dd63fb84313db4fa
-  hamlets_empresa_listarservico_hamlet2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.hamlets_empresa_listarservico_hamlet3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-e789c69beca461a7a5a29da325ec7d32
-  hamlets_empresa_listarservico_hamlet3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA._DBA_hs5,
-                  DBA.hamlets_empresa_listarservico_hamlet4)) -}
-5df5b2b30b7edece6df11a71d38bd2e7
-  hamlets_empresa_listarservico_hamlet4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "xxRfKbfM"#) -}
-c1cc2927c51cf16e18da067ba22eb42b
-  hamlets_empresa_listarservico_hamlet5 :: [Data.Text.Internal.Text]
-  {- Unfolding: (GHC.Base.map
-                   @ [GHC.Types.Char]
-                   @ Data.Text.Internal.Text
-                   Data.Text.pack
-                   DBA.hamlets_empresa_listarservico_hamlet6) -}
-e6050cd87596f2aec5d984e171d9a861
-  hamlets_empresa_listarservico_hamlet6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_clientes_listarcliente_hamlet11
-                   DBA.hamlets_empresa_listarservico_hamlet7) -}
-5b9ac2a63ad455f8925141d1139f48a6
-  hamlets_empresa_listarservico_hamlet7 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_empresa_listarempresa_hamlet10
-                   DBA.hamlets_empresa_listarservico_hamlet8) -}
-17b71e14f4074da43360c113f54ffb4c
-  hamlets_empresa_listarservico_hamlet8 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_empresa_listarservico_hamlet9
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-45547f1ade8552d4bb4a85b9441385a1
-  hamlets_empresa_listarservico_hamlet9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "listarservico.hamlet"#) -}
-e0a1822d72a6ef24f7114e93c3e95b3b
-  hamlets_home_header_hamlet :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.hamlets_home_header_hamlet1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-c62f608c0f14f29a84cb3129a0fc934d
-  hamlets_home_header_hamlet1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.hamlets_home_header_hamlet5
-                   DBA.hamlets_home_header_hamlet2) -}
-c0f1b81a6c531864ad46e6323c3802fe
-  hamlets_home_header_hamlet10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "home"#) -}
-c1923fdae1e017b0f14f95d8404c27d7
-  hamlets_home_header_hamlet2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.hamlets_home_header_hamlet3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-7090a6d027479e5d9a58c7c96dfbdc4a
-  hamlets_home_header_hamlet3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA._DBA_hs5, DBA.hamlets_home_header_hamlet4)) -}
-b85844f934e391cea57ac2de6f00db2e
-  hamlets_home_header_hamlet4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "uzj6Q3HM"#) -}
-ca9c8a8880fc2879ae72c0f94cd0dd86
-  hamlets_home_header_hamlet5 :: [Data.Text.Internal.Text]
-  {- Unfolding: (GHC.Base.map
-                   @ [GHC.Types.Char]
-                   @ Data.Text.Internal.Text
-                   Data.Text.pack
-                   DBA.hamlets_home_header_hamlet6) -}
-c78390d3832fb09dc6e05fa8a79230db
-  hamlets_home_header_hamlet6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_clientes_listarcliente_hamlet11
-                   DBA.hamlets_home_header_hamlet7) -}
-3c09ade0da9d04b040690e3caeea53f7
-  hamlets_home_header_hamlet7 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_home_header_hamlet10
-                   DBA.hamlets_home_header_hamlet8) -}
-7ad04204d846835a8e48c9e806839b6b
-  hamlets_home_header_hamlet8 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_home_header_hamlet9
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-43b3b0bcfadd431083d8d1b9e11d1419
-  hamlets_home_header_hamlet9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "header.hamlet"#) -}
-7e07cbd721dffd966a4d5f43797b9455
-  hamlets_prestador_listarprestador_hamlet ::
-    Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.hamlets_prestador_listarprestador_hamlet1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-3031659a0a10847405a319d5bdf25491
-  hamlets_prestador_listarprestador_hamlet1 ::
-    Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.hamlets_prestador_listarprestador_hamlet5
-                   DBA.hamlets_prestador_listarprestador_hamlet2) -}
-b33cd4f7c4ade37468ea25db02efab1f
-  hamlets_prestador_listarprestador_hamlet10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "prestador"#) -}
-4571b0e450afd523932f94b2c24c4428
-  hamlets_prestador_listarprestador_hamlet2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.hamlets_prestador_listarprestador_hamlet3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-1ed54c3e133ebca199c31bd0fc880761
-  hamlets_prestador_listarprestador_hamlet3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA._DBA_hs5,
-                  DBA.hamlets_prestador_listarprestador_hamlet4)) -}
-e5b14dc64b1d116dbc47d70ea2da1360
-  hamlets_prestador_listarprestador_hamlet4 ::
-    Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "EZAa6-zj"#) -}
-5f3840da4eac0f76baf311a9d8b0ba76
-  hamlets_prestador_listarprestador_hamlet5 ::
-    [Data.Text.Internal.Text]
-  {- Unfolding: (GHC.Base.map
-                   @ [GHC.Types.Char]
-                   @ Data.Text.Internal.Text
-                   Data.Text.pack
-                   DBA.hamlets_prestador_listarprestador_hamlet6) -}
-1bb8635144c4e3a36bd35fb72c7f41e2
-  hamlets_prestador_listarprestador_hamlet6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_clientes_listarcliente_hamlet11
-                   DBA.hamlets_prestador_listarprestador_hamlet7) -}
-963f64fcb5fd85963f19370b9322e8ab
-  hamlets_prestador_listarprestador_hamlet7 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_prestador_listarprestador_hamlet10
-                   DBA.hamlets_prestador_listarprestador_hamlet8) -}
-74412a8c524e23c5cabf59e74fba15b9
-  hamlets_prestador_listarprestador_hamlet8 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.hamlets_prestador_listarprestador_hamlet9
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-af22a8510224ef53968a45de36020c8b
-  hamlets_prestador_listarprestador_hamlet9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "listarprestador.hamlet"#) -}
-63ac8ca978313ee8dc176e11d66af36c
-  img_logo_mewlogo_png :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.img_logo_mewlogo_png1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-86fdc5ee47ed339d6bab71aa4733a420
-  img_logo_mewlogo_png1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.img_logo_mewlogo_png5
-                   DBA.img_logo_mewlogo_png2) -}
-8356237bdca75baad44069dfb62cfb01
-  img_logo_mewlogo_png10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "logo"#) -}
-79e9869e1f6d096f324873e900e65faa
-  img_logo_mewlogo_png11 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "img"#) -}
-45230c7fa1a9b04b43f73911ad2c7441
-  img_logo_mewlogo_png2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.img_logo_mewlogo_png3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-35f1fe5e912387e1e8a1403beb97d021
-  img_logo_mewlogo_png3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA._DBA_hs5, DBA.img_logo_mewlogo_png4)) -}
-cd459c3a144ac06d696bea5b5909f757
-  img_logo_mewlogo_png4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "9Qgr3iXg"#) -}
-29a59e612e5979b2a3c7e736757aa826
-  img_logo_mewlogo_png5 :: [Data.Text.Internal.Text]
-  {- Unfolding: (GHC.Base.map
-                   @ [GHC.Types.Char]
-                   @ Data.Text.Internal.Text
-                   Data.Text.pack
-                   DBA.img_logo_mewlogo_png6) -}
-8f9fc7280fe44af3be6cfe7dd6c64e15
-  img_logo_mewlogo_png6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.img_logo_mewlogo_png11
-                   DBA.img_logo_mewlogo_png7) -}
-b3d458bc480ba9de5a83eb5202868433
-  img_logo_mewlogo_png7 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.img_logo_mewlogo_png10
-                   DBA.img_logo_mewlogo_png8) -}
-ccbea147851cd65cbf53900515a7cd3a
-  img_logo_mewlogo_png8 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.img_logo_mewlogo_png9
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-aaca04e71533d4017dcd7a8a06bc8c3c
-  img_logo_mewlogo_png9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "mewlogo.png"#) -}
 9a6502bfdae2b725f99d0d6da98adfc6
   isAdmin ::
     Yesod.Core.Class.Handler.MonadHandler m =>
@@ -12585,139 +12044,6 @@ a627b1bb70f671b33a4e70e16da05fa2
                       (case mu of wild {
                          GHC.Base.Nothing -> Yesod.Core.Types.AuthenticationRequired
                          GHC.Base.Just ds -> Yesod.Core.Types.Authorized }))) -}
-154336835692a056467c8b184a990667
-  main_hs :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.main_hs1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-8f53c7f52c050072c1bb748bd64f575b
-  main_hs1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute DBA.main_hs5 DBA.main_hs2) -}
-7216808bfcc00da7f600f7fb03201a4a
-  main_hs2 :: [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.main_hs3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-8aeea8e58f716378310f343115dcafe7
-  main_hs3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m, Unfolding: ((DBA._DBA_hs5, DBA.main_hs4)) -}
-fa7b7a3152a7f7d6432f9c5be8e77794
-  main_hs4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "gKJPM8tX"#) -}
-3fec9dd12b6ec6c042513e8896988c9a
-  main_hs5 :: [Data.Text.Internal.Text]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Data.Text.Internal.Text
-                   DBA.main_hs6
-                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-e258ffb8b5c3d9350945021a8e968c5b
-  main_hs6 :: Data.Text.Internal.Text
-  {- Unfolding: (GHC.ST.runSTRep
-                   @ Data.Text.Internal.Text
-                   DBA.main_hs7) -}
-ace8eb8e27a356f1694d1274881e6109
-  main_hs7 ::
-    GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 1,
-     Unfolding: (\ @ s1 s2 :: GHC.Prim.State# s1[OneShot] ->
-                 case GHC.Prim.newByteArray# @ s1 8 s2 of ds1 { (#,#) ipv ipv1 ->
-                 DBA.main_hs9
-                   @ s1
-                   (Data.Text.Array.MArray @ s1 ipv1)
-                   DBA.$fPersistFieldClientex17
-                   DBA.main_hs8
-                   0
-                   ipv }) -}
-e891e1c4ea6fb9e677fdeedb6920e042
-  main_hs8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "main.hs"#) -}
-b4a0e553015132c1f0a93be91cb0a670
-  main_hs9 ::
-    Data.Text.Array.MArray s1
-    -> GHC.Types.Int
-    -> [GHC.Types.Char]
-    -> GHC.Prim.Int#
-    -> GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
-     Inline: [0] -}
-e0ec2aac1e26c9efccf11b1ff7a620c6
-  mewfestas_png :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.mewfestas_png1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-09c995bffa11e7066e8a202cb93c5729
-  mewfestas_png1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.mewfestas_png5
-                   DBA.mewfestas_png2) -}
-37c4fe78b9818e021e3dc9867608e3f5
-  mewfestas_png2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.mewfestas_png3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-3a5e6f5e5fb091d116d8e368b6968248
-  mewfestas_png3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA._DBA_hs5, DBA.mewfestas_png4)) -}
-6514826f397184446eca9f10f235eb6f
-  mewfestas_png4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "--yfXbbK"#) -}
-52af35c346bd1407e72b9931d9eb5086
-  mewfestas_png5 :: [Data.Text.Internal.Text]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Data.Text.Internal.Text
-                   DBA.mewfestas_png6
-                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-2631d55e6849e78944a2b4e29b466b60
-  mewfestas_png6 :: Data.Text.Internal.Text
-  {- Unfolding: (GHC.ST.runSTRep
-                   @ Data.Text.Internal.Text
-                   DBA.mewfestas_png7) -}
-cb41d0204eab2eae73f5928de79111d7
-  mewfestas_png7 ::
-    GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 1,
-     Unfolding: (\ @ s1 s2 :: GHC.Prim.State# s1[OneShot] ->
-                 case GHC.Prim.newByteArray# @ s1 8 s2 of ds1 { (#,#) ipv ipv1 ->
-                 DBA.mewfestas_png9
-                   @ s1
-                   (Data.Text.Array.MArray @ s1 ipv1)
-                   DBA.$fPersistFieldClientex17
-                   DBA.mewfestas_png8
-                   0
-                   ipv }) -}
-68911e8849a4acda44844913255cd167
-  mewfestas_png8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "mewfestas.png"#) -}
-5017bd119b0312a183a76b3981730748
-  mewfestas_png9 ::
-    Data.Text.Array.MArray s1
-    -> GHC.Types.Int
-    -> [GHC.Types.Char]
-    -> GHC.Prim.Int#
-    -> GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
-     Inline: [0] -}
 3f2caea2919c9e4d0aa6f011d41772fd
   migrateAll :: Database.Persist.Sql.Types.Migration
   {- Arity: 2,
@@ -12819,474 +12145,462 @@ c62680dd9a0ae9e31f808c633df1c141
                 (\ ds :: DBA.Prestadorx ->
                  case ds of wild { DBA.Prestadorx ds1 ds2 ds3 ds4 ds5 ds6 ->
                  ds4 }) -}
-d274962a2589e8d6fa447bcf3d093047
+033e992c05c96095aadb437954d000e7
   resourcesPagina ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina187
+                   DBA.resourcesPagina189
                    DBA.resourcesPagina1) -}
-418194f1d832f5a7d5e047c14feae5c8
+ce243d031643b2b55645b2e372fc83b3
   resourcesPagina1 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina183
+                   DBA.resourcesPagina185
                    DBA.resourcesPagina2) -}
-e791fa42fcf7100774cfd23689a9fce9
+bafe3127d6b6efd0eb2c48fc7ecf1a05
   resourcesPagina10 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina134
+                   DBA.resourcesPagina135
                    DBA.resourcesPagina11) -}
-2495fd44a625fbdaf162733a3e52feb5
-  resourcesPagina100 ::
+36deedfa18520c95c92178495a78c743
+  resourcesPagina100 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ExcluirprestadorR"#) -}
+f2f4e73f10e56eb35e7aba241ff4cfd7
+  resourcesPagina101 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina101) -}
-0ec60c4368de0a7fcc9dce660ebc8a05
-  resourcesPagina101 ::
+                   DBA.resourcesPagina102) -}
+77d916015b76fd8b95370f3e6884d8fd
+  resourcesPagina102 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina106
-                   DBA.resourcesPagina102
+                   DBA.resourcesPagina107
+                   DBA.resourcesPagina103
                    DBA.resourcesPagina27
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-9862cc8ce99e4a73b5630e818510600e
-  resourcesPagina102 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina98
-                   DBA.resourcesPagina103) -}
-bf62779b2090e69424ea3bada0010993
+71743623e804b41a42c1b7e5859fc7b2
   resourcesPagina103 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina104
+                   DBA.resourcesPagina98
+                   DBA.resourcesPagina104) -}
+71752cef2f5624d2d60bd21a4a650441
+  resourcesPagina104 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina105
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-7dbdcf9f9a1c2f91de2ac1c55e759136
-  resourcesPagina104 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+426c7973a437c334d8023186e04b59ae
+  resourcesPagina105 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   DBA.resourcesPagina105) -}
-e7c6eef805a8c9232f7d460c016842e9
-  resourcesPagina105 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "listar"#) -}
-8b348a0cf67e45539f237c1d3db63154
+                   DBA.resourcesPagina106) -}
+0f975c08fde68d663e96b9924ca27a72
   resourcesPagina106 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "listar"#) -}
+fd650342fc50082c6a339548400c8f6b
+  resourcesPagina107 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ListarprestadorR"#) -}
-94decf6be9ea74ef77d8071693a51b79
-  resourcesPagina107 ::
+1afeb16e77293c0d0ec0084f8db76ef2
+  resourcesPagina108 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina108) -}
-f009a2c6046baf729b3971d6ad6da5ed
-  resourcesPagina108 ::
+                   DBA.resourcesPagina109) -}
+ee3acf443626e0d2b3c90ae16c1c7f43
+  resourcesPagina109 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina111
-                   DBA.resourcesPagina109
+                   DBA.resourcesPagina112
+                   DBA.resourcesPagina110
                    DBA.resourcesPagina27
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-b11da9edad5fbef84fd641ad380ac878
-  resourcesPagina109 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina98
-                   DBA.resourcesPagina110) -}
-ddedf44f5152753006213fd1b8f68849
+99f05aec5f032a7faeab41795a0baf59
   resourcesPagina11 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina126
+                   DBA.resourcesPagina127
                    DBA.resourcesPagina12) -}
-58d10760602836db189c0a0afb7d17c9
+b06feb6078628dee65caf22a2989cba7
   resourcesPagina110 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina98
+                   DBA.resourcesPagina111) -}
+3400afabb8d8a2f4b8f1b844b3c03f8c
+  resourcesPagina111 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    DBA.resourcesPagina81
                    DBA.resourcesPagina95) -}
-7e13a63fa3444a46fe0847daba8df786
-  resourcesPagina111 :: [GHC.Types.Char]
+7747343da7c2948d15bd6369a1b966ce
+  resourcesPagina112 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ChecarprestadorR"#) -}
-f76a6f3a486cb34b129af3d4f197e7b0
-  resourcesPagina112 ::
+d62c720cda6632d3a19565f5f65296d2
+  resourcesPagina113 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina113) -}
-a5e94aa76a15e3677f9b13fd588ac35e
-  resourcesPagina113 ::
+                   DBA.resourcesPagina114) -}
+ee65f56ad3370e78978602759a297e9b
+  resourcesPagina114 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
+                   DBA.resourcesPagina116
                    DBA.resourcesPagina115
-                   DBA.resourcesPagina114
                    DBA.resourcesPagina57
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-30c6536d07e05b2ad0b68c6ad6013025
-  resourcesPagina114 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+4a8750d7cc33b3ecf0b67079542fb38a
+  resourcesPagina115 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    DBA.resourcesPagina98
                    DBA.resourcesPagina87) -}
-e0967b7a133dfbcae80a5ab8691817d1
-  resourcesPagina115 :: [GHC.Types.Char]
+8528b58df0470b1eb30a9d80deb23e73
+  resourcesPagina116 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "PrestadorR"#) -}
-8549c7f355c546cce5f09dc228909f00
-  resourcesPagina116 ::
+a8bb54fd8534c1bbcad33cdb425620c3
+  resourcesPagina117 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina117) -}
-a8f9bb54a27ff8bbcf98295157056a1e
-  resourcesPagina117 ::
+                   DBA.resourcesPagina118) -}
+e72c1b29e6a92c6e6919507d7df6cfb1
+  resourcesPagina118 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina125
-                   DBA.resourcesPagina118
+                   DBA.resourcesPagina126
+                   DBA.resourcesPagina119
                    DBA.resourcesPagina27
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-56d506de8b14b61accaf4318788f9e2e
-  resourcesPagina118 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina123
-                   DBA.resourcesPagina119) -}
-536889524100bbf149303005ac57da41
+f35f38e133bc48685ec267fbf329df7f
   resourcesPagina119 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina104
+                   DBA.resourcesPagina124
                    DBA.resourcesPagina120) -}
-7cce15c37b596056e1f8753cd4f1bb7a
+a5c9a7111c9385865c7d2e327b69f62b
   resourcesPagina12 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina116
+                   DBA.resourcesPagina117
                    DBA.resourcesPagina13) -}
-f69618dbae86418a184e344014cfa487
+def876026a2d1b9c482b20b3cfda1097
   resourcesPagina120 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina121
+                   DBA.resourcesPagina105
+                   DBA.resourcesPagina121) -}
+7f94e3c784373926fa792a9f6d186937
+  resourcesPagina121 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina122
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-9831a98513fc045fbd10c29b1a3fe977
-  resourcesPagina121 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+9c1b68a8f23eb37050df41241feaae9e
+  resourcesPagina122 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m2,
      Unfolding: (Yesod.Routes.TH.Types.Dynamic
                    @ GHC.Base.String
-                   DBA.resourcesPagina122) -}
-36108ab2b76decb65544a637f93c9780
-  resourcesPagina122 :: [GHC.Types.Char]
+                   DBA.resourcesPagina123) -}
+87fb220d7144f4018334c3a672af13c2
+  resourcesPagina123 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "EmpresaxId"#) -}
-64c56b4d180d97835158e0e76ba41881
-  resourcesPagina123 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+d136c86cfc2adda0d4980b51abb93e00
+  resourcesPagina124 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   DBA.resourcesPagina124) -}
-991bdbd3aa3b5a33409213de04b44e7e
-  resourcesPagina124 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "servico"#) -}
-e99c0735bc668455b199f5f17469eb1f
+                   DBA.resourcesPagina125) -}
+8d66cf18d0c20ba9a1dbd1793340888e
   resourcesPagina125 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "servico"#) -}
+1bf30a00be7a827df4e5e3d4b33cd893
+  resourcesPagina126 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ListarservicoR"#) -}
-d4cce57cc50db84c26044bf084ab1cda
-  resourcesPagina126 ::
+4721361c074d1901d0b7de5ea195ce54
+  resourcesPagina127 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina127) -}
-61ac9a31bba8183724fd7edb20c3bf04
-  resourcesPagina127 ::
+                   DBA.resourcesPagina128) -}
+7913dc37029868b53bc856119b75512d
+  resourcesPagina128 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina133
-                   DBA.resourcesPagina128
+                   DBA.resourcesPagina134
+                   DBA.resourcesPagina129
                    DBA.resourcesPagina27
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-ef1c0293d588a68d62f5edc8f7b421d2
-  resourcesPagina128 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina123
-                   DBA.resourcesPagina129) -}
-297b2c56d8c1f487055dad89f9dc180e
+2f88bc15eb4ad5e46bde9a5ffd0c5d44
   resourcesPagina129 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina72
+                   DBA.resourcesPagina124
                    DBA.resourcesPagina130) -}
-99721b0d4bfa81a2b28b25773f6bc9f2
+07fcafdf885ac023d37cd780637896fe
   resourcesPagina13 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina112
+                   DBA.resourcesPagina113
                    DBA.resourcesPagina14) -}
-07da94fba37714efd6d9af58cd91163b
+020e1b65c6f17410a9ee1d38ebff19f0
   resourcesPagina130 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina131
+                   DBA.resourcesPagina72
+                   DBA.resourcesPagina131) -}
+195eea2355359eac9cb25f43482cf0ef
+  resourcesPagina131 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina132
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-61fb9acdf6a255bea5b12547744fa962
-  resourcesPagina131 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+78b770de13251dadb18065bfbf4797a1
+  resourcesPagina132 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m2,
      Unfolding: (Yesod.Routes.TH.Types.Dynamic
                    @ GHC.Base.String
-                   DBA.resourcesPagina132) -}
-c0956da3413944ee0cd342020099d3ef
-  resourcesPagina132 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "ServicoxId"#) -}
-3d26a2e15f64a91f6a2fcb3eff1d3499
+                   DBA.resourcesPagina133) -}
+568e1c6ba8301b3a8bace6ded84096ca
   resourcesPagina133 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ServicoxId"#) -}
+08212125b750c2a02fc2f402c3984542
+  resourcesPagina134 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ExcluirservicoR"#) -}
-75043e85dbfa053e631f7cefa6f7fb49
-  resourcesPagina134 ::
+e97e8619876d08a43e3b4943a78ad8ca
+  resourcesPagina135 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina135) -}
-0506508fee2a431538a9e71135fad2b4
-  resourcesPagina135 ::
+                   DBA.resourcesPagina136) -}
+48f70981d5eb63c982493b8d40eb2c6a
+  resourcesPagina136 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina138
-                   DBA.resourcesPagina136
+                   DBA.resourcesPagina139
+                   DBA.resourcesPagina137
                    DBA.resourcesPagina27
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-063b904812b55fbf10fd3388e4beaca6
-  resourcesPagina136 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina123
-                   DBA.resourcesPagina137) -}
-f60e74c2a7900595ffaa57aca320bb8b
+099e6679760a2ba786f111fc5f16566e
   resourcesPagina137 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina124
+                   DBA.resourcesPagina138) -}
+cb3d62f2e6808169d784a4a412cfcb49
+  resourcesPagina138 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    DBA.resourcesPagina81
-                   DBA.resourcesPagina130) -}
-972e205866fc8096e79ae4c54479592a
-  resourcesPagina138 :: [GHC.Types.Char]
+                   DBA.resourcesPagina131) -}
+1703d1caa3ab2806c5ecc27badfdfb0c
+  resourcesPagina139 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ChecarservicoR"#) -}
-8b540b9fad64cc4fa16dcb38b21f225d
-  resourcesPagina139 ::
-    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
-                   @ GHC.Base.String
-                   DBA.resourcesPagina140) -}
-def32931b50aac74081c7f8cc32fb94e
+1374fc726cc142f207cbe63bd9d2eba2
   resourcesPagina14 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina107
+                   DBA.resourcesPagina108
                    DBA.resourcesPagina15) -}
-231a3bc8e6fa9d339ad9d6d96d3b3634
+2ef5a6cdd3b298bf011c597c63df0453
   resourcesPagina140 ::
-    Yesod.Routes.TH.Types.Resource GHC.Base.String
-  {- Strictness: m,
-     Unfolding: (Yesod.Routes.TH.Types.Resource
-                   @ GHC.Base.String
-                   DBA.resourcesPagina142
-                   DBA.resourcesPagina141
-                   DBA.resourcesPagina57
-                   (GHC.Types.[] @ GHC.Base.String)
-                   GHC.Types.True) -}
-8c0f8246ee2f223a340db5bec54debe1
-  resourcesPagina141 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina123
-                   DBA.resourcesPagina87) -}
-3655d1bf8f3ee11b48d246359ef60e55
-  resourcesPagina142 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "ServicoR"#) -}
-80c9e4963fa4cd9e5ad1a937feb0571e
-  resourcesPagina143 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina144) -}
-e3c26755c2211595e1b6465fa6edb7fa
-  resourcesPagina144 ::
+                   DBA.resourcesPagina141) -}
+18d06c00f0b184f16f2971cd4a3b7e5f
+  resourcesPagina141 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina148
-                   DBA.resourcesPagina145
-                   DBA.resourcesPagina27
+                   DBA.resourcesPagina143
+                   DBA.resourcesPagina142
+                   DBA.resourcesPagina57
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-9b2d7f4af2ae732bb7d289383f974517
-  resourcesPagina145 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+ba47ddea7a4c5983996e57299da2b68f
+  resourcesPagina142 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina147
-                   DBA.resourcesPagina146) -}
-fb8d2c305b3846d6a35e99dd43dacc0c
+                   DBA.resourcesPagina124
+                   DBA.resourcesPagina87) -}
+66ddcc5dd823e3a71172b1160c86448b
+  resourcesPagina143 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ServicoR"#) -}
+086611ef714fe810d79dde19708679f0
+  resourcesPagina144 ::
+    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
+                   @ GHC.Base.String
+                   DBA.resourcesPagina145) -}
+ef73f34979297453e5bab3624dea9546
+  resourcesPagina145 ::
+    Yesod.Routes.TH.Types.Resource GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Yesod.Routes.TH.Types.Resource
+                   @ GHC.Base.String
+                   DBA.resourcesPagina150
+                   DBA.resourcesPagina146
+                   DBA.resourcesPagina27
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Types.True) -}
+ee5a284df5a52e39bdac36deb24f5d3b
   resourcesPagina146 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina148
+                   DBA.resourcesPagina147) -}
+64fbdaeb0b8a843db40f17faaa525a64
+  resourcesPagina147 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    DBA.resourcesPagina72
-                   DBA.resourcesPagina120) -}
-2d8647ab0b2730884e77a00d0545a16d
-  resourcesPagina147 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+                   DBA.resourcesPagina121) -}
+eeb297f8da4a259b744d96e53f0b6005
+  resourcesPagina148 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   DBA.hamlets_empresa_listarempresa_hamlet10) -}
-8bb2285b92fb0f42701baa5f9a1211d9
-  resourcesPagina148 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "ExcluirempresaR"#) -}
-c766d47ae08d63c86c3a411ae86c3d93
-  resourcesPagina149 ::
-    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
-                   @ GHC.Base.String
-                   DBA.resourcesPagina150) -}
-8c89d9dda88f27785591fb4978c4d936
+                   DBA.resourcesPagina149) -}
+603a1914ed0e1d87d85e95f899442d0e
+  resourcesPagina149 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "empresa"#) -}
+c8a2defb25c459ea10bf8601e0a03bcc
   resourcesPagina15 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina100
+                   DBA.resourcesPagina101
                    DBA.resourcesPagina16) -}
-782e355796e5a0a022ff02321cb986bd
-  resourcesPagina150 ::
-    Yesod.Routes.TH.Types.Resource GHC.Base.String
-  {- Strictness: m,
-     Unfolding: (Yesod.Routes.TH.Types.Resource
-                   @ GHC.Base.String
-                   DBA.resourcesPagina152
-                   DBA.resourcesPagina151
-                   DBA.resourcesPagina27
-                   (GHC.Types.[] @ GHC.Base.String)
-                   GHC.Types.True) -}
-b30d44ea805d5cd6849a0dbc30439dd6
-  resourcesPagina151 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina147
-                   DBA.resourcesPagina103) -}
-6a2f48a84e239e10a4cbc1afb01ba3a0
-  resourcesPagina152 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "ListarempresaR"#) -}
-b46f61d7eb262404013494385b15e12b
-  resourcesPagina153 ::
+61174158117deb345bfc9b67793053a8
+  resourcesPagina150 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ExcluirempresaR"#) -}
+1a8702a34a235545a59360b85cbad58b
+  resourcesPagina151 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina154) -}
-9561c2b3efb96f8b342364bf255800d0
-  resourcesPagina154 ::
+                   DBA.resourcesPagina152) -}
+b582cd98fd2de8f57f67a9c8ddc601d9
+  resourcesPagina152 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina157
-                   DBA.resourcesPagina155
+                   DBA.resourcesPagina154
+                   DBA.resourcesPagina153
                    DBA.resourcesPagina27
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-e6f53be6913f9373e40e188f3d24c45a
-  resourcesPagina155 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+5197cfeff071fb93025771a6ac52b802
+  resourcesPagina153 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina147
+                   DBA.resourcesPagina148
+                   DBA.resourcesPagina104) -}
+83e2b192377a8d2082a09eb2f85161b3
+  resourcesPagina154 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ListarempresaR"#) -}
+97914fcf475835d46e40615f9e549138
+  resourcesPagina155 ::
+    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
+                   @ GHC.Base.String
                    DBA.resourcesPagina156) -}
-3cd674643cf592943945dcb789f9b7d3
-  resourcesPagina156 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+3aa788848fb79bc27923bbc3b38b3605
+  resourcesPagina156 ::
+    Yesod.Routes.TH.Types.Resource GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Yesod.Routes.TH.Types.Resource
+                   @ GHC.Base.String
+                   DBA.resourcesPagina159
+                   DBA.resourcesPagina157
+                   DBA.resourcesPagina27
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Types.True) -}
+69022a92c585bd2a7a3f2fbb012dd55d
+  resourcesPagina157 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina148
+                   DBA.resourcesPagina158) -}
+534dfca9a06117aa196049b63d1d9789
+  resourcesPagina158 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    DBA.resourcesPagina81
-                   DBA.resourcesPagina120) -}
-3ccd62cae152cd303fd2c4b4e1fd1919
-  resourcesPagina157 :: [GHC.Types.Char]
+                   DBA.resourcesPagina121) -}
+34e7a2642ccd006afe87255d7d432393
+  resourcesPagina159 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ChecarempresaR"#) -}
-2c2d6d2aac98d57280ac04ab1608fcc8
-  resourcesPagina158 ::
-    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
-                   @ GHC.Base.String
-                   DBA.resourcesPagina159) -}
-480f4905b710a103a7a5b5bc9ca8d802
-  resourcesPagina159 ::
-    Yesod.Routes.TH.Types.Resource GHC.Base.String
-  {- Strictness: m,
-     Unfolding: (Yesod.Routes.TH.Types.Resource
-                   @ GHC.Base.String
-                   DBA.resourcesPagina161
-                   DBA.resourcesPagina160
-                   DBA.resourcesPagina57
-                   (GHC.Types.[] @ GHC.Base.String)
-                   GHC.Types.True) -}
-1e86bf328b525b1680757e5c2e333997
+34ab15b70c6d89ab57df345e7a65caa9
   resourcesPagina16 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
@@ -13294,71 +12608,71 @@ e6f53be6913f9373e40e188f3d24c45a
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
                    DBA.resourcesPagina91
                    DBA.resourcesPagina17) -}
-31a1d29309449a2427f08cba09b1c1a3
-  resourcesPagina160 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina147
-                   DBA.resourcesPagina87) -}
-c22fe7829ed7ba1ccff69690ab505a4b
-  resourcesPagina161 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "EmpresaR"#) -}
-975ca049d827568724581193494e7fbb
-  resourcesPagina162 ::
+f2bd5342eb2c659103ac53a4fb9ff99c
+  resourcesPagina160 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina163) -}
-128ae9727458a54d402463bd3b01e4cf
-  resourcesPagina163 ::
+                   DBA.resourcesPagina161) -}
+98f6cd66a923d4910f5f6a3f5eff23e5
+  resourcesPagina161 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina167
-                   DBA.resourcesPagina164
-                   DBA.resourcesPagina27
+                   DBA.resourcesPagina163
+                   DBA.resourcesPagina162
+                   DBA.resourcesPagina57
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-cfde8336e2b62ec07bed1b10f65dac54
-  resourcesPagina164 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+2aff7984e6c0e4e30e6422cbe42ba948
+  resourcesPagina162 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina165
-                   DBA.resourcesPagina103) -}
-176d939fdd9f72472a12526c55197cf3
-  resourcesPagina165 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+                   DBA.resourcesPagina148
+                   DBA.resourcesPagina87) -}
+ffe453db2b07ee85430e259e7825a20e
+  resourcesPagina163 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "EmpresaR"#) -}
+292b1bca604fb36f63ef81cfb29a5c3d
+  resourcesPagina164 ::
+    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
+                   @ GHC.Base.String
+                   DBA.resourcesPagina165) -}
+5e3880690582bb4d05146307ca9c6067
+  resourcesPagina165 ::
+    Yesod.Routes.TH.Types.Resource GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Yesod.Routes.TH.Types.Resource
+                   @ GHC.Base.String
+                   DBA.resourcesPagina169
+                   DBA.resourcesPagina166
+                   DBA.resourcesPagina27
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Types.True) -}
+907d734ef927b9289fd861e5b98cf34b
+  resourcesPagina166 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina167
+                   DBA.resourcesPagina104) -}
+535bca716134ecba3ec367821feafb00
+  resourcesPagina167 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   DBA.resourcesPagina166) -}
-0f86d5a9819de9b6ecd77ac40bb44ba4
-  resourcesPagina166 :: [GHC.Types.Char]
+                   DBA.resourcesPagina168) -}
+b0d7354c635028a33665fb6871e4ae24
+  resourcesPagina168 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "cliente"#) -}
-bb3d2ecf45db2daeaeb65dae5e37fab5
-  resourcesPagina167 :: [GHC.Types.Char]
+814c1fb2c4d7f190228809646757962c
+  resourcesPagina169 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ListarclienteR"#) -}
-75fadf7b7fc16b01192461469c368f1a
-  resourcesPagina168 ::
-    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
-                   @ GHC.Base.String
-                   DBA.resourcesPagina169) -}
-0bc58634b5b10b24b16f727f2e5175da
-  resourcesPagina169 ::
-    Yesod.Routes.TH.Types.Resource GHC.Base.String
-  {- Strictness: m,
-     Unfolding: (Yesod.Routes.TH.Types.Resource
-                   @ GHC.Base.String
-                   DBA.resourcesPagina177
-                   DBA.resourcesPagina170
-                   DBA.resourcesPagina27
-                   (GHC.Types.[] @ GHC.Base.String)
-                   GHC.Types.True) -}
 80cea35a28d11159a6076bdf5124e059
   resourcesPagina17 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
@@ -13367,66 +12681,66 @@ bb3d2ecf45db2daeaeb65dae5e37fab5
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
                    DBA.resourcesPagina84
                    DBA.resourcesPagina18) -}
-e9a577dd1864422912234feec222067f
-  resourcesPagina170 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina175
-                   DBA.resourcesPagina171) -}
-499fb49ed288e63e7422201c6ae16f19
-  resourcesPagina171 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina72
-                   DBA.resourcesPagina172) -}
-1443b4c2a1cc16b6fc2fbcfb64fa3cbc
-  resourcesPagina172 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina173
-                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-0183409e7390a4d99553921e07ae63f9
-  resourcesPagina173 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
-  {- Strictness: m2,
-     Unfolding: (Yesod.Routes.TH.Types.Dynamic
-                   @ GHC.Base.String
-                   DBA.resourcesPagina174) -}
-0088a6dea371d41f36cb0d3bab8dff7c
-  resourcesPagina174 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "ClientexId"#) -}
-b09b6c9a01cdccac62521c9786e90b78
-  resourcesPagina175 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.Static
-                   @ GHC.Base.String
-                   DBA.resourcesPagina176) -}
-111bd804739a90eb65630be3d447c50e
-  resourcesPagina176 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "clinte"#) -}
-aa8f58eebe981f7ca6802e5085aff2f2
-  resourcesPagina177 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "ExcluirclienteR"#) -}
-a445233a0ca87ff0aed0622c66c5576d
-  resourcesPagina178 ::
+5007613b24e2a772bf6d895340f4f62c
+  resourcesPagina170 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina179) -}
-fd9210f93e1efdfd55e2bdd386610917
-  resourcesPagina179 ::
+                   DBA.resourcesPagina171) -}
+b8d5a9467ecb46d64607c82030b4e231
+  resourcesPagina171 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina182
-                   DBA.resourcesPagina180
+                   DBA.resourcesPagina179
+                   DBA.resourcesPagina172
                    DBA.resourcesPagina27
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
+5999c7d43aa4867ec2debbbd209cf1bc
+  resourcesPagina172 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina177
+                   DBA.resourcesPagina173) -}
+341d424b62ab10c582329f0ff02aae96
+  resourcesPagina173 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina72
+                   DBA.resourcesPagina174) -}
+67211fc067af1e48ec134c5fba63ca55
+  resourcesPagina174 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   DBA.resourcesPagina175
+                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
+0c00d8efa3945bb33ce59f9f05256baf
+  resourcesPagina175 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+  {- Strictness: m2,
+     Unfolding: (Yesod.Routes.TH.Types.Dynamic
+                   @ GHC.Base.String
+                   DBA.resourcesPagina176) -}
+5bf58dfe54c65a4351285f00d62e9892
+  resourcesPagina176 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ClientexId"#) -}
+6684a44eb10bbfe78a5d836570ca4055
+  resourcesPagina177 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.Static
+                   @ GHC.Base.String
+                   DBA.resourcesPagina178) -}
+c6b746099c068fa265811530f3854e6c
+  resourcesPagina178 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "clinte"#) -}
+26a9e041681aa9458cda4fb55401d5de
+  resourcesPagina179 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ExcluirclienteR"#) -}
 95f3eae27ef714321cc0698c39bb2f52
   resourcesPagina18 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
@@ -13435,72 +12749,76 @@ fd9210f93e1efdfd55e2bdd386610917
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
                    DBA.resourcesPagina77
                    DBA.resourcesPagina19) -}
-0c7b7f06557eecec19470237dd87827f
-  resourcesPagina180 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+98553920558bdd76057f96e5b876a3a8
+  resourcesPagina180 ::
+    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
+                   @ GHC.Base.String
+                   DBA.resourcesPagina181) -}
+1a914bab0e10fd8fb3916e4134609662
+  resourcesPagina181 ::
+    Yesod.Routes.TH.Types.Resource GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Yesod.Routes.TH.Types.Resource
+                   @ GHC.Base.String
+                   DBA.resourcesPagina184
+                   DBA.resourcesPagina182
+                   DBA.resourcesPagina27
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Types.True) -}
+d8f19c571991761d28ab0627b600324d
+  resourcesPagina182 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina165
-                   DBA.resourcesPagina181) -}
-7f11745c3b3a4b7abb3aafdca5a040fc
-  resourcesPagina181 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+                   DBA.resourcesPagina167
+                   DBA.resourcesPagina183) -}
+1f18519fcf7862c6df16559c53258fc4
+  resourcesPagina183 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    DBA.resourcesPagina81
-                   DBA.resourcesPagina172) -}
-b2bbae54cf76cfdfdda257dd8cb9b23b
-  resourcesPagina182 :: [GHC.Types.Char]
+                   DBA.resourcesPagina174) -}
+761944dddcbf9ed218ca80e444459c9a
+  resourcesPagina184 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ChecarclienteR"#) -}
-3e660225f17c46c5a1047a684c7ae98c
-  resourcesPagina183 ::
+f1a64372260fcf89abc779eea8e7cd2a
+  resourcesPagina185 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina184) -}
-33250177dcf171a1f1835ce5faef9b88
-  resourcesPagina184 ::
+                   DBA.resourcesPagina186) -}
+0f09a1804a2a58958087217d39231004
+  resourcesPagina186 ::
     Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina186
-                   DBA.resourcesPagina185
+                   DBA.resourcesPagina188
+                   DBA.resourcesPagina187
                    DBA.resourcesPagina57
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-b5fe0feddcb8747f82ece8d823291e0c
-  resourcesPagina185 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+b1a0be84644ef84e57939f500ebb31e8
+  resourcesPagina187 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   DBA.resourcesPagina165
+                   DBA.resourcesPagina167
                    DBA.resourcesPagina87) -}
-1528ede35e3b0e89628e7f387383438c
-  resourcesPagina186 :: [GHC.Types.Char]
+1a696dc7203e0f7a2347bb3cc31499f6
+  resourcesPagina188 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ClienteR"#) -}
-05761f2c74435a6dc4ee88388a7a5187
-  resourcesPagina187 ::
+2b60ffddeb43fdbfd3ad5493acedf827
+  resourcesPagina189 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   DBA.resourcesPagina188) -}
-d4f1a7c0b2a54f9acd743982b40206ed
-  resourcesPagina188 ::
-    Yesod.Routes.TH.Types.Resource GHC.Base.String
-  {- Strictness: m,
-     Unfolding: (Yesod.Routes.TH.Types.Resource
-                   @ GHC.Base.String
-                   DBA.resourcesPagina189
-                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))
-                   DBA.resourcesPagina27
-                   (GHC.Types.[] @ GHC.Base.String)
-                   GHC.Types.True) -}
-775993a8b0aa1cc86b419a99a5803934
-  resourcesPagina189 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "HomeR"#) -}
+                   DBA.resourcesPagina190) -}
 733b26b3eb5b77edac9d7aaa958719e7
   resourcesPagina19 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
@@ -13509,13 +12827,27 @@ d4f1a7c0b2a54f9acd743982b40206ed
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
                    DBA.resourcesPagina65
                    DBA.resourcesPagina20) -}
-291aefaaec92c81a4dc179dfe8219d49
+eb0c9c045c44e8b275b66e1fbe851812
+  resourcesPagina190 ::
+    Yesod.Routes.TH.Types.Resource GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Yesod.Routes.TH.Types.Resource
+                   @ GHC.Base.String
+                   DBA.resourcesPagina191
+                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))
+                   DBA.resourcesPagina27
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Types.True) -}
+3c74273bab6054ea9c073141bb27eca2
+  resourcesPagina191 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "HomeR"#) -}
+498cea6509dc0faf3ac0f56d20962248
   resourcesPagina2 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina178
+                   DBA.resourcesPagina180
                    DBA.resourcesPagina3) -}
 a984a70feab9356f8677b5a3cfca739b
   resourcesPagina20 ::
@@ -13592,13 +12924,13 @@ be815e1d10bca98aac938d63974bfbfc
 fc2b3bc4b2d43c10f9a506e56a612859
   resourcesPagina29 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "GET"#) -}
-77693f38319ca38d14c2ccf18c7269a7
+8f5c3657764ce61059c4a0d512470572
   resourcesPagina3 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina168
+                   DBA.resourcesPagina170
                    DBA.resourcesPagina4) -}
 93f2a8f002f00ee0856b95796721419c
   resourcesPagina30 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
@@ -13656,13 +12988,13 @@ a14b2b6651fbaacad6cc9dca589e64c8
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    DBA.resourcesPagina40
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-bdb79c1d3ebd68495460e2186fd1faed
+167997aaa955f8da48729cb06658e6d5
   resourcesPagina4 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina162
+                   DBA.resourcesPagina164
                    DBA.resourcesPagina5) -}
 b4244fd7eb588fb07f2f031bfb7f9a24
   resourcesPagina40 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
@@ -13719,13 +13051,13 @@ c5840e0b39d89296dea0490abca97346
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
                    DBA.resourcesPagina50) -}
-cad41ddcf6b461c8b54c68a64d1f0f27
+773822f7967cd0ef28d172b7a022365f
   resourcesPagina5 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina158
+                   DBA.resourcesPagina160
                    DBA.resourcesPagina6) -}
 e89003e9715f6ade0069b254dcac64f6
   resourcesPagina50 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
@@ -13794,13 +13126,13 @@ fc3893c779f8f8ca27b6f09ed3b73b8d
                    @ GHC.Base.String
                    DBA.resourcesPagina60
                    (GHC.Types.[] @ GHC.Base.String)) -}
-2f794a0b205194b1533cb90dd509acaa
+9fb9d5d770f78c136a268afc8cffa027
   resourcesPagina6 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina153
+                   DBA.resourcesPagina155
                    DBA.resourcesPagina7) -}
 7f075ac356e7ec5a9fd86bdeae1843e7
   resourcesPagina60 :: [GHC.Types.Char]
@@ -13862,13 +13194,13 @@ fb612607125ab4b2afe12d6616d2fdf4
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    DBA.resourcesPagina70
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-602a7091f97aabdf3bf6c94a0aae8a24
+ebe1acbf2a076cde597dc6e789abb86e
   resourcesPagina7 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina149
+                   DBA.resourcesPagina151
                    DBA.resourcesPagina8) -}
 74d5cd1e07fb5d3c0f01638d61a11db4
   resourcesPagina70 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
@@ -13924,13 +13256,13 @@ a70ded1350668fd57196bff1cfd0ece3
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    DBA.resourcesPagina74
                    DBA.resourcesPagina80) -}
-69cc42ad3bd1050754da81d09fbcde1e
+41afa7168943141f891dd8851f51a786
   resourcesPagina8 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina143
+                   DBA.resourcesPagina144
                    DBA.resourcesPagina9) -}
 2684cdd4027e44654e144455e0509468
   resourcesPagina80 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
@@ -13991,35 +13323,35 @@ d6c3125e13dcd53ad6bbc7973522f8dc
 5e32b9ea935fdee31928416419de8dff
   resourcesPagina89 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "cadastro"#) -}
-5ba3412144a029b398415007557ce4c2
+20cf7e53caf97dd1f58d598c6d1c3900
   resourcesPagina9 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   DBA.resourcesPagina139
+                   DBA.resourcesPagina140
                    DBA.resourcesPagina10) -}
 c5dcdec0b56a8d771dabb422e0dab01a
   resourcesPagina90 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ServipR"#) -}
-c305e1b40f21f1d70b3d19aa56876a09
+721402f69e47e4548ca3b933840cf81d
   resourcesPagina91 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
                    DBA.resourcesPagina92) -}
-e436dce6f8b595b48266f956ccedac86
+88657c4de373bea09d5bfa3a007afaec
   resourcesPagina92 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   DBA.resourcesPagina99
+                   DBA.resourcesPagina100
                    DBA.resourcesPagina93
                    DBA.resourcesPagina27
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-539a32b1e77dc550391388c2b8c47e11
+5fc89ba79db15b4d38dcd1e6e43c4e02
   resourcesPagina93 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -14049,15 +13381,15 @@ e436dce6f8b595b48266f956ccedac86
 9ecce688aefdedbc4e5d0723afa6b5c0
   resourcesPagina97 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "PrestadorxId"#) -}
-9a57eeed4f03f5c78ccbea4f73b3f1f6
+ec0a5e7edced952f03399ed2ee58f477
   resourcesPagina98 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   DBA.hamlets_prestador_listarprestador_hamlet10) -}
-1ea909b5d3f3b8e73ce7aa6f57082995
+                   DBA.resourcesPagina99) -}
+5b806ccffa68a0f08ae0ec0459898aeb
   resourcesPagina99 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "ExcluirprestadorR"#) -}
+  {- Unfolding: (GHC.CString.unpackCString# "prestador"#) -}
 ee72b7ae10b91b828c92a51d7289f1ed
   servicoxDescricao :: DBA.Servicox -> Data.Text.Internal.Text
   RecSel DBA.Servicox
@@ -14128,203 +13460,6 @@ d373466dc32123539fa15ff884df179a
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: DBA.Servipx ->
                  case ds of wild { DBA.Servipx ds1 dt ds2 ds3 -> ds1 }) -}
-1e62062c1d45571ae60dbda59d6f3e44
-  stack_yaml :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.stack_yaml1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-601c899a05199d087a4dd8396ebaf4fe
-  stack_yaml1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.stack_yaml5
-                   DBA.stack_yaml2) -}
-0b67860f42e5960be4c84fc675bb42ef
-  stack_yaml2 :: [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.stack_yaml3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-6a01e36e02f04c10ed9a18aa09ccb350
-  stack_yaml3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m, Unfolding: ((DBA._DBA_hs5, DBA.stack_yaml4)) -}
-3e26750ef23ae5517e6a16f3beb37cc2
-  stack_yaml4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "RIYVONHK"#) -}
-2300ab5ffa5fea66126fd5c9064de14c
-  stack_yaml5 :: [Data.Text.Internal.Text]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Data.Text.Internal.Text
-                   DBA.stack_yaml6
-                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-65c476e9667cf606c1d9ad2299b856bd
-  stack_yaml6 :: Data.Text.Internal.Text
-  {- Unfolding: (GHC.ST.runSTRep
-                   @ Data.Text.Internal.Text
-                   DBA.stack_yaml7) -}
-85d64433bc2adb477b5991666fb0fe6b
-  stack_yaml7 ::
-    GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 1,
-     Unfolding: (\ @ s1 s2 :: GHC.Prim.State# s1[OneShot] ->
-                 case GHC.Prim.newByteArray# @ s1 8 s2 of ds1 { (#,#) ipv ipv1 ->
-                 DBA.stack_yaml9
-                   @ s1
-                   (Data.Text.Array.MArray @ s1 ipv1)
-                   DBA.$fPersistFieldClientex17
-                   DBA.stack_yaml8
-                   0
-                   ipv }) -}
-0fecaf600c44bb33b16386e04854419b
-  stack_yaml8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "stack.yaml"#) -}
-2e05f260ad9aad0e556bb6e194f85b39
-  stack_yaml9 ::
-    Data.Text.Array.MArray s1
-    -> GHC.Types.Int
-    -> [GHC.Types.Char]
-    -> GHC.Prim.Int#
-    -> GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
-     Inline: [0] -}
-c71584adfc0ecd1d622dde77477a1f18
-  template_css_menu_css :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.template_css_menu_css1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-446b1eb052340532dbc1424e2829c38a
-  template_css_menu_css1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.template_css_menu_css5
-                   DBA.template_css_menu_css2) -}
-9ce7ea4d1ce8b21ce5fcc708451bfa99
-  template_css_menu_css10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "css"#) -}
-adf8e9e8f664c9b16c4264481fed679b
-  template_css_menu_css11 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "template"#) -}
-278c86673f349c67b7d907d621a64c41
-  template_css_menu_css2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.template_css_menu_css3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-56343e528e2ce72233ab880f155ec2c6
-  template_css_menu_css3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA._DBA_hs5, DBA.template_css_menu_css4)) -}
-1719b12d25cf98fd6d93dc50a446d61d
-  template_css_menu_css4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "7683s-cR"#) -}
-e7eaeac222dfd66606d2b31ce5e7fcb0
-  template_css_menu_css5 :: [Data.Text.Internal.Text]
-  {- Unfolding: (GHC.Base.map
-                   @ [GHC.Types.Char]
-                   @ Data.Text.Internal.Text
-                   Data.Text.pack
-                   DBA.template_css_menu_css6) -}
-7a229f196f708460ccbaa2aa9adcfc2f
-  template_css_menu_css6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.template_css_menu_css11
-                   DBA.template_css_menu_css7) -}
-3beeb7048659f0b02b692dc93f85d584
-  template_css_menu_css7 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.template_css_menu_css10
-                   DBA.template_css_menu_css8) -}
-0b2c01b8462410c235bd77eb3d79f155
-  template_css_menu_css8 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.template_css_menu_css9
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-f831b19c8968fa7ef3792a3907b7539e
-  template_css_menu_css9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "menu.css"#) -}
-600f8d5330902ea27e96e375e5abb028
-  teste_cabal :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.teste_cabal1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-2bd9804fc7bef2ff995a6cf6b34d886a
-  teste_cabal1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.teste_cabal5
-                   DBA.teste_cabal2) -}
-973e419407080f000877931937b01825
-  teste_cabal2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.teste_cabal3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-17145c3e6daba28607f3595fc9deaf31
-  teste_cabal3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m, Unfolding: ((DBA._DBA_hs5, DBA.teste_cabal4)) -}
-e2dc11e744ac5585e2c4b5ba65f934f4
-  teste_cabal4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "A7jAl1yb"#) -}
-37d1b1df04d72c090a8c6f15cb489750
-  teste_cabal5 :: [Data.Text.Internal.Text]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Data.Text.Internal.Text
-                   DBA.teste_cabal6
-                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-831a06a4371e3c28877da6c63bfe9229
-  teste_cabal6 :: Data.Text.Internal.Text
-  {- Unfolding: (GHC.ST.runSTRep
-                   @ Data.Text.Internal.Text
-                   DBA.teste_cabal7) -}
-80aa9150bb7e50118d0182380dbb9485
-  teste_cabal7 ::
-    GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 1,
-     Unfolding: (\ @ s1 s2 :: GHC.Prim.State# s1[OneShot] ->
-                 case GHC.Prim.newByteArray# @ s1 8 s2 of ds1 { (#,#) ipv ipv1 ->
-                 DBA.teste_cabal9
-                   @ s1
-                   (Data.Text.Array.MArray @ s1 ipv1)
-                   DBA.$fPersistFieldClientex17
-                   DBA.teste_cabal8
-                   0
-                   ipv }) -}
-a5e6663cd7e5aebb2c0abbca1898cabf
-  teste_cabal8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "teste.cabal"#) -}
-f7cc3069dfa7a98b63fd62adf9a852b1
-  teste_cabal9 ::
-    Data.Text.Array.MArray s1
-    -> GHC.Types.Int
-    -> [GHC.Types.Char]
-    -> GHC.Prim.Int#
-    -> GHC.Prim.State# s1
-    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
-  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
-     Inline: [0] -}
 c5045012bc1b4ba2a322b1a6d7286630
   unClientexKey ::
     Database.Persist.Class.PersistEntity.Key DBA.Clientex

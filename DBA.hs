@@ -15,7 +15,7 @@ import Database.Persist.Postgresql
 data Pagina = Pagina{connPool :: ConnectionPool,
                      getStatic :: Static }
 
-staticFiles "."
+staticFiles "static"
 
 
 -- tabelas

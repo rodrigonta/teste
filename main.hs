@@ -410,7 +410,8 @@ getHomeR = do
         --lista <- runDB $ selectList [] [Asc EmpresaNome]
         defaultLayout $ do
             setTitle "Mew Festas"
-            $(whamletFile "hamlets/home/header.hamlet")
+            $(whamletFile "hamlets/home/index.hamlet")
+            addStylesheet $ StaticR css_menu_css
             
 
 
@@ -476,5 +477,5 @@ connStr = "dbname=d73v9jtp1m4gmm host=ec2-23-21-193-140.compute-1.amazonaws.com 
 main::IO()
 main = runStdoutLoggingT $ withPostgresqlPool connStr 10 $ \pool -> liftIO $ do 
        runSqlPersistMPool (runMigration migrateAll) pool
-       s <- static "."
+       s <- static "static"
        warp 8080 (Pagina pool s)
