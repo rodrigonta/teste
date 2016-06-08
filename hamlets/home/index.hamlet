@@ -67,7 +67,7 @@
                     <section id="icon-todos-eventos">TODOS OS SERVIÇOS
         
         <div id="barra">
-            <!-- <figure id="logo_servicos"><img src="img/servicos.png"></figure>-->
+            <figure id="logo_servicos"><img src=@{StaticR img_servicos_png}>
             <section id="menu-categoria">
             <section id="categoria" style="background-color:#FF7600;">
                 <a href="TODOSEVENTOS.php">

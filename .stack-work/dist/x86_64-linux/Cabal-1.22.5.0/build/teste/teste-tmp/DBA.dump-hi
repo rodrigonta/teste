@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2016-06-08 04:21:13.118876 UTC
+2016-06-08 04:58:07.263694 UTC
 
 interface main@main:DBA [family instance module] 7103
-  interface hash: 68aec9f4cf68ba9b83ed2c5814778b6e
-  ABI hash: e274a47bc36a46408bf4148f61fe993c
-  export-list hash: 9089637133078fa852b5239df6502fc7
+  interface hash: 7b14d10684c9723151f6c437f8ceb39b
+  ABI hash: 8796001b158f8e8ed62cbdf64fb4e0f3
+  export-list hash: e306e40740095dd7a5348c92e5fde458
   orphan hash: d6c7d991499cbc3b0909c8786e9557a1
   flag hash: 04ddf3e78ba9931eebdc0cfe0da7b8bd
   sig of: Nothing
@@ -13,6 +13,8 @@ interface main@main:DBA [family instance module] 7103
   where
 exports:
   DBA.css_menu_css
+  DBA.img_logo_mewlogo_png
+  DBA.img_servicos_png
   DBA.isAdmin
   DBA.isUser
   DBA.migrateAll
@@ -11942,6 +11944,122 @@ b2fe63a22e73f74a0a0421bd35a57088
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: DBA.Pagina ->
                  case ds of wild { DBA.Pagina ds1 ds2 -> ds2 }) -}
+d06acba92eeceab3457ae649b8d64e5b
+  img_logo_mewlogo_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_logo_mewlogo_png1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+61eaca72278c813e29f859a5530fe0d9
+  img_logo_mewlogo_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_logo_mewlogo_png5
+                   DBA.img_logo_mewlogo_png2) -}
+8356237bdca75baad44069dfb62cfb01
+  img_logo_mewlogo_png10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "logo"#) -}
+79e9869e1f6d096f324873e900e65faa
+  img_logo_mewlogo_png11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "img"#) -}
+9944c173fb09039555fc0cf591c3e9b3
+  img_logo_mewlogo_png2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   DBA.img_logo_mewlogo_png3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+233fe25fdb848dbb259d7232acdeca64
+  img_logo_mewlogo_png3 ::
+    (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((DBA.css_menu_css5, DBA.img_logo_mewlogo_png4)) -}
+cd459c3a144ac06d696bea5b5909f757
+  img_logo_mewlogo_png4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "9Qgr3iXg"#) -}
+29a59e612e5979b2a3c7e736757aa826
+  img_logo_mewlogo_png5 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_logo_mewlogo_png6) -}
+8f9fc7280fe44af3be6cfe7dd6c64e15
+  img_logo_mewlogo_png6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_logo_mewlogo_png11
+                   DBA.img_logo_mewlogo_png7) -}
+b3d458bc480ba9de5a83eb5202868433
+  img_logo_mewlogo_png7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_logo_mewlogo_png10
+                   DBA.img_logo_mewlogo_png8) -}
+ccbea147851cd65cbf53900515a7cd3a
+  img_logo_mewlogo_png8 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_logo_mewlogo_png9
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+aaca04e71533d4017dcd7a8a06bc8c3c
+  img_logo_mewlogo_png9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "mewlogo.png"#) -}
+2071fb1eb6253c10a4b16f07d9d3c15a
+  img_servicos_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_servicos_png1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+ff92788f39897b949b720fe8dfd9cb66
+  img_servicos_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_servicos_png5
+                   DBA.img_servicos_png2) -}
+e16ed1383900f2ba5b161e28acd82b68
+  img_servicos_png2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   DBA.img_servicos_png3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+558df4242ed66a6f0ccdb7eee4463466
+  img_servicos_png3 ::
+    (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((DBA.css_menu_css5, DBA.img_servicos_png4)) -}
+f238bd83bff16378747e12841e14d752
+  img_servicos_png4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Q5oYpi54"#) -}
+3cff28e0b5e392eee6729043954aea02
+  img_servicos_png5 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_servicos_png6) -}
+9557004193cb45a2e5d6916107741f87
+  img_servicos_png6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_logo_mewlogo_png11
+                   DBA.img_servicos_png7) -}
+efc2f576924db9b960df51797655ce63
+  img_servicos_png7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_servicos_png8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+3700552d8d1675c5679d58ee4602c416
+  img_servicos_png8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "servicos.png"#) -}
 9a6502bfdae2b725f99d0d6da98adfc6
   isAdmin ::
     Yesod.Core.Class.Handler.MonadHandler m =>

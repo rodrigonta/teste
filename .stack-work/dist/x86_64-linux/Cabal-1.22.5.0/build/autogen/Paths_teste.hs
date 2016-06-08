@@ -17,7 +17,7 @@ version = Version [0,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/ubuntu/workspace/teste/.stack-work/install/x86_64-linux/lts-5.12/7.10.3/bin"
-libdir     = "/home/ubuntu/workspace/teste/.stack-work/install/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/teste-0.0.0-C1ZwmhtRESI7J7IqnfOxzh"
+libdir     = "/home/ubuntu/workspace/teste/.stack-work/install/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/teste-0.0.0-Dtayffv3HIb0i5Qe7sr1yN"
 datadir    = "/home/ubuntu/workspace/teste/.stack-work/install/x86_64-linux/lts-5.12/7.10.3/share/x86_64-linux-ghc-7.10.3/teste-0.0.0"
 libexecdir = "/home/ubuntu/workspace/teste/.stack-work/install/x86_64-linux/lts-5.12/7.10.3/libexec"
 sysconfdir = "/home/ubuntu/workspace/teste/.stack-work/install/x86_64-linux/lts-5.12/7.10.3/etc"
