@@ -32,7 +32,7 @@ pRoutes = [parseRoutes|
 /servico/cadastro ServicoR GET POST
 /servico/checar/#ServicoxId ChecarservicoR GET
 /servico/deletar/#ServicoxId ExcluirservicoR GET
-
+/servico/listar/#EmpresaxId ListarservicoR GET
 
 
 

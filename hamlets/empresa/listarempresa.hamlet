@@ -27,7 +27,7 @@
                              <tbody>
                                 $forall Entity id empresax <- lista
                                     <tr class="linha" data-id=@{ChecarempresaR id}>
-                                        <td>#{empresaxNome empresax}
+                                        <td><a href=@{ListarservicoR id}>#{empresaxNome empresax}
                                         <td>#{empresaxCnpj empresax}
                                         <td>#{empresaxEndereco empresax}
                                         <td>#{empresaxTelefone empresax}

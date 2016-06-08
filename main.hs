@@ -68,7 +68,7 @@ postClienteR = do
                _ -> redirect ErroR
            
 
-
+    
 getChecarclienteR :: ClientexId -> Handler Html
 getChecarclienteR clid = do
     clientex <- runDB $ get404 clid
@@ -84,12 +84,14 @@ getChecarclienteR clid = do
     |]
 
 
+
 getExcluirclienteR :: ClientexId -> Handler Html
 getExcluirclienteR id = do
     runDB $ get404 id
     runDB $ delete $ id
     setMessage $ [shamlet| Registro excluído com sucesso! |]
     redirect ListarclienteR
+
 
 
 
@@ -171,17 +173,22 @@ getListarempresaR = do
     defaultLayout $ do
         setTitle "Lista de Empresas"
         $(whamletFile "hamlets/empresa/listarempresa.hamlet")
-{-
+
+
+
+
+
 --esse n ta funcionando (ainda)
 --listar empresas com link
 --ou pelo menos uma tentativa disso
+{-
 getListarE :: Handler Html
 getListarE = do
     listaE <- runDB $ selectList [] [Asc EmpresaxNome]
     defaultLayout [whamlet|
         <h1> Listagem Geral de Empresas:
         $forall Entity id EmpresaR <- listaE
-            <a href=@{LivroL id}>#{empresaxNome empresax} <br>
+            <a href=@{ChecarservicoR id}>#{empresaxNome empresax} <br>
 
 
 -}
@@ -246,17 +253,17 @@ getExcluirservicoR id = do
     setMessage $ [shamlet| Registro excluído com sucesso! |]
     redirect ListarempresaR
 
-{- nao funciona
 
-getListarservicoR :: Handler Html
-getListarservicoR = do
+
+
+getListarservicoR :: EmpresaxId -> Handler Html
+getListarservicoR id = do
     lista <- runDB $ selectList [] [Asc ServicoxTipo]
-    empre <- runDB $ get404 (servicoxEmpresaid servicox)
     msg <- getMessage
     defaultLayout $ do
         setTitle "Lista de Serviços"
         $(whamletFile "hamlets/empresa/listarservico.hamlet")
--}
+
 
 
 --prestador de servico
