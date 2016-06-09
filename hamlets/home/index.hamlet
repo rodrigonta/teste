@@ -14,7 +14,10 @@
             <section id="nav-logar">
                 <section id="opcao-logar">
                     <a href="@{LoginR}">LOGIN
-                <a href="@{ServicoR}" id="opcao-evento"> + PUBLICAR SERVIÇO 
+                    &nbsp &nbsp
+                    <a href="@{ClienteR}">CADASTRO
+                <a href="@{ServicoR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO EMPRESA 
+                <a href="@{ServipR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO PRESTADOR DE SERVIÇO 
         
         <figure id="logo-central">
                 <img src=@{StaticR img_fundo_branco_png} style="width:350px; float:left;">
