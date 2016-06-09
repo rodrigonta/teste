@@ -371,8 +371,6 @@ getChecarservipR seid = do
         
     |]
 
-
-
 getExcluirservipR :: ServipxId -> Handler Html
 getExcluirservipR id = do
     runDB $ get404 id

@@ -3,58 +3,24 @@
     <head>
         <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
-        <title>Mew Festas - Tudo num só portal!
-<!-- <link rel="shortcut icon" href=@{StaticR img_icon_png}>-->
-
+            <title>Mew Festas - Tudo num só portal!
+            <link rel="shortcut icon" img src=@{StaticR img_icon_png}>
     <body>
-
         <header>
-        
-            <!--MOBILE-->
-            <figure id="icone-menu">
-               <!--  <img src=@{StaticR img_iconemen_png}>-->
-
-            <form method="get" id="pesquisar" >
-                <!-- <input id="search" name="search" type="search" placeholder="Buscar Serviço">
-                <figure id="lupa">
-                    <img src=@{StaticR img_2_jpg}>-->
 
             <figure id="logo">
-            <!-- <a href="index.php"><img src="img/logo_fundo_branco.png"></a>-->
-            <!-- <figure id="lupa-mobile"><img src="img/search-icon-mobile.png"></figure>-->
+                <img src=@{StaticR img_logo_fundo_branco_png}>
             
             <section id="nav-logar">
                 <section id="opcao-logar">
                     <a href="@{LoginR}">LOGIN
                 <a href="CADASTRO_EVENTO/form-evento.php" id="opcao-evento"> + PUBLICAR SERVIÇO 
         
-        <div id="background">
-                <!-- <section id="caixa_login">
-                <form action="autenticar.php" id="login" method="POST">
-                    <h6>Faça seu login</h6>
-                    <input name="email" type="text" id="email" placeholder="email">	
-                    <input name="senha" type="password" id="senha" placeholder="senha">
-                    <input name="entrar" type="submit" id="entrar" value="ENTRAR">
-                    <a id="cadastrar" href="CADASTRO_E_LOGIN/cadastro_empresa.php"><h1>cadastrar</h1></a> -->
-
-                <!--MOBILE-->
-        <div id="menu">
-            <a href="#">
-                <h5>Login
-            <a href="#">
-                <h5>Quem Somos
-            <a href="#">
-                <h5>Contato
-            <a href="#">
-                <h5>+ PUBLICAR SERVIÇO
-    
-    
         <figure id="logo-central">
-            <!-- <img src=@{StaticR img_motivo4_png} style="width:350px; float:left;">-->
+                <img src=@{StaticR img_fundo_branco_png} style="width:350px; float:left;">
             
         <article id="slogan">
-            <h2>T U D O  E M U M P O R T A L
-    
+            <h2>&nbsp T U D O &nbsp E M &nbsp U M &nbsp P O R T A L
     
         <ul class="rslides2" id="slider2">
             <li><img src=@{StaticR img_slide_slide1_jpg} alt="">
@@ -63,155 +29,137 @@
             <li><img src=@{StaticR img_slide_slide4_jpg} alt="">
             <li><img src=@{StaticR img_slide_slide5_jpg} alt="">
           
-    <section id="todos-eventos">
-        <h1 id="h1desktop">O site com o maior número de serviços na baixada santista
-        <h1 id="h1mobile">O site com o maior número de<br>serviços na baixada santista
-            <a href="TODOSEVENTOS.php">
-                <section id="icon-todos-eventos">TODOS OS SERVIÇOS
+        <section id="todos-eventos">
+            <h1 id="h1desktop">O site com o maior número de serviços na baixada santista
+            <a href="@{LoginR}" id="icon-todos-eventos"> TODOS OS SERVIÇOS
     
-    <div id="barra">
-        <figure id="logo_servicos"><img src=@{StaticR img_servicos_png}>
-        <section id="menu-categoria">
-        <section id="categoria" style="background-color:#FF7600;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                        <img id="img-categoria" class="zoom" src=@{StaticR img_2_jpg}>
-                        <!--onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
-    
-        <section id="categoria" style="background-color:#FF7600;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
-    
-        <section id="categoria" style="background-color:#FF7600;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
+        <div id="barra">
+            <figure id="logo_servicos">
+                &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp &nbsp &nbsp &nbsp<img src=@{StaticR img_servicos_png}>
 
-        <section id="categoria" style="background-color:#FF7600;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
-    
-          
-        <section id="categoria" style="background-color:#FF7600;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
-    
-          
-        <section id="categoria" style="background-color:#FF7600;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
-    
+            <section id="menu-categoria">
+                <section id="categoria" style="background-color:#FF7600;">
+                    <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSH
+                    <article>
+                        <!--<img id="img-categoria" class="zoom" src=@{StaticR img_2_jpg}>
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
         
-        <section id="categoria" style="background-color:#00a885;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
-    
-         
-        <section id="categoria" style="background-color:#00a885;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
-    
-                
-        <section id="categoria" style="background-color:#00a885;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
-    
-                
-        <section id="categoria" style="background-color:#00a885;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
-    
+            <section id="categoria" style="background-color:#FF7600;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
         
-        <section id="categoria" style="background-color:#00a885;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
+            <section id="categoria" style="background-color:#FF7600;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
     
+            <section id="categoria" style="background-color:#FF7600;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
         
-        <section id="categoria" style="background-color:#00a885;">
-            <a href="TODOSEVENTOS.php">
-                <h4>CURSOS E WORKSHOPS
-                <article>
-                    <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
-                        onmouseout="this.src='img/tipos/2.jpg'">
-                    </img>-->
+              
+            <section id="categoria" style="background-color:#FF7600;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
+        
+              
+            <section id="categoria" style="background-color:#FF7600;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
+        
+            
+            <section id="categoria" style="background-color:#00a885;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
+        
+             
+            <section id="categoria" style="background-color:#00a885;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
+        
+                    
+            <section id="categoria" style="background-color:#00a885;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
+        
+                    
+            <section id="categoria" style="background-color:#00a885;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
+        
+            
+            <section id="categoria" style="background-color:#00a885;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
+        
+            
+            <section id="categoria" style="background-color:#00a885;">
+                <a href="TODOSEVENTOS.php">
+                    <h4>CURSOS E WORKSHOPS
+                    <article>
+                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
+                            onmouseover="this.src='img/tipos/2.0.jpg'"
+                            onmouseout="this.src='img/tipos/2.jpg'">
+                        </img>-->
 
-    <div id="barra2">
-    <section id="menu-motivos">
-    
-    <div id="barra">
-    <figure id="logo_servicos"><img src=@{StaticR img_escolha_png}>
-
-    <div id="motivo1">
-    <!--<div id="img-motivo1"></div>-->
-        <h1 id="h1desktop"><p align="center"><strong>Organize</strong> seus eventos,<br> buscando todos os serviços<br> que<strong> necessiteem um curto espaço<br> de tempo!
-        <h1 id="h1mobile"><p align="center"><strong>Organize</strong> seus eventos,<br> buscando todos os serviços<br> que<strong> necessite</strong> em um curto espaço<br> de tempo!
-    
-    <!--<div id="img-motivo1"></div>-->
-    <div id="img-motivo2"></div>
-        <h1 id="h1desktop"><p align="center"><strong>Organize</strong> seus eventos,<br> buscando todos os serviços<br> que<strong> necessite</strong> em um curto espaço<br> de tempo!
-        <h1 id="h1mobile"><p align="center"><strong>Organize</strong> seus eventos,<br> buscando todos os serviços<br> que<strong> necessite</strong> em um curto espaço<br> de tempo!
-    
-    <!--<div id="img-motivo1"></div>-->
-    <div id="img-motivo3"></div>
-        <h1 id="h1desktop"><p align="center"><strong>Organize</strong> seus eventos,<br> buscando todos os serviços<br> que<strong> necessite</strong> em um curto espaço<br> de tempo!
-        <h1 id="h1mobile"><p align="center"><strong>Organize</strong> seus eventos,<br> buscando todos os serviços<br> que<strong> necessite</strong> em um curto espaço<br> de tempo!
-    
-    <footer>
-    <!--<img id="redes_sociais" src="img/redes_sociais_transp.png">-->
-        <p class="links"><a href="../index.php"> HOME </a><br><a href="../TODOSEVENTOS.php"> TODOS OS SERVIÇOS </a><br><a href="#"> QUEM SOMOS </a><br><a href="#"> CONTATO </a>
-        <p class="copyright"> Todos os direitos reservados <br><br> 
-        ©Copyright <br><br>  
-        <a href="#">MEW FESTAS</a> | ®2016 
+        <footer>
+            <!--<img id="redes_sociais" src="img/redes_sociais_transp.png">-->
+                <p class="links"><a href="../index.php"> HOME </a><br><a href="../TODOSEVENTOS.php"> TODOS OS SERVIÇOS </a><br><a href="#"> QUEM SOMOS </a><br><a href="#"> CONTATO </a>
+                <p class="copyright"> Todos os direitos reservados <br><br> 
+                    ©Copyright <br><br>  
+                    <a href="#">MEW FESTAS</a> | ®2016 
