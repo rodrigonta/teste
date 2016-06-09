@@ -20,6 +20,8 @@ staticFiles "static"
 
 -- tabelas
 share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
+--tabela de clientes
+--com username unico pra cada cliente
 Clientex json
    username Text
    UniqueUsername username
@@ -32,6 +34,8 @@ Clientex json
    estado Text
    deriving Show
 
+
+--servico de empresa
 Servicox json
    tipo Text
    preco Double 
@@ -47,7 +51,9 @@ Empresax json
    cidade Text
    estado Text
    deriving Show
-   
+
+
+--servico de prestador
 Servipx json
    tipo Text
    preco Double 
@@ -70,12 +76,20 @@ Prestadorx json
 
 mkYesodData "Pagina" pRoutes
 
+
+
 instance YesodPersist Pagina where
    type YesodPersistBackend Pagina = SqlBackend
    runDB f = do 
        master <- getYesod
        let pool = connPool master
        runSqlPool f pool
+
+
+
+
+--parte que diz quais rotas sao acessadas por qualquer um,
+--apenas por usuários, ou apenas por admin
 
 instance Yesod Pagina where
 --    authRoute _ = Just $ HomeR
@@ -96,13 +110,16 @@ instance Yesod Pagina where
     isAuthorized ResposivoR _ = return Authorized
     isAuthorized _ _ = isUser
 
+
+
+--checa na sessao se o usuario logado eh admin
 isAdmin = do
     mu <- lookupSession "_ID"
     return $ case mu of
         Nothing -> AuthenticationRequired
         Just "admin" -> Authorized
         Just _ -> Unauthorized "Apenas admin acessa aqui"
-
+--ou se eh usuario comum
 isUser = do
     mu <- lookupSession "_ID"
     return $ case mu of

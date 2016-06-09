@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-06-09 03:26:37.152421 UTC
+2016-06-09 16:10:52.732899 UTC
 
 interface main@main:DBA [family instance module] 7103
-  interface hash: caf16df4fe4cc16eaad277e76e98d452
-  ABI hash: c64c648fe303485fd3bb4f21240298d1
+  interface hash: 05324ee9193bd91af71a9c2e725705ae
+  ABI hash: 114fe1c6fc12523c0b7c76bd275b9290
   export-list hash: 65c4bbe876f0563228ac237465c2235b
   orphan hash: d6c7d991499cbc3b0909c8786e9557a1
   flag hash: 04ddf3e78ba9931eebdc0cfe0da7b8bd
@@ -11949,14 +11949,14 @@ dd806eb610c94908bc8b772722118b57
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: DBA.Pagina ->
                  case ds of wild { DBA.Pagina ds1 ds2 -> ds1 }) -}
-88219d43508da242bf9efaf3b0ed044b
+7af60b8614efd9b897a65051295cc57f
   css_menu_css :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 DBA.css_menu_css1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-e60dea44d159b5cbe424aefd8af08379
+f39e49d531c3520a9d35d14ea5d9b1bb
   css_menu_css1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
@@ -11965,7 +11965,7 @@ e60dea44d159b5cbe424aefd8af08379
 701b9f96d6f0e25b4ada16feec3e795c
   css_menu_css10 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "css"#) -}
-cad2dbda395ed33126f19c4dc65a6290
+500d419ba6877625eecad8e6a70f33b8
   css_menu_css2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
@@ -11974,13 +11974,13 @@ cad2dbda395ed33126f19c4dc65a6290
                    DBA.css_menu_css3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-23b0352c073e5d04259f894eecf0c6be
+40fbf480037c26eccffb5ce33577cb1a
   css_menu_css3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((DBA.css_menu_css5, DBA.css_menu_css4)) -}
-5e87307cbb6ca513448cb53e92b298ca
+c1511a5d9914e5d197127601794f8472
   css_menu_css4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "7683s-cR"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "UBf0yEWb"#) -}
 a18992d2df4a143e6fc93318c1794db2
   css_menu_css5 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "etag"#) -}
@@ -12062,20 +12062,20 @@ b2fe63a22e73f74a0a0421bd35a57088
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: DBA.Pagina ->
                  case ds of wild { DBA.Pagina ds1 ds2 -> ds2 }) -}
-f3b143206cad27ce5560ae799f477832
+fb8d73671438ea8f411ebcf7a1ef658c
   img_2_jpg :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 DBA.img_2_jpg1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-3a023a957e57d6838ea0e85f5ce5039c
+8dc0383aea8fa21f4cc5831fdb0cd12c
   img_2_jpg1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    DBA.img_2_jpg5
                    DBA.img_2_jpg2) -}
-da652e5e75c613744908ebe693143bf1
+2dd77888f7d09619c98c1d722edf11df
   img_2_jpg2 :: [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -12083,13 +12083,13 @@ da652e5e75c613744908ebe693143bf1
                    DBA.img_2_jpg3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-4b77d6c8e564e3f2c3fb30eaaa44d5bd
+46251cb7feaa402634ec4723c9086555
   img_2_jpg3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((DBA.css_menu_css5, DBA.img_2_jpg4)) -}
-2c6f6fe8d0e343a09b3f3c7432d10901
+d60ebd2745f9fd3fe0a6e20cf63c2a61
   img_2_jpg4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "KbKm9Xp4"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "2uDLopW6"#) -}
 bb53e39cf5eca9602b344b46699b165f
   img_2_jpg5 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.map
@@ -12337,20 +12337,20 @@ e9cd01f0e754e23d6bdf8dad305ff39f
 81452f6ceb76bcd8d3d67d55f952d20f
   img_fundobranco_png5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "fundobranco.png"#) -}
-b5bd3d3c70bf69000dfb6128d638becd
+fae396f27fbd1227f7c0d331e3dd468a
   img_icon_png :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 DBA.img_icon_png1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-b8dce4140509ee7f54a8f8a394da1341
+08b9a585d9abd1fd590201636417e7b0
   img_icon_png1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    DBA.img_icon_png5
                    DBA.img_icon_png2) -}
-782c7841b9d6239948cd63de43a97757
+7d48b65fb79709a6ab261c359cd98efa
   img_icon_png2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
@@ -12359,13 +12359,13 @@ b8dce4140509ee7f54a8f8a394da1341
                    DBA.img_icon_png3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-2c4c3c4c8c8c8ce54adfbaba2fab7838
+2f2d7ecd44ea3e18eb1cb1d731daa22d
   img_icon_png3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((DBA.css_menu_css5, DBA.img_icon_png4)) -}
-c279c3932666948528354265ebca09e7
+18c4a4c3c6106c20030059bbce65576d
   img_icon_png4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "pdt9VJ13"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "Rgwx3wVU"#) -}
 da35ab121f3a45ddecb546866bdd4f79
   img_icon_png5 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.map
@@ -13008,14 +13008,14 @@ efc2f576924db9b960df51797655ce63
 3700552d8d1675c5679d58ee4602c416
   img_servicos_png8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "servicos.png"#) -}
-a1f8fcdadb2ef20ae2899be55f35cb83
+1d48359eead55a5832746c1914471a49
   img_slide_slide1_jpg :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 DBA.img_slide_slide1_jpg1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-ee22112fcdc38775028c60e0e1ce470f
+31d32605842ea63c866eee030a2ba32b
   img_slide_slide1_jpg1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
@@ -13024,7 +13024,7 @@ ee22112fcdc38775028c60e0e1ce470f
 ddd43b3c867fb4c1a198b8b1324453ee
   img_slide_slide1_jpg10 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "slide"#) -}
-a22441e27db943d4a908b9a804ff8577
+c80b180fdf59bda12baa893d7a17c657
   img_slide_slide1_jpg2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
@@ -13033,14 +13033,14 @@ a22441e27db943d4a908b9a804ff8577
                    DBA.img_slide_slide1_jpg3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-dcb897ec88bc2a24dffde02f303bb9a0
+361c7d925fee9b73bfc7cdb0f286b1b9
   img_slide_slide1_jpg3 ::
     (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((DBA.css_menu_css5, DBA.img_slide_slide1_jpg4)) -}
-53fb18a78548f399c6c14f20a0092603
+b5ba72dd29453849de0bbc28556da57e
   img_slide_slide1_jpg4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "oRfyO2TA"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "N7LT66F4"#) -}
 313f4e317d2d4fcc0e68064e2cab7bbe
   img_slide_slide1_jpg5 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.map
@@ -13069,20 +13069,20 @@ dcb897ec88bc2a24dffde02f303bb9a0
 a1734c76e45b5cde1ba76b335f7780f4
   img_slide_slide1_jpg9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "slide1.jpg"#) -}
-030d70addcf1912ada04cac8b95e4704
+f8b0035f613db266c2ab7dd4d8da491e
   img_slide_slide2_jpg :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 DBA.img_slide_slide2_jpg1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-9d2a1918d78054a29d1e5a70da91ee6d
+abbbf7bd015b8e1ee4bfaa9f0e729ddf
   img_slide_slide2_jpg1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    DBA.img_slide_slide2_jpg5
                    DBA.img_slide_slide2_jpg2) -}
-bebd64752c8626c0bdf0836e3426d054
+d49178c3e0bb8a7c96ce09d67547c4e8
   img_slide_slide2_jpg2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
@@ -13091,14 +13091,14 @@ bebd64752c8626c0bdf0836e3426d054
                    DBA.img_slide_slide2_jpg3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-14b9ce56b33b78a5afcf7674137e6efb
+9b4587040bd3878bda350378c8fe884f
   img_slide_slide2_jpg3 ::
     (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((DBA.css_menu_css5, DBA.img_slide_slide2_jpg4)) -}
-440dd52be21e86ebb3221a730cd38815
+3f3d94af2104b053ff7064d0a00adb84
   img_slide_slide2_jpg4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "nlz4KAF3"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "yo5t1hmg"#) -}
 3f5621b18f93323c5c8676c45671bbb5
   img_slide_slide2_jpg5 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.map
@@ -13127,20 +13127,20 @@ bebd64752c8626c0bdf0836e3426d054
 089c33b3240a676e55abbf3a4afaef99
   img_slide_slide2_jpg9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "slide2.jpg"#) -}
-18ceafaafd42d830bf45b31c81c5c77c
+6c0fe85137c5fd91913039a47cdc07ad
   img_slide_slide3_jpg :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 DBA.img_slide_slide3_jpg1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-36f8986d67098763ca58ea808b6bdfc8
+14e8896380c5bfcc1fb139474285cf65
   img_slide_slide3_jpg1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    DBA.img_slide_slide3_jpg5
                    DBA.img_slide_slide3_jpg2) -}
-de64e760463b87b0bf0237636b556c10
+c71bf71618b17a8d5a07b41b55b07a09
   img_slide_slide3_jpg2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
@@ -13149,14 +13149,14 @@ de64e760463b87b0bf0237636b556c10
                    DBA.img_slide_slide3_jpg3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-63992f12c7d494243cef3395afd7bb03
+ff30db14e1cc3a0ef991b8c63297902b
   img_slide_slide3_jpg3 ::
     (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((DBA.css_menu_css5, DBA.img_slide_slide3_jpg4)) -}
-e1c444951c7a9897f5dac875c58fdf40
+883b63ad2e249d03d6d706d6ae1791f1
   img_slide_slide3_jpg4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "GdLCbHj_"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "Nf1ivx2x"#) -}
 a857d6c819feb710f2cd98a8385c2c4e
   img_slide_slide3_jpg5 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.map
@@ -13185,20 +13185,20 @@ b4b1ce25112ed4bc0f679ed801720ab8
 8334b3ef0f89d9614a341b41f4ada9ab
   img_slide_slide3_jpg9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "slide3.jpg"#) -}
-7b2877cfc00c0f06a44ac918fef3ddf1
+9ccfe33f419d9be65a770a90bc6b0ec3
   img_slide_slide4_jpg :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 DBA.img_slide_slide4_jpg1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-a65b5cd971e87efc150f21d4a011a321
+6b4731c72b058876e0ef0fe2e2f3fa1f
   img_slide_slide4_jpg1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    DBA.img_slide_slide4_jpg5
                    DBA.img_slide_slide4_jpg2) -}
-03d38f4d516f7495cc5d2a13d841dba1
+0a8b9cedbcb2a79104b64d8ce183b9c8
   img_slide_slide4_jpg2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
@@ -13207,14 +13207,14 @@ a65b5cd971e87efc150f21d4a011a321
                    DBA.img_slide_slide4_jpg3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-b29f7fc8577222ce1bf0bddb50463d62
+2a730d91b37ef721575cd2b0d84d004b
   img_slide_slide4_jpg3 ::
     (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((DBA.css_menu_css5, DBA.img_slide_slide4_jpg4)) -}
-56377162b312563d01cbbe9b00dd7539
+27cfe459b6359552928ca50d50ddd6d5
   img_slide_slide4_jpg4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "3YbiprDB"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "hnsZa28Z"#) -}
 181a1776b8b8ca0c2368d36944ac8a9f
   img_slide_slide4_jpg5 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.map
@@ -13243,20 +13243,20 @@ b29f7fc8577222ce1bf0bddb50463d62
 c55536bf5183708ea1ac796e1152c4e7
   img_slide_slide4_jpg9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "slide4.jpg"#) -}
-b4cb278df96ebdae831d1dc9f7207cff
+378fae13ccf5cb94fdd6dbc094058a1a
   img_slide_slide5_jpg :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 DBA.img_slide_slide5_jpg1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-86df26625de2f0ee30dcac7fc9471801
+8073599c48ca254a04a80610e5d86639
   img_slide_slide5_jpg1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
                    DBA.img_slide_slide5_jpg5
                    DBA.img_slide_slide5_jpg2) -}
-c2da7dcdcc09479fd2d17178cfff2921
+656d1ab48fb457b61c086c7a78646a81
   img_slide_slide5_jpg2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
@@ -13265,14 +13265,14 @@ c2da7dcdcc09479fd2d17178cfff2921
                    DBA.img_slide_slide5_jpg3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-70c28cbbf0f25d17c8a49d9e2c156322
+aa681e05cfec9c83a869580675fb0d18
   img_slide_slide5_jpg3 ::
     (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
      Unfolding: ((DBA.css_menu_css5, DBA.img_slide_slide5_jpg4)) -}
-b0a5ec0593d828e631eee0b4669464fe
+f3ba2c0b622cd2e26d98a1073157dd7c
   img_slide_slide5_jpg4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "WaMgsVX_"#) -}
+  {- Unfolding: (Data.Text.Show.unpackCString# "Bex6hEc8"#) -}
 98ec6ae23a55800f9dd500d5a4b6ad1e
   img_slide_slide5_jpg5 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.map

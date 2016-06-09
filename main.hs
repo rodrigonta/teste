@@ -105,6 +105,11 @@ getListarclienteR = do
     defaultLayout $ do
         setTitle "Lista de Clientes"
         $(whamletFile "hamlets/clientes/listarcliente.hamlet")
+        addStylesheet $ StaticR css_menu_css
+        addScript JqueryR
+        addScript ExjqueryR
+        addScript ResposivoR
+        toWidget $(juliusFile "julius/index.julius")
 
 
 --empresa           --

@@ -1,35 +1,51 @@
-<!-- Lista de Clientes -->
-<section style="padding: 200px 0px">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Lista de Clientes
-                <hr class="star-primary">
-                <p>&nbsp;
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+            <title>Mew Festas - Tudo num só portal!
+            <link rel="shortcut icon" img src=@{StaticR img_icon_png}>
+    <body>
+        <header>
 
-            $maybe mm <- msg                   
-                <div class="col-lg-12 text-center">
-                    <div class="alert alert-success col-sm-12">
-                        <p class="pull-left">#{mm}
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="table-responsive">
-                         <table class="table table-condensed table-striped table-hover">
-                             <thead>
-                                <tr>
-                                    <th>Nome
-                                    <th>Cpf
-                                    <th>Endereço
-                                    <th>Telefone
-                                    <th>Cidade
-                                    <th>Estado
-                             <tbody>
-                                $forall Entity id clientex <- lista
-                                    <tr class="linha" data-id=@{ChecarclienteR id}>
-                                        <td>#{clientexNome clientex}
-                                        <td>#{clientexCpf clientex}
-                                        <td>#{clientexEndereco clientex}
-                                        <td>#{clientexTelefone clientex}
-                                        <td>#{clientexCidade clientex}
-                                        <td>#{clientexEstado clientex}
+            <figure id="logo">
+                <img src=@{StaticR img_logo_fundo_branco_png}>
+            
+            <section id="nav-logar">
+                <section id="opcao-logar">
+                    <a href="@{LoginR}">LOGIN
+                <a href="@{ServicoR}" id="opcao-evento"> + PUBLICAR SERVIÇO 
+        <!-- Lista de Clientes -->
+        <section style="padding: 200px 0px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Lista de Clientes
+                        <hr class="star-primary">
+                        <p>&nbsp;
+        
+                    $maybe mm <- msg                   
+                        <div class="col-lg-12 text-center">
+                            <div class="alert alert-success col-sm-12">
+                                <p class="pull-left">#{mm}
+        
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="table-responsive">
+                                 <table class="table table-condensed table-striped table-hover">
+                                     <thead>
+                                        <tr>
+                                            <th>Nome
+                                            <th>Cpf
+                                            <th>Endereço
+                                            <th>Telefone
+                                            <th>Cidade
+                                            <th>Estado
+                                     <tbody>
+                                        $forall Entity id clientex <- lista
+                                            <tr class="linha" data-id=@{ChecarclienteR id}>
+                                                <td>#{clientexNome clientex}
+                                                <td>#{clientexCpf clientex}
+                                                <td>#{clientexEndereco clientex}
+                                                <td>#{clientexTelefone clientex}
+                                                <td>#{clientexCidade clientex}
+                                                <td>#{clientexEstado clientex}
