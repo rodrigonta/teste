@@ -96,8 +96,6 @@ instance Yesod Pagina where
     isAuthorized ResposivoR _ = return Authorized
     isAuthorized _ _ = isUser
 
-
-
 isAdmin = do
     mu <- lookupSession "_ID"
     return $ case mu of

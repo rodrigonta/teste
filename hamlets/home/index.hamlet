@@ -4,30 +4,32 @@
         <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
         <title>Mew Festas - Tudo num só portal!
-        <!-- <link rel="shortcut icon" href="./img/icon.png" >-->
-    
+<!-- <link rel="shortcut icon" href=@{StaticR img_icon_png}>-->
+
     <body>
 
         <header>
         
             <!--MOBILE-->
             <figure id="icone-menu">
-            <!-- <img src="img/menu_mobile-icon.png">-->
-        
+               <!--  <img src=@{StaticR img_iconemen_png}>-->
+
             <form method="get" id="pesquisar" >
-                <input id="search" name="search" type="search" placeholder="Buscar Serviço">
-            <!-- <figure id="lupa"><img src="img/search-icon.png"></figure>-->
+                <!-- <input id="search" name="search" type="search" placeholder="Buscar Serviço">
+                <figure id="lupa">
+                    <img src=@{StaticR img_2_jpg}>-->
 
             <figure id="logo">
             <!-- <a href="index.php"><img src="img/logo_fundo_branco.png"></a>-->
             <!-- <figure id="lupa-mobile"><img src="img/search-icon-mobile.png"></figure>-->
             
             <section id="nav-logar">
-                <section id="opcao-logar"> LOGIN 
+                <section id="opcao-logar">
+                    <a href="@{LoginR}">LOGIN
                 <a href="CADASTRO_EVENTO/form-evento.php" id="opcao-evento"> + PUBLICAR SERVIÇO 
         
-                <!-- <div id="background">
-                <section id="caixa_login">
+        <div id="background">
+                <!-- <section id="caixa_login">
                 <form action="autenticar.php" id="login" method="POST">
                     <h6>Faça seu login</h6>
                     <input name="email" type="text" id="email" placeholder="email">	
@@ -48,11 +50,10 @@
     
     
         <figure id="logo-central">
-        <!-- <img src="img/fundo branco.png" style="width:350px; float:left;">-->
-        
-    
+            <!-- <img src=@{StaticR img_motivo4_png} style="width:350px; float:left;">-->
+            
         <article id="slogan">
-            <h2>T U D O &nbsp; E M &nbsp;U M &nbsp;P O R T A L
+            <h2>T U D O  E M U M P O R T A L
     
     
         <ul class="rslides2" id="slider2">
@@ -75,8 +76,8 @@
             <a href="TODOSEVENTOS.php">
                 <h4>CURSOS E WORKSHOPS
                 <article>
-                        <!--<img id="img-categoria" class="zoom"  src="img/tipos/2.jpg" 
-                        onmouseover="this.src='img/tipos/2.0.jpg'"
+                        <img id="img-categoria" class="zoom" src=@{StaticR img_2_jpg}>
+                        <!--onmouseover="this.src='img/tipos/2.0.jpg'"
                         onmouseout="this.src='img/tipos/2.jpg'">
                     </img>-->
     
@@ -188,7 +189,7 @@
                     </img>-->
 
     <div id="barra2">
-        <section id="menu-motivos">
+    <section id="menu-motivos">
     
     <div id="barra">
     <figure id="logo_servicos"><img src=@{StaticR img_escolha_png}>

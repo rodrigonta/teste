@@ -180,23 +180,6 @@ getListarempresaR = do
 
 
 
-
---esse n ta funcionando (ainda)
---listar empresas com link
---ou pelo menos uma tentativa disso
-{-
-getListarE :: Handler Html
-getListarE = do
-    listaE <- runDB $ selectList [] [Asc EmpresaxNome]
-    defaultLayout [whamlet|
-        <h1> Listagem Geral de Empresas:
-        $forall Entity id EmpresaR <- listaE
-            <a href=@{ChecarservicoR id}>#{empresaxNome empresax} <br>
-
-
--}
-
-
 --serviços da empresa
 
 empr = do
@@ -396,6 +379,9 @@ getExcluirservipR id = do
     prest <- runDB $ delete $ id
     setMessage $ [shamlet| Registro excluído com sucesso! |]
     redirect ListarprestadorR
+
+
+
 
 -- home
 

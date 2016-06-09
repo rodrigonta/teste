@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2016-06-08 07:19:40.012172 UTC
+2016-06-08 21:30:42.648596 UTC
 
 interface main@main:DBA [family instance module] 7103
-  interface hash: bd13d592661db294d905db2612f77a75
-  ABI hash: 0368e572881ff28a27e6613afc64d8dd
-  export-list hash: eac2e65bb9d04b43dbfaa30f52eea5f8
+  interface hash: 42434ed67ceedbf8519d7efc141d6f6e
+  ABI hash: dbc645d3c4b41ded0e7f2f7f4649389a
+  export-list hash: 65579a22909ca4f3640b510c0697cc16
   orphan hash: d6c7d991499cbc3b0909c8786e9557a1
   flag hash: 04ddf3e78ba9931eebdc0cfe0da7b8bd
   sig of: Nothing
@@ -14,17 +14,23 @@ interface main@main:DBA [family instance module] 7103
 exports:
   DBA.css_menu_css
   DBA.img_2_jpg
+  DBA.img_3_png
   DBA.img_escolha_png
+  DBA.img_ff_jpg
   DBA.img_fundo_branco_png
+  DBA.img_fundobranco_png
+  DBA.img_icon_png
+  DBA.img_iconemen_png
+  DBA.img_img1_fundobranco_png
   DBA.img_logo_fundo_branco_png
   DBA.img_logo_mewlogo_png
-  DBA.img_menu_mobile_icon_png
   DBA.img_motivo1_png
   DBA.img_motivo2_png
   DBA.img_motivo3_png
+  DBA.img_motivo4_png
   DBA.img_redes_sociais_transp_png
-  DBA.img_search_icon_mobile_png
-  DBA.img_search_icon_png
+  DBA.img_searchicon_png
+  DBA.img_searchiconmobile_png
   DBA.img_servicos_png
   DBA.img_slide_slide1_jpg
   DBA.img_slide_slide2_jpg
@@ -12087,6 +12093,56 @@ f48a8e3063cd67584d06b31e9845c8dd
 0936c8676accdd658b6de14949e57059
   img_2_jpg9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "img"#) -}
+5dcafb6bf2e9627a2e361ab81a9c447e
+  img_3_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_3_png1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+0e75ab10ecb4127f8175220ea9649a74
+  img_3_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_3_png5
+                   DBA.img_3_png2) -}
+804dd248f84cc713bb68adb5f6feb86f
+  img_3_png2 :: [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   DBA.img_3_png3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+cc8b1797699363593f1e6d673bd2c468
+  img_3_png3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((DBA.css_menu_css5, DBA.img_3_png4)) -}
+27a313dacaaee6dc5c0b69da69ae24f2
+  img_3_png4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "--yfXbbK"#) -}
+b2e95f5b88dcb52b8cf645a9a9572d61
+  img_3_png5 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_3_png6) -}
+cf30e0bb9c19d1b229c374a0b33dd428
+  img_3_png6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_2_jpg9
+                   DBA.img_3_png7) -}
+8b634f93de590b808cf8ce6c85abfea2
+  img_3_png7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_3_png8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+506f79039c3fb2ed40f25779b26da47a
+  img_3_png8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3.png"#) -}
 b4efdb1bff4eeeb2445288b7eb6d2fe7
   img_escolha_png :: Yesod.Static.StaticRoute
   {- Strictness: m,
@@ -12139,58 +12195,264 @@ fea3a27e8d10311d2aecd9009fedc971
 88b9081cc96df850f84397f9eac555dd
   img_escolha_png8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "escolha.png"#) -}
-f4697b01dfa1dbdb41b2f3b28f6b3917
+b85469544c3c6a9d62e1dc2108f1bebb
+  img_ff_jpg :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_ff_jpg1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+b23f7660aea8e28085c9738cb785574e
+  img_ff_jpg1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_ff_jpg5
+                   DBA.img_ff_jpg2) -}
+be0aad21588c8a945f949cebe005e3ab
+  img_ff_jpg2 :: [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   DBA.img_ff_jpg3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+5471c4fc3eeade76ae7d3e42dfccc64e
+  img_ff_jpg3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((DBA.css_menu_css5, DBA.img_ff_jpg4)) -}
+95e790f8f35b0edc02bfc25019e57b63
+  img_ff_jpg4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "KW0Dk5ei"#) -}
+e89b5f02b130481021bb3e2c2e3217c3
+  img_ff_jpg5 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_ff_jpg6) -}
+2d80c0271843b9bce2ce603f3d692da9
+  img_ff_jpg6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_2_jpg9
+                   DBA.img_ff_jpg7) -}
+d20613124362375f17e6466db5490b1c
+  img_ff_jpg7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_ff_jpg8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+2bd3b2eddeebdcaea9f7c24c7923f6af
+  img_ff_jpg8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ff.jpg"#) -}
+df0b662e2c74707191d7b5dce2c8f587
   img_fundo_branco_png :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 DBA.img_fundo_branco_png1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-8e3b04d61284c3b3219b1567d008319d
+9b3900323c68d080a1cb9c873f58a87a
   img_fundo_branco_png1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
-                   DBA.img_fundo_branco_png5
-                   DBA.img_fundo_branco_png2) -}
-ebb3125e46868b380eb99a64b02dc2fa
-  img_fundo_branco_png2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.img_fundo_branco_png3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-2c01f6012bfd5a3ca18431134df8a7a3
-  img_fundo_branco_png3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA.css_menu_css5, DBA.img_fundo_branco_png4)) -}
-3bb8d73cd00a44e1410bd941e8ae2be5
-  img_fundo_branco_png4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "--yfXbbK"#) -}
-da682ab058750557266dfec8a93d5667
-  img_fundo_branco_png5 :: [Data.Text.Internal.Text]
+                   DBA.img_fundo_branco_png2
+                   DBA.img_3_png2) -}
+9059263223ba4e9cd95375133d408e21
+  img_fundo_branco_png2 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.map
                    @ [GHC.Types.Char]
                    @ Data.Text.Internal.Text
                    Data.Text.pack
-                   DBA.img_fundo_branco_png6) -}
-69d9b419c03ed22d58e19e690f9014f1
-  img_fundo_branco_png6 :: [GHC.Base.String]
+                   DBA.img_fundo_branco_png3) -}
+4bf4b59f2d7f0a3c8fd5f79111fcde7e
+  img_fundo_branco_png3 :: [GHC.Base.String]
   {- Unfolding: (GHC.Types.:
                    @ GHC.Base.String
                    DBA.img_2_jpg9
-                   DBA.img_fundo_branco_png7) -}
-8e089ebf40c64c223f8c82c2aa77ad5a
-  img_fundo_branco_png7 :: [GHC.Base.String]
+                   DBA.img_fundo_branco_png4) -}
+538d3d72281e9c64f30919e42387e087
+  img_fundo_branco_png4 :: [GHC.Base.String]
   {- Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   DBA.img_fundo_branco_png8
+                   DBA.img_fundo_branco_png5
                    (GHC.Types.[] @ GHC.Base.String)) -}
-ef739dd9b28d7aa7ce7949ed9d6973ab
-  img_fundo_branco_png8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "fundo branco.png"#) -}
+aaa2b4b28c6dc1c0ff5377e067b830eb
+  img_fundo_branco_png5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fundo_branco.png"#) -}
+5f5955cec8a842d0da7bec9be35a7764
+  img_fundobranco_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_fundobranco_png1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+8476a9832ffc0c4a164689d2dcc56fa2
+  img_fundobranco_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_fundobranco_png2
+                   DBA.img_3_png2) -}
+a7945be38d24adb047517df1b8180fba
+  img_fundobranco_png2 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_fundobranco_png3) -}
+08a9a96f98d03c52e68c5e45a481ed29
+  img_fundobranco_png3 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_2_jpg9
+                   DBA.img_fundobranco_png4) -}
+e9cd01f0e754e23d6bdf8dad305ff39f
+  img_fundobranco_png4 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_fundobranco_png5
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+81452f6ceb76bcd8d3d67d55f952d20f
+  img_fundobranco_png5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fundobranco.png"#) -}
+b5bd3d3c70bf69000dfb6128d638becd
+  img_icon_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_icon_png1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+b8dce4140509ee7f54a8f8a394da1341
+  img_icon_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_icon_png5
+                   DBA.img_icon_png2) -}
+782c7841b9d6239948cd63de43a97757
+  img_icon_png2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   DBA.img_icon_png3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+2c4c3c4c8c8c8ce54adfbaba2fab7838
+  img_icon_png3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((DBA.css_menu_css5, DBA.img_icon_png4)) -}
+c279c3932666948528354265ebca09e7
+  img_icon_png4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "pdt9VJ13"#) -}
+da35ab121f3a45ddecb546866bdd4f79
+  img_icon_png5 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_icon_png6) -}
+9738457e1672857a0e91d9971360db3a
+  img_icon_png6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_2_jpg9
+                   DBA.img_icon_png7) -}
+428b724e8393af24b3bea049d2f6c7a8
+  img_icon_png7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_icon_png8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+28428ab8e1da0cbb04926bc218c410b2
+  img_icon_png8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "icon.png"#) -}
+125536a3617b5925e5c69f5634adeb3a
+  img_iconemen_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_iconemen_png1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+7fce6cb3d8ace9ef58e772621f6faa5b
+  img_iconemen_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_iconemen_png5
+                   DBA.img_iconemen_png2) -}
+a7f6b4b6ae58ef6ec29af209aebb72c4
+  img_iconemen_png2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   DBA.img_iconemen_png3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+c7bc8b324293c4c5ece0fdd219972854
+  img_iconemen_png3 ::
+    (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((DBA.css_menu_css5, DBA.img_iconemen_png4)) -}
+53707387dda87a1e164d9118819e48d8
+  img_iconemen_png4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "1IGM_0B1"#) -}
+ed65bbf00eb1227b43b67494b7d6d8e7
+  img_iconemen_png5 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_iconemen_png6) -}
+a77e90c28979ad3ea5fa1213295f12cc
+  img_iconemen_png6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_2_jpg9
+                   DBA.img_iconemen_png7) -}
+0e66cf72a7116a435ff28f183bad29ea
+  img_iconemen_png7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_iconemen_png8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+1c8c028bc595ed1ef76a04cd9333b4ab
+  img_iconemen_png8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "iconemen.png"#) -}
+3f5429568cf55ab4a1117008fa7b66d0
+  img_img1_fundobranco_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_img1_fundobranco_png1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+7b3cb34ccd59e2f7058c3fbd7d53426b
+  img_img1_fundobranco_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_img1_fundobranco_png2
+                   DBA.img_3_png2) -}
+109febfd49f2fb7d7b47ada968808a4e
+  img_img1_fundobranco_png2 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_img1_fundobranco_png3) -}
+413bd8e79f249328a134e1a2d3210dc8
+  img_img1_fundobranco_png3 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_2_jpg9
+                   DBA.img_img1_fundobranco_png4) -}
+b77f8afd9ee914d38acd133e2fa96f9a
+  img_img1_fundobranco_png4 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_img1_fundobranco_png5
+                   DBA.img_fundobranco_png4) -}
+cb3cfcdf91a5c2baf689730823c45f96
+  img_img1_fundobranco_png5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "img1"#) -}
 b7d28f0c8022ed6fa4f0670f2f6cb851
   img_logo_fundo_branco_png :: Yesod.Static.StaticRoute
   {- Strictness: m,
@@ -12305,59 +12567,6 @@ ccbea147851cd65cbf53900515a7cd3a
 aaca04e71533d4017dcd7a8a06bc8c3c
   img_logo_mewlogo_png9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "mewlogo.png"#) -}
-517de3e6f2c8f1ce16c3f999beb65962
-  img_menu_mobile_icon_png :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.img_menu_mobile_icon_png1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-31102178ae71e1df66941ddc793151c7
-  img_menu_mobile_icon_png1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.img_menu_mobile_icon_png5
-                   DBA.img_menu_mobile_icon_png2) -}
-fef34a8395da7103d33297d501aefd6f
-  img_menu_mobile_icon_png2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.img_menu_mobile_icon_png3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-65c3385ff17462c19da3c609797a68ae
-  img_menu_mobile_icon_png3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA.css_menu_css5, DBA.img_menu_mobile_icon_png4)) -}
-f88893f51c009dc5244b8e88a3886bcd
-  img_menu_mobile_icon_png4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "1IGM_0B1"#) -}
-5b11f61c96d85a3087d32732164fc19b
-  img_menu_mobile_icon_png5 :: [Data.Text.Internal.Text]
-  {- Unfolding: (GHC.Base.map
-                   @ [GHC.Types.Char]
-                   @ Data.Text.Internal.Text
-                   Data.Text.pack
-                   DBA.img_menu_mobile_icon_png6) -}
-e3abadbe18145dbbdb6a31634faa18f8
-  img_menu_mobile_icon_png6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.img_2_jpg9
-                   DBA.img_menu_mobile_icon_png7) -}
-d29e8bc085e9e2a86c91bb3c08c76b80
-  img_menu_mobile_icon_png7 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.img_menu_mobile_icon_png8
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-f5bef8a43c0ca2a4e42ad6f22d218aba
-  img_menu_mobile_icon_png8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "menu_mobile-icon.png"#) -}
 a68eda4b64fd2e320e44a2ca2b41414d
   img_motivo1_png :: Yesod.Static.StaticRoute
   {- Strictness: m,
@@ -12514,6 +12723,58 @@ e54ccb9f813c588b729a5ebb8ba3f0f8
 ac2f9e1b85cc8d595e176d2982dac46a
   img_motivo3_png8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "motivo3.png"#) -}
+816a713cf78fbab9e5d242cc13b1d0b6
+  img_motivo4_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_motivo4_png1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+d4d572f22928938230593a1f9b6cb3a9
+  img_motivo4_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_motivo4_png5
+                   DBA.img_motivo4_png2) -}
+a88ff8e4c17e63d661ba95efed873d8b
+  img_motivo4_png2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   DBA.img_motivo4_png3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+90e2ba6469e73d4484e01806fce0fb96
+  img_motivo4_png3 ::
+    (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((DBA.css_menu_css5, DBA.img_motivo4_png4)) -}
+0a9f23937b4a091d20aafbf1a5df69e8
+  img_motivo4_png4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "ZRTFVtYz"#) -}
+357e6c34d7330881e2438d4d2d850ed0
+  img_motivo4_png5 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_motivo4_png6) -}
+222bcd15e69a3960fa8d52a82129ba07
+  img_motivo4_png6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_2_jpg9
+                   DBA.img_motivo4_png7) -}
+9b647a9a4a274093f53164e8e44cc73f
+  img_motivo4_png7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_motivo4_png8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+a8ec667f21bbf381f418e72e196854ad
+  img_motivo4_png8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "motivo4.png"#) -}
 72accadbf3fdd9695449460582369499
   img_redes_sociais_transp_png :: Yesod.Static.StaticRoute
   {- Strictness: m,
@@ -12568,112 +12829,111 @@ bf1f6501d4a2412d318bcb47b6da841a
   img_redes_sociais_transp_png8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "redes_sociais_transp.png"#) -}
-bf420105984764cfadf6cde1460ef2f2
-  img_search_icon_mobile_png :: Yesod.Static.StaticRoute
+a0a41e31ef656ee4471af840e0c1721d
+  img_searchicon_png :: Yesod.Static.StaticRoute
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
-                DBA.img_search_icon_mobile_png1
+                DBA.img_searchicon_png1
                   `cast`
                 (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-c7f24a998c1b468225cbf69c1d95694d
-  img_search_icon_mobile_png1 :: Yesod.Static.R:RouteStatic
+2e76bb1dd7843859646de3ba54a85066
+  img_searchicon_png1 :: Yesod.Static.R:RouteStatic
   {- Strictness: m,
      Unfolding: (Yesod.Static.StaticRoute
-                   DBA.img_search_icon_mobile_png5
-                   DBA.img_search_icon_mobile_png2) -}
-0a36bf1a9b4d0f4a52370d570c3cba67
-  img_search_icon_mobile_png2 ::
+                   DBA.img_searchicon_png5
+                   DBA.img_searchicon_png2) -}
+0b19c34d4e4d923e59e35939673ac3fb
+  img_searchicon_png2 ::
     [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.img_search_icon_mobile_png3
+                   DBA.img_searchicon_png3
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-2bed4bf2b5acef334efaf39e38418299
-  img_search_icon_mobile_png3 ::
+b2a4a88822ad29651b40015512c52b76
+  img_searchicon_png3 ::
     (Data.Text.Internal.Text, Data.Text.Internal.Text)
   {- Strictness: m,
-     Unfolding: ((DBA.css_menu_css5,
-                  DBA.img_search_icon_mobile_png4)) -}
-ea842eb97031d3b320c5b758c2d7ea09
-  img_search_icon_mobile_png4 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "llPsmgkG"#) -}
-40693ba8a96f9b37c8ce36b32d1c7c0d
-  img_search_icon_mobile_png5 :: [Data.Text.Internal.Text]
-  {- Unfolding: (GHC.Base.map
-                   @ [GHC.Types.Char]
-                   @ Data.Text.Internal.Text
-                   Data.Text.pack
-                   DBA.img_search_icon_mobile_png6) -}
-6797743f55fb616b921e017e6493a84c
-  img_search_icon_mobile_png6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.img_2_jpg9
-                   DBA.img_search_icon_mobile_png7) -}
-881b7ac9999ba1d03be341cae052dd42
-  img_search_icon_mobile_png7 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   DBA.img_search_icon_mobile_png8
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-165eaf489c7a48ecbe0761e59bb6e273
-  img_search_icon_mobile_png8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "search-icon-mobile.png"#) -}
-4f00357c751fc1c218b5ea2bdcaaf7a6
-  img_search_icon_png :: Yesod.Static.StaticRoute
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                DBA.img_search_icon_png1
-                  `cast`
-                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
-6a54ad333607fbd56526166b3750d08e
-  img_search_icon_png1 :: Yesod.Static.R:RouteStatic
-  {- Strictness: m,
-     Unfolding: (Yesod.Static.StaticRoute
-                   DBA.img_search_icon_png5
-                   DBA.img_search_icon_png2) -}
-bd515b18a4eea2e618e701dd28b6c6e1
-  img_search_icon_png2 ::
-    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
-                   DBA.img_search_icon_png3
-                   (GHC.Types.[]
-                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-188cb6b477d4287cebb05ddf946d6d24
-  img_search_icon_png3 ::
-    (Data.Text.Internal.Text, Data.Text.Internal.Text)
-  {- Strictness: m,
-     Unfolding: ((DBA.css_menu_css5, DBA.img_search_icon_png4)) -}
-bd9991e546a280b1e0bf80c7e80f4b8d
-  img_search_icon_png4 :: Data.Text.Internal.Text
+     Unfolding: ((DBA.css_menu_css5, DBA.img_searchicon_png4)) -}
+6829b5f7a260e8f1e9f5c5635f86e37a
+  img_searchicon_png4 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "RCSABXDb"#) -}
-289571fc669cd696bbdd1be682e1a251
-  img_search_icon_png5 :: [Data.Text.Internal.Text]
+3787c4397322086f22236c058144a825
+  img_searchicon_png5 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.map
                    @ [GHC.Types.Char]
                    @ Data.Text.Internal.Text
                    Data.Text.pack
-                   DBA.img_search_icon_png6) -}
-7e8409528ad4d7fd7be49e47f69c709e
-  img_search_icon_png6 :: [GHC.Base.String]
+                   DBA.img_searchicon_png6) -}
+7002357c3e2a182131c89af1013cbcf9
+  img_searchicon_png6 :: [GHC.Base.String]
   {- Unfolding: (GHC.Types.:
                    @ GHC.Base.String
                    DBA.img_2_jpg9
-                   DBA.img_search_icon_png7) -}
-e9fe6050a4629db6eff069494912e091
-  img_search_icon_png7 :: [GHC.Base.String]
+                   DBA.img_searchicon_png7) -}
+7a8c6f41f5ad7e57c2fc6ec27dc75b12
+  img_searchicon_png7 :: [GHC.Base.String]
   {- Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   DBA.img_search_icon_png8
+                   DBA.img_searchicon_png8
                    (GHC.Types.[] @ GHC.Base.String)) -}
-3e18d0db0a9a15fd75a3caacf1d84808
-  img_search_icon_png8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "search-icon.png"#) -}
+9ba8adbbd613b1c7bc7df29ab885bf06
+  img_searchicon_png8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "searchicon.png"#) -}
+4f188834980becf06dae214748aa4630
+  img_searchiconmobile_png :: Yesod.Static.StaticRoute
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                DBA.img_searchiconmobile_png1
+                  `cast`
+                (Sub (Sym (Yesod.Static.TFCo:R:RouteStatic[0]))) -}
+55bbeb79456f97bb6fbdbdd6f6a8db47
+  img_searchiconmobile_png1 :: Yesod.Static.R:RouteStatic
+  {- Strictness: m,
+     Unfolding: (Yesod.Static.StaticRoute
+                   DBA.img_searchiconmobile_png5
+                   DBA.img_searchiconmobile_png2) -}
+68127056a014595f37c58f13fa669c7f
+  img_searchiconmobile_png2 ::
+    [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   DBA.img_searchiconmobile_png3
+                   (GHC.Types.[]
+                      @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
+fe64dd3e11003393f3743c879f021d3a
+  img_searchiconmobile_png3 ::
+    (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m,
+     Unfolding: ((DBA.css_menu_css5, DBA.img_searchiconmobile_png4)) -}
+2757dc4ba97771b739dcd5b8e4e87e83
+  img_searchiconmobile_png4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "llPsmgkG"#) -}
+f2dee38685315ceccb958813f45e8039
+  img_searchiconmobile_png5 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ Data.Text.Internal.Text
+                   Data.Text.pack
+                   DBA.img_searchiconmobile_png6) -}
+53d2b8c34f942ac6a16204f1c69e8244
+  img_searchiconmobile_png6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_2_jpg9
+                   DBA.img_searchiconmobile_png7) -}
+b4838dab96e8daa4e0896b4d92f446fb
+  img_searchiconmobile_png7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   DBA.img_searchiconmobile_png8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+8072d5424aa1a802101e42b288ea2f27
+  img_searchiconmobile_png8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "searchiconmobile.png"#) -}
 8b205868eb39eb716a6fc34487cbef20
   img_servicos_png :: Yesod.Static.StaticRoute
   {- Strictness: m,

@@ -50,7 +50,6 @@ pRoutes = [parseRoutes|
 /servip/deletar/#ServipxId ExcluirservipR GET
 
 
-
 /login LoginR GET POST
 /logout LogoutR GET
 /admin AdminR GET
