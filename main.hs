@@ -381,6 +381,15 @@ getExcluirservipR id = do
     redirect ListarprestadorR
 
 
+getListarservipR :: PrestadorxId -> Handler Html
+getListarservipR id = do
+    lista <- runDB $ selectList [] [Asc ServipxTipo]
+    msg <- getMessage
+    defaultLayout $ do
+        setTitle "Lista de Serviços"
+        $(whamletFile "hamlets/prestador/listarservip.hamlet")
+
+
 
 
 -- home

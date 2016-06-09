@@ -48,6 +48,7 @@ pRoutes = [parseRoutes|
 /servip/cadastro ServipR GET POST
 /servip/checar/#ServipxId ChecarservipR GET
 /servip/deletar/#ServipxId ExcluirservipR GET
+/servip/listar/#PrestadorxId ListarservipR GET
 
 
 /login LoginR GET POST
