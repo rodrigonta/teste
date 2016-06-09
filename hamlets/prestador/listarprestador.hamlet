@@ -21,8 +21,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Lista de Prestadores
                 <hr class="star-primary">
+                <h2>Lista de Prestadores
                 <p>&nbsp;
 
             $maybe mm <- msg                   

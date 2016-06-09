@@ -55,7 +55,7 @@ getClienteR = do
            defaultLayout $ do 
            toWidget [cassius|
                label
-                   color:red;
+                   color:green;
            |]
            [whamlet|
                  <form method=post enctype=#{enctype} action=@{ClienteR}>
@@ -186,6 +186,19 @@ getListarempresaR = do
         addScript ExjqueryR
         addScript ResposivoR
         toWidget $(juliusFile "julius/index.julius")
+        toWidget [cassius|
+                h2
+                    color:#00c0ac;
+                tbody
+                    a:link 
+                        color: black
+                    a:visited 
+                        color: black
+                    a:hover 
+                        color: black
+                    a:active 
+                        color: black
+        |]
 
 
 --serviços da empresa
@@ -262,6 +275,19 @@ getListarservicoR id = do
         addScript ExjqueryR
         addScript ResposivoR
         toWidget $(juliusFile "julius/index.julius")
+        toWidget [cassius|
+                h2
+                    color:#00c0ac;
+                tbody
+                    a:link 
+                        color: black
+                    a:visited 
+                        color: black
+                    a:hover 
+                        color: black
+                    a:active 
+                        color: black
+        |]
 
 
 
@@ -338,6 +364,19 @@ getListarprestadorR = do
         addScript ExjqueryR
         addScript ResposivoR
         toWidget $(juliusFile "julius/index.julius")
+        toWidget [cassius|
+                h2
+                    color:#00c0ac;
+                tbody
+                    a:link 
+                        color: black
+                    a:visited 
+                        color: black
+                    a:hover 
+                        color: black
+                    a:active 
+                        color: black
+        |]
 
 
 --serviços do prestador
@@ -404,6 +443,19 @@ getListarservipR id = do
     defaultLayout $ do
         setTitle "Lista de Serviços"
         $(whamletFile "hamlets/prestador/listarservip.hamlet")
+        toWidget [cassius|
+                h2
+                    color:#00c0ac;
+                tbody
+                    a:link 
+                        color: black
+                    a:visited 
+                        color: black
+                    a:hover 
+                        color: black
+                    a:active 
+                        color: black
+        |]
 
 
 
