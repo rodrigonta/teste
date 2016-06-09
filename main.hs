@@ -181,8 +181,11 @@ getListarempresaR = do
     defaultLayout $ do
         setTitle "Lista de Empresas"
         $(whamletFile "hamlets/empresa/listarempresa.hamlet")
-
-
+        addStylesheet $ StaticR css_menu_css
+        addScript JqueryR
+        addScript ExjqueryR
+        addScript ResposivoR
+        toWidget $(juliusFile "julius/index.julius")
 
 
 --serviços da empresa
@@ -254,6 +257,11 @@ getListarservicoR id = do
     defaultLayout $ do
         setTitle "Lista de Serviços"
         $(whamletFile "hamlets/empresa/listarservico.hamlet")
+        addStylesheet $ StaticR css_menu_css
+        addScript JqueryR
+        addScript ExjqueryR
+        addScript ResposivoR
+        toWidget $(juliusFile "julius/index.julius")
 
 
 
@@ -325,6 +333,11 @@ getListarprestadorR = do
     defaultLayout $ do
         setTitle "Lista de Prestadores"
         $(whamletFile "hamlets/prestador/listarprestador.hamlet")
+        addStylesheet $ StaticR css_menu_css
+        addScript JqueryR
+        addScript ExjqueryR
+        addScript ResposivoR
+        toWidget $(juliusFile "julius/index.julius")
 
 
 --serviços do prestador

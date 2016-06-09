@@ -1,4 +1,22 @@
-<!-- Lista de Prestadores -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+            <title>Mew Festas - Tudo num só portal!
+            <link rel="shortcut icon" img src=@{StaticR img_icon_png}>
+    <body>
+        <header>
+
+            <figure id="logo">
+                <img src=@{StaticR img_logo_fundo_branco_png}>
+            
+            <section id="nav-logar">
+                <section id="opcao-logar">
+                    <a href="@{LoginR}">LOGIN
+                    &nbsp &nbsp
+                    <a href="@{ClienteR}">CADASTRO
+                <a href="@{ServicoR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO EMPRESA 
+                <a href="@{ServipR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO PRESTADOR DE SERVIÇO <!-- Lista de Prestadores -->
 <section style="padding: 200px 0px">
     <div class="container">
         <div class="row">
