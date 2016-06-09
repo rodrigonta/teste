@@ -31,7 +31,8 @@
           
         <section id="todos-eventos">
                     <h1 id="h1desktop">O site com o maior número de serviços na baixada santista
-                    <a href="@{ServicoR}" id="icon-todos-eventos"> TODOS OS SERVIÇOS
+                    <a href="@{ListarempresaR}" id="icon-todos-eventos"> TODOS AS EMPRESAS
+                    <a href="@{ListarprestadorR}" id="icon-todos-eventos"> TODOS OS PRESTADORES
     
        <div id="barra">
             <figure id="logo_servicos">
