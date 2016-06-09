@@ -33,7 +33,11 @@ mkYesodDispatch "Pagina" pRoutes
 -- Sempre que preciso um form, sera ncessario
 -- funcoes deste tipo
 
-
+----------------------LINKS----------------------
+---https://haskell-hw-cloned-fcandi.c9users.io/
+---https://github.com/rodrigonta/teste/
+---https://ide.c9.io/fcandi_/haskell-hw-cloned
+-------------------------------------------------
 -- form e gets de clientes
 
 formcliente :: Form Clientex
@@ -82,9 +86,9 @@ getChecarclienteR clid = do
         <p><b> #{clientexEndereco clientex}  
         <p><b> #{clientexTelefone clientex}  
         <p><b> #{clientexCidade clientex}  
-        <p><b> #{clientexEstado clientex}  
-        
-    |]
+        <p><b> #{clientexEstado clientex} 
+        |]
+
 
 
 
@@ -529,10 +533,7 @@ postLoginR = do
 
 
 
-getAdminR :: Handler Html
-getAdminR = defaultLayout [whamlet|
-     <h1> Seja bem vindo administrador!
-|]
+
 
 getLogoutR :: Handler Html
 getLogoutR = do
@@ -541,6 +542,10 @@ getLogoutR = do
          <h1> Xauzinho!
      |]
 
+
+getAdminR :: Handler Html
+getAdminR = defaultLayout [whamlet|
+    <h1> Seja bem vindo administrador!
 
 
     -- erro
