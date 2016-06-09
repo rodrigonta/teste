@@ -16,6 +16,10 @@
                     <a href="@{LoginR}">LOGIN
                     &nbsp &nbsp
                     <a href="@{ClienteR}">CADASTRO
+                    &nbsp &nbsp
+                    <a href="@{EmpresaR}">CADASTRO DE EMPRESA
+                    &nbsp &nbsp
+                    <a href="@{PrestadorR}">CADASTRO DE PRESTADOR
                 <a href="@{ServicoR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO EMPRESA 
                 <a href="@{ServipR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO PRESTADOR DE SERVIÇO 
         

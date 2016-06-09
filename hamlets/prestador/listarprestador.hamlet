@@ -15,6 +15,10 @@
                     <a href="@{LoginR}">LOGIN
                     &nbsp &nbsp
                     <a href="@{ClienteR}">CADASTRO
+                    &nbsp &nbsp
+                    <a href="@{EmpresaR}">CADASTRO DE EMPRESA
+                    &nbsp &nbsp
+                    <a href="@{PrestadorR}">CADASTRO DE PRESTADOR
                 <a href="@{ServicoR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO EMPRESA 
                 <a href="@{ServipR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO PRESTADOR DE SERVIÇO <!-- Lista de Prestadores -->
         <section style="padding: 200px 0px">
@@ -42,6 +46,7 @@
                                             <th>Telefone
                                             <th>Cidade
                                             <th>Estado
+                                            <th>Excluir
                                      <tbody>
                                         $forall Entity id prestadorx <- lista
                                             <tr class="linha" data-id=@{ChecarprestadorR id}>
@@ -51,3 +56,4 @@
                                                 <td>#{prestadorxTelefone prestadorx}
                                                 <td>#{prestadorxCidade prestadorx}
                                                 <td>#{prestadorxEstado prestadorx}
+                                                <td><a href=@{ExcluirprestadorR id}>Excluir

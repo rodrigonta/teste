@@ -110,6 +110,19 @@ getListarclienteR = do
         addScript ExjqueryR
         addScript ResposivoR
         toWidget $(juliusFile "julius/index.julius")
+        toWidget [cassius|
+                h2
+                    color:#00c0ac;
+                tbody
+                    a:link 
+                        color: black
+                    a:visited 
+                        color: black
+                    a:hover 
+                        color: black
+                    a:active 
+                        color: black
+        |]
 
 
 --empresa           --
