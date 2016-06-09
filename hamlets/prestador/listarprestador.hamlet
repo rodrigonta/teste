@@ -17,37 +17,37 @@
                     <a href="@{ClienteR}">CADASTRO
                 <a href="@{ServicoR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO EMPRESA 
                 <a href="@{ServipR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO PRESTADOR DE SERVIÇO <!-- Lista de Prestadores -->
-<section style="padding: 200px 0px">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <hr class="star-primary">
-                <h2>Lista de Prestadores
-                <p>&nbsp;
-
-            $maybe mm <- msg                   
-                <div class="col-lg-12 text-center">
-                    <div class="alert alert-success col-sm-12">
-                        <p class="pull-left">#{mm}
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="table-responsive">
-                         <table class="table table-condensed table-striped table-hover">
-                             <thead>
-                                <tr>
-                                    <th>Nome
-                                    <th>CPF
-                                    <th>Endereço
-                                    <th>Telefone
-                                    <th>Cidade
-                                    <th>Estado
-                             <tbody>
-                                $forall Entity id prestadorx <- lista
-                                    <tr class="linha" data-id=@{ChecarprestadorR id}>
-                                        <td><a href=@{ListarservipR id}>#{prestadorxNome prestadorx}
-                                        <td>#{prestadorxCpf prestadorx}
-                                        <td>#{prestadorxEndereco prestadorx}
-                                        <td>#{prestadorxTelefone prestadorx}
-                                        <td>#{prestadorxCidade prestadorx}
-                                        <td>#{prestadorxEstado prestadorx}
+        <section style="padding: 200px 0px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <hr class="star-primary">
+                        <h2>Lista de Prestadores
+                        <p>&nbsp;
+        
+                    $maybe mm <- msg                   
+                        <div class="col-lg-12 text-center">
+                            <div class="alert alert-success col-sm-12">
+                                <p class="pull-left">#{mm}
+        
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="table-responsive">
+                                 <table class="table table-condensed table-striped table-hover">
+                                     <thead>
+                                        <tr>
+                                            <th>Nome
+                                            <th>CPF
+                                            <th>Endereço
+                                            <th>Telefone
+                                            <th>Cidade
+                                            <th>Estado
+                                     <tbody>
+                                        $forall Entity id prestadorx <- lista
+                                            <tr class="linha" data-id=@{ChecarprestadorR id}>
+                                                <td><a href=@{ListarservipR id}>#{prestadorxNome prestadorx}
+                                                <td>#{prestadorxCpf prestadorx}
+                                                <td>#{prestadorxEndereco prestadorx}
+                                                <td>#{prestadorxTelefone prestadorx}
+                                                <td>#{prestadorxCidade prestadorx}
+                                                <td>#{prestadorxEstado prestadorx}

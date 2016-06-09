@@ -443,6 +443,11 @@ getListarservipR id = do
     defaultLayout $ do
         setTitle "Lista de Serviços"
         $(whamletFile "hamlets/prestador/listarservip.hamlet")
+        addStylesheet $ StaticR css_menu_css
+        addScript JqueryR
+        addScript ExjqueryR
+        addScript ResposivoR
+        toWidget $(juliusFile "julius/index.julius")
         toWidget [cassius|
                 h2
                     color:#00c0ac;
@@ -456,6 +461,7 @@ getListarservipR id = do
                     a:active 
                         color: black
         |]
+
 
 
 

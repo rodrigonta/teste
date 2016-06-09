@@ -17,32 +17,32 @@
                     <a href="@{ClienteR}">CADASTRO
                 <a href="@{ServicoR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO EMPRESA 
                 <a href="@{ServipR}" id="opcao-evento"> + PUBLICAR SERVIÇO COMO PRESTADOR DE SERVIÇO <!-- Lista de Serviços -->
-<section style="padding: 200px 0px">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <hr class="star-primary">
-                <h2>Lista de Serviços das Empresas
-                <p>&nbsp;
-
-            $maybe mm <- msg                   
-                <div class="col-lg-12 text-center">
-                    <div class="alert alert-success col-sm-12">
-                        <p class="pull-left">#{mm}
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="table-responsive">
-                         <table class="table table-condensed table-striped table-hover">
-                             <thead>
-                                <tr>
-                                    <th>Tipo de serviço:
-                                    <th>Preço:
-                                    <th>Descirçao do serviço:
-                                    <th>Empresa:
-                             <tbody>
-                                $forall Entity id servicox <- lista
-                                    <tr class="linha" data-id=@{ChecarservicoR id}>
-                                        <td>#{servicoxTipo servicox}
-                                        <td>#{servicoxPreco servicox}
-                                        <td>#{servicoxDescricao servicox}
+        <section style="padding: 200px 0px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <hr class="star-primary">
+                        <h2>Lista de Serviços das Empresas
+                        <p>&nbsp;
+        
+                    $maybe mm <- msg                   
+                        <div class="col-lg-12 text-center">
+                            <div class="alert alert-success col-sm-12">
+                                <p class="pull-left">#{mm}
+        
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="table-responsive">
+                                 <table class="table table-condensed table-striped table-hover">
+                                     <thead>
+                                        <tr>
+                                            <th>Tipo de serviço:
+                                            <th>Preço:
+                                            <th>Descirçao do serviço:
+                                            <th>Empresa:
+                                     <tbody>
+                                        $forall Entity id servicox <- lista
+                                            <tr class="linha" data-id=@{ChecarservicoR id}>
+                                                <td>#{servicoxTipo servicox}
+                                                <td>#{servicoxPreco servicox}
+                                                <td>#{servicoxDescricao servicox}
